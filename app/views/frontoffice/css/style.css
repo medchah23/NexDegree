@@ -1,0 +1,222 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #FDF0D5;
+    animation: backgroundAnimation 10s infinite;
+}@keyframes backgroundAnimation {
+     0% {
+         background-color: #CFEFFF; /* Softer light blue */
+     }
+     25% {
+         background-color: #E9F7FF; /* Pale blueish white */
+     }
+     50% {
+         background-color: #F6FCFF; /* Very light and soft */
+     }
+     75% {
+         background-color: #E2F3FF; /* A slightly deeper soft blue */
+     }
+     100% {
+         background-color: #CFEFFF; /* Return to starting color */
+     }
+ }
+.wrapper {
+    position: relative;
+    max-width: 700px;
+    width: 100%;
+    border-radius: 12px;
+    padding: 20px 30px 120px;
+    background: #64aede; /* Primary Blue */
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+.form.login {
+    position: absolute;
+    left: 50%;
+    bottom: -90%;
+    transform: translateX(-50%);
+    width: calc(100% + 220px);
+    padding: 20px 140px;
+    height: 101%;
+    background: #fff;
+    transition: all 0.6s ease;
+}input::selection {
+     background-color: #C6E7FF; /* Highlight color */
+     color: #000;
+     border : solid 2px #64aede;
+ }
+.wrapper.active .form.login {
+    bottom: -10%;
+    box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
+}
+
+.form header {
+    font-size: 30px;
+    text-align: center;
+    color: #fff;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.form.login header {
+    color: #003049; /* Dark Blue */
+    opacity: 0.6;
+}
+
+.wrapper.active .form.login header {
+    opacity: 1;
+}
+
+.wrapper.active .signup header {
+    opacity: 0.6;
+}
+
+.wrapper form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+form input,
+form select {
+    height: 60px;
+    outline: none;
+    border: none;
+    padding: 0 15px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #333;
+    border-radius: 8px;
+    background: #fff;
+}
+
+.form.login input {
+    border: 1px solid #aaa;
+}
+
+.form.login input:focus {
+    box-shadow: 0 1px 0 #ddd;
+}
+
+form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+form a {
+    color: #003049; /* Dark Blue */
+    text-decoration: none;
+}
+
+form a:hover {
+    text-decoration: underline;
+}
+
+@keyframes shake {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(-5px);
+    }
+    50% {
+        transform: translateX(5px);
+    }
+    75% {
+        transform: translateX(-5px);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+input.error {
+    border: 2px solid #C1121F;
+    animation: shake 0.5s;
+}
+input.error::placeholder {
+    color: #C1121F; }
+form input[type="submit"] {
+    margin-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.form.login input[type="submit"] {
+    background: #003049;
+    color: #fff;
+    border: none;
+}
+.address-group {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+.address-group .address {
+    flex: 1 1 calc(33.333% - 10px);
+    min-width: 150px;
+}
+.popup {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px 40px;
+    border-radius: 5px;
+    color: #fff;
+    z-index: 1000;
+    opacity: 0;
+    animation: fadeIn 0.3s forwards;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+.popup.success {
+    background-color: #4CAF50;
+}
+.popup.error {
+    background-color: #C1121F;
+}
+.popup.confirm-popup {
+    background-color: #FDF0D5;
+    color: #003049;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+.button-container {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 20px;
+}
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.confirm-button {
+    background-color: #4CAF50;
+    color: #fff;
+}
+.cancel-button {
+    background-color: #C1121F;
+    color: #fff;
+}
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+}
