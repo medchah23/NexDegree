@@ -8,12 +8,6 @@
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
-<section>
-    <div class='air air1'></div>
-    <div class='air air2'></div>
-    <div class='air air3'></div>
-    <div class='air air4'></div>
-</section>
 <div class="animated-bg"></div>
 <section class="wrapper">
     <!-- Signup Form -->
@@ -24,11 +18,46 @@
             <input type="text" id="secondName" name="secondName" placeholder="Last Name" required />
             <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required />
             <input type="email" id="email" name="email" placeholder="Email Address" required />
-            <select name="role" id="role" required>
+            <select name="role" id="role" required onchange="togglestudent()">
+                <option selected disabled >votre role </option>
                 <option value="etudient">Student</option>
                 <option value="prof">Teacher (Request Approval)</option>
             </select>
+            <div id="student" style="display: none">
+                    <header>Eleve  : </header>
+                    <select name="niveau" id="niveau">
+                        <option value="NULL" disabled>selectioner votre niveau </option>
+                        <option value="7eme">7éme</option>
+                        <option value="8eme">8éme</option>
+                        <option value="9eme">9éme</option>
+                        <option value="1 secondaire">1 secondaire</option>
+                        <option value="2éme info">2éme informatique</option>
+                        <option value="2éme science">2éme science</option>
+                        <option value="2éme lettre">2éme lettre</option>
+                        <option value="3éme info">3éme informatique</option>
+                        <option value="3éme science exprimentale">3éme science exprimentale</option>
+                        <option value="3éme lettre">3éme lettre</option>
+                        <option value="3éme mathematique">3éme mathematique</option>
+                        <option value="3éme technique">3éme technique</option>
+                        <option value="BAC info">BAC informatique</option>
+                        <option value="3éme science exprimentale">BAC science exprimentale</option>
+                        <option value="3éme lettre">BAC lettre</option>
+                        <option value="3éme mathematique">BAC mathematique</option>
+                        <option value="3éme technique">BAC technique</option>
+                    </select><br>
+                    <label for="student_image">votre image</label>
+                    <input id="student_image" type="file">
+                </div>
+                <div id="prof"style="display:  none">
+                    <header>Teacher (Request Approval)</header>
+                    <select name="matier" id="matier">
+                        <option value="" selected disabled>matier pour educater</option>
+                    </select>
+                    <label for="CV">cv : </label><input type="file" name="cv" id="cv">
+                </div>
             <input type="password" id="password" name="password" placeholder="Password" required />
+            <input type="cpassword" id="cpassword" name="cpassword" placeholder="confirm Password" required />
+
             <input type="submit" id="signupSubmit" value="Signup" />
         </form>
     </div>

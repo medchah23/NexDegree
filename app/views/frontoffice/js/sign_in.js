@@ -11,15 +11,24 @@ loginHeader.addEventListener("click", () => {
 signupHeader.addEventListener("click", () => {
     wrapper.classList.remove("active");
 });
-function toggleCategoryInput() {
-    const role = document.getElementById('role');
-    const PROF = document.getElementById('PROF');
-    if (role.value === 'prof') {
-        PROF.style.display = 'block';
+function togglestudent() {
+    const role = document.getElementById('role').value; // Get selected role value
+    const student = document.getElementById('student'); // Student section
+    const prof = document.getElementById('prof'); // Teacher section
+
+    if (role === 'etudient') {
+        student.style.display = 'block'; // Show student section
+        prof.style.display = 'none'; // Hide teacher section
+    } else if (role === 'prof') {
+        prof.style.display = 'block'; // Show teacher section
+        student.style.display = 'none'; // Hide student section
     } else {
-        PROF.style.display = 'none';
+        // Default case: Hide both sections
+        student.style.display = 'none';
+        prof.style.display = 'none';
     }
 }
+
 function createPopupb(message, status, callback = null) {
     // Remove any existing popup
     const existingPopup = document.querySelector('.popup');
@@ -110,12 +119,44 @@ function removeShakeAnimation(element) {
 }
 function verif(event) {
     event.preventDefault();
-    nom = document.getElementById("firstName")
+    nom = document.getElementById("firstName");
     prenom = document.getElementById('secondName');
     email = document.getElementById('email');
-    telefone = document.getElementsByClassName('tele');
+    tele= document.getElementById('tel');
+    role = document.getElementById('role');
+    niveau = document.getElementById('niveau');
+    image_student = document.getElementById('student_image');
+    matier = document.getElementById('matier');
+    cv= document.getElementById('cv');
+    isValid=true
+    if (ischaine(nom.value)===false || nom.value ==="") {
+        nom.value = "";
+        nom.placeholder = "nom not valid";
+        nom.classList.add("error");
+        removeShakeAnimation(nom);
+        isValid = false;
+    }
+    else if (ischaine(prenom.value)==false|| prenom.value=="") {
+        prenom.value = "";
+        prenom.placeholder = "prenom not valid";
+        nom.classList.add("error");
+        removeShakeAnimation(prenom);
+        isValid = false;
+
+    }
+    const test = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+    else if (!test.test(email.value)) {
+        email.value="";
+        email.placeholder = "email address non valide";
+        email.classList.add("error");
+        removeShakeAnimation(test);
+        isValid = false;
+    }
+    else if()
 
 }
+
 /*document.getElementById('signupForm').addEventListener('submit', signin);
 document.getElementById('loginForm').addEventListener('submit', login);
 */

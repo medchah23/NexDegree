@@ -219,4 +219,122 @@ button {
     to {
         opacity: 1;
     }
+}/* Shared Styles for Student and Prof Sections */
+#student,
+#prof {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center-align content horizontally */
+    justify-content: center; /* Center-align content vertically */
+    gap: 15px; /* Spacing between elements */
+    padding: 20px;
+    margin: 20px auto; /* Center section within its parent */
+    width: 90%; /* Set width relative to the parent */
+    max-width: 400px; /* Limit maximum width for better readability */
+    border: 2px solid #64aede; /* Blue border to highlight the section */
+    border-radius: 12px; /* Smooth rounded corners */
+    background-color: #f9f9f9; /* Light background for contrast */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Header Styling */
+#student header,
+#prof header {
+    font-size: 20px;
+    font-weight: 600;
+    color: #003049; /* Dark Blue */
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+/* Dropdown Styling */
+#student select,
+#prof select {
+    width: 100%; /* Full width inside container */
+    height: 45px;
+    padding: 5px 10px;
+    font-size: 16px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#student select:focus,
+#prof select:focus {
+    border-color: #64aede;
+    box-shadow: 0 0 8px rgba(100, 174, 222, 0.5);
+}
+
+/* Label Styling */
+#student label,
+#prof label {
+    font-size: 14px;
+    color: #003049; /* Dark Blue */
+    font-weight: 500;
+    text-align: left;
+    width: 100%; /* Align label with input fields */
+}
+
+/* File Input Styling */
+#student input[type="file"],
+#prof input[type="file"] {
+    padding: 8px;
+    font-size: 14px;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    background: #fff;
+    width: 100%; /* Full width for better alignment */
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#student input[type="file"]:hover,
+#prof input[type="file"]:hover {
+    border-color: #64aede;
+    background-color: #e9f7ff; /* Light hover effect */
+}
+
+/* File Selector Button Styling */
+#student input[type="file"]::file-selector-button,
+#prof input[type="file"]::file-selector-button {
+    padding: 8px 12px;
+    background-color: #64aede; /* Primary Blue */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+#student input[type="file"]::file-selector-button:hover,
+#prof input[type="file"]::file-selector-button:hover {
+    background-color: #003049; /* Darker Blue on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    #student,
+    #prof {
+        width: 95%;
+        padding: 15px;
+    }
+
+    #student header,
+    #prof header {
+        font-size: 18px;
+    }
+
+    #student select,
+    #prof select {
+        height: 40px;
+        font-size: 14px;
+    }
+
+    #student input[type="file"],
+    #prof input[type="file"] {
+        font-size: 12px;
+    }
 }
