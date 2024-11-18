@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+
 * {
     margin: 0;
     padding: 0;
@@ -13,23 +14,26 @@ body {
     justify-content: center;
     background: #FDF0D5;
     animation: backgroundAnimation 10s infinite;
-}@keyframes backgroundAnimation {
-     0% {
-         background-color: #CFEFFF; /* Softer light blue */
-     }
-     25% {
-         background-color: #E9F7FF; /* Pale blueish white */
-     }
-     50% {
-         background-color: #F6FCFF; /* Very light and soft */
-     }
-     75% {
-         background-color: #E2F3FF; /* A slightly deeper soft blue */
-     }
-     100% {
-         background-color: #CFEFFF; /* Return to starting color */
-     }
- }
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-color: #CFEFFF; /* Softer light blue */
+    }
+    25% {
+        background-color: #E9F7FF; /* Pale blueish white */
+    }
+    50% {
+        background-color: #F6FCFF; /* Very light and soft */
+    }
+    75% {
+        background-color: #E2F3FF; /* A slightly deeper soft blue */
+    }
+    100% {
+        background-color: #CFEFFF; /* Return to starting color */
+    }
+}
+
 .wrapper {
     position: relative;
     max-width: 700px;
@@ -40,6 +44,7 @@ body {
     box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
     overflow: hidden;
 }
+
 .form.login {
     position: absolute;
     left: 50%;
@@ -50,11 +55,14 @@ body {
     height: 101%;
     background: #fff;
     transition: all 0.6s ease;
-}input::selection {
-     background-color: #C6E7FF; /* Highlight color */
-     color: #000;
-     border : solid 2px #64aede;
- }
+}
+
+input::selection {
+    background-color: #C6E7FF; /* Highlight color */
+    color: #000;
+    border: solid 2px #64aede;
+}
+
 .wrapper.active .form.login {
     bottom: -10%;
     box-shadow: 0 -5px 10px rgba(0, 0, 0, 0.1);
@@ -141,32 +149,40 @@ form a:hover {
         transform: translateX(0);
     }
 }
+
 input.error {
     border: 2px solid #C1121F;
     animation: shake 0.5s;
 }
+
 input.error::placeholder {
-    color: #C1121F; }
+    color: #C1121F;
+}
+
 form input[type="submit"] {
     margin-top: 15px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
 }
+
 .form.login input[type="submit"] {
     background: #003049;
     color: #fff;
     border: none;
 }
+
 .address-group {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
 }
+
 .address-group .address {
     flex: 1 1 calc(33.333% - 10px);
     min-width: 150px;
 }
+
 .popup {
     position: fixed;
     top: 50%;
@@ -181,12 +197,15 @@ form input[type="submit"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
+
 .popup.success {
     background-color: #4CAF50;
 }
+
 .popup.error {
     background-color: #C1121F;
 }
+
 .popup.confirm-popup {
     background-color: #FDF0D5;
     color: #003049;
@@ -194,12 +213,14 @@ form input[type="submit"] {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     text-align: center;
 }
+
 .button-container {
     display: flex;
     justify-content: center;
     gap: 10px;
     margin-top: 20px;
 }
+
 button {
     padding: 10px 20px;
     border: none;
@@ -207,50 +228,47 @@ button {
     font-size: 16px;
     cursor: pointer;
 }
+
 .confirm-button {
     background-color: #4CAF50;
     color: #fff;
 }
+
 .cancel-button {
     background-color: #C1121F;
     color: #fff;
 }
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}/* Shared Styles for Student and Prof Sections */
+
+/* Shared Styles for Student and Prof Sections */
 #student,
 #prof {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Center-align content horizontally */
-    justify-content: center; /* Center-align content vertically */
-    gap: 15px; /* Spacing between elements */
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
     padding: 20px;
-    margin: 20px auto; /* Center section within its parent */
-    width: 90%; /* Set width relative to the parent */
-    max-width: 400px; /* Limit maximum width for better readability */
-    border: 2px solid #64aede; /* Blue border to highlight the section */
-    border-radius: 12px; /* Smooth rounded corners */
-    background-color: #f9f9f9; /* Light background for contrast */
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #64aede;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Header Styling */
 #student header,
 #prof header {
     font-size: 20px;
     font-weight: 600;
-    color: #003049; /* Dark Blue */
+    color: #003049;
     text-align: center;
     margin-bottom: 10px;
 }
 
-/* Dropdown Styling */
 #student select,
 #prof select {
-    width: 100%; /* Full width inside container */
+    width: 100%;
     height: 45px;
     padding: 5px 10px;
     font-size: 16px;
@@ -267,17 +285,15 @@ button {
     box-shadow: 0 0 8px rgba(100, 174, 222, 0.5);
 }
 
-/* Label Styling */
 #student label,
 #prof label {
     font-size: 14px;
-    color: #003049; /* Dark Blue */
+    color: #003049;
     font-weight: 500;
     text-align: left;
-    width: 100%; /* Align label with input fields */
+    width: 100%;
 }
 
-/* File Input Styling */
 #student input[type="file"],
 #prof input[type="file"] {
     padding: 8px;
@@ -287,21 +303,20 @@ button {
     border-radius: 8px;
     cursor: pointer;
     background: #fff;
-    width: 100%; /* Full width for better alignment */
+    width: 100%;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
 }
 
 #student input[type="file"]:hover,
 #prof input[type="file"]:hover {
     border-color: #64aede;
-    background-color: #e9f7ff; /* Light hover effect */
+    background-color: #e9f7ff;
 }
 
-/* File Selector Button Styling */
 #student input[type="file"]::file-selector-button,
 #prof input[type="file"]::file-selector-button {
     padding: 8px 12px;
-    background-color: #64aede; /* Primary Blue */
+    background-color: #64aede;
     color: #fff;
     border: none;
     border-radius: 5px;
@@ -311,10 +326,9 @@ button {
 
 #student input[type="file"]::file-selector-button:hover,
 #prof input[type="file"]::file-selector-button:hover {
-    background-color: #003049; /* Darker Blue on hover */
+    background-color: #003049;
 }
 
-/* Media Query for Smaller Screens */
 @media (max-width: 768px) {
     #student,
     #prof {
@@ -337,4 +351,34 @@ button {
     #prof input[type="file"] {
         font-size: 12px;
     }
+}
+.passwordCriteria {display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+    padding: 20px;
+    margin: 20px auto;
+    width: 90%;
+    max-width: 400px;
+    border: 2px solid #64aede;
+    border-radius: 12px;
+    background-color: #f9f9f9;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+.criteria ul {
+    list-style-position: inside; /* S'assurer que les puces ou numéros sont alignés avec le texte */
+}
+
+
+.criteria li {
+    margin: 5px 0;
+}
+
+.criteria .invalid {
+    color: #e74c3c;
+}
+
+.criteria .valid {
+    color: #2ecc71;
 }

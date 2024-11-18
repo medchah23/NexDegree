@@ -14,12 +14,12 @@
     <div class="form signup">
         <header>Signup</header>
         <form id="signupForm" method="post" action="php/signup_process.php">
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
-            <input type="text" id="secondName" name="secondName" placeholder="Last Name" required />
-            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required />
-            <input type="email" id="email" name="email" placeholder="Email Address" required />
-            <select name="role" id="role" required onchange="togglestudent()">
-                <option selected disabled >votre role </option>
+            <input type="text" id="firstName" name="firstName" placeholder="First Name"  />
+            <input type="text" id="secondName" name="secondName" placeholder="Last Name"  />
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"  />
+            <input type="email" id="email" name="email" placeholder="Email Address"  />
+            <select name="role" id="role"  onchange="togglestudent()">
+                <option selected disabled value="" >selection votre role </option>
                 <option value="etudient">Student</option>
                 <option value="prof">Teacher (Request Approval)</option>
             </select>
@@ -55,23 +55,33 @@
                     </select>
                     <label for="CV">cv : </label><input type="file" name="cv" id="cv">
                 </div>
-            <input type="password" id="password" name="password" placeholder="Password" required />
-            <input type="cpassword" id="cpassword" name="cpassword" placeholder="confirm Password" required />
 
-            <input type="submit" id="signupSubmit" value="Signup" />
+            <input type="password" id="password" name="password" placeholder="Mot de passe" />
+            <div id="passwordCriteria" class="passwordCriteria">
+                <p>Votre mot de passe doit :</p>
+                <ul>
+                    <li id="lengthCriteria" class="invalid">Avoir au moins 8 caractères</li>
+                    <li id="uppercaseCriteria" class="invalid">Contenir une majuscule</li>
+                    <li id="numberCriteria" class="invalid">Contenir un chiffre</li>
+                    <li id="specialCharCriteria" class="invalid">Contenir un caractère spécial</li>
+                </ul>
+            </div>
+
+
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirmer le mot de passe" />
+
+                <input type="submit" id="signupSubmit" value="Signup" />
         </form>
-    </div>
     <div class="form login">
         <header>Login</header>
         <form id="loginForm" action="php/login.php" method="post">
-            <input type="email" id="loginEmail" name="loginEmail" placeholder="Email Address" required />
-            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required />
+            <input type="email" id="loginEmail" name="loginEmail" placeholder="Email Address"  />
+            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password"  />
             <a href="password.html" class="forgot-password">Forgot password?</a>
             <input type="submit" id="loginSubmit" value="Login" />
         </form>
     </div>
 </section>
-
 <script src="../js/sign_in.js"></script>
 </body>
 </html>
