@@ -352,7 +352,8 @@ button {
         font-size: 12px;
     }
 }
-.passwordCriteria {display: flex;
+.passwordCriteria {
+    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -365,20 +366,62 @@ button {
     border-radius: 12px;
     background-color: #f9f9f9;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-.criteria ul {
-    list-style-position: inside; /* S'assurer que les puces ou numéros sont alignés avec le texte */
+    font-family: Arial, sans-serif; /* Cleaner font for better readability */
+    color: #333;
 }
 
+.criteria ul {
+    list-style: none; /* Remove default list styles */
+    padding: 0;
+    margin: 0;
+    width: 100%; /* Take full width of container */
+}
 
 .criteria li {
     margin: 5px 0;
+    display: flex;
+    align-items: center;
+    gap: 10px; /* More spacing between icon and text */
+    font-size: 1rem; /* Standardize text size */
+    transition: color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
 }
-
-.criteria .invalid {
-    color: #e74c3c;
+.criteria .invalid::before {
+    content: "❌";
+    color: #e74c3c; /* Red for invalid criteria */
+    font-size: 1.4em; /* Larger, more noticeable icon */
+    padding-right: 5px; /* Space between icon and text */
+    transform: scale(1); /* Reset scale for animation */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for effects */
 }
-
+.criteria .valid::before {
+    content: "✔️";
+    color: #2ecc71; /* Green for valid criteria */
+    font-size: 1.4em; /* Larger, more noticeable icon */
+    padding-right: 5px; /* Space between icon and text */
+    transform: scale(1.2); /* Slightly enlarge valid icon */
+    transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for effects */
+}
 .criteria .valid {
-    color: #2ecc71;
+    color: #2ecc71; /* Match text color with icon */
+    font-weight: bold; /* Make valid criteria stand out */
 }
+.criteria .invalid {
+    color: #e74c3c; /* Match text color with icon */
+    opacity: 0.8; /* Slightly fade invalid text */
+}
+@media (max-width: 480px) {
+    .passwordCriteria {
+        gap: 10px; /* Adjust gap for smaller screens */
+        padding: 15px;
+    }
+    .criteria li {
+        font-size: 0.9rem; /* Slightly smaller font on mobile */
+        gap: 6px; /* Reduce spacing */
+    }
+
+    .criteria .valid::before,
+    .criteria .invalid::before {
+        font-size: 1.2em; /* Adjust icon size for smaller screens */
+    }
+}
+

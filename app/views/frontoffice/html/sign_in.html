@@ -13,70 +13,49 @@
     <!-- Signup Form -->
     <div class="form signup">
         <header>Signup</header>
-        <form id="signupForm" method="post" action="php/signup_process.php">
-            <input type="text" id="firstName" name="firstName" placeholder="First Name"  />
-            <input type="text" id="secondName" name="secondName" placeholder="Last Name"  />
-            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number"  />
-            <input type="email" id="email" name="email" placeholder="Email Address"  />
-            <select name="role" id="role"  onchange="togglestudent()">
-                <option selected disabled value="" >selection votre role </option>
+        <form id="signupForm" action="../PHP/sign_in.php" method="post" enctype="multipart/form-data" onsubmit="return validateSignupForm();">
+            <input type="text" id="firstName" name="firstName" placeholder="First Name" required />
+            <input type="text" id="secondName" name="secondName" placeholder="Last Name" required />
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" required pattern="[0-9]{8}" />
+            <input type="email" id="email" name="email" placeholder="Email Address" required />
+            <select name="role" id="role" required onchange="toggleRole();">
+                <option selected disabled value="">Select Your Role</option>
                 <option value="etudient">Student</option>
-                <option value="prof">Teacher (Request Approval)</option>
+                <option value="prof">Teacher</option>
             </select>
-            <div id="student" style="display: none">
-                    <header>Eleve  : </header>
-                    <select name="niveau" id="niveau">
-                        <option value="NULL" disabled>selectioner votre niveau </option>
-                        <option value="7eme">7éme</option>
-                        <option value="8eme">8éme</option>
-                        <option value="9eme">9éme</option>
-                        <option value="1 secondaire">1 secondaire</option>
-                        <option value="2éme info">2éme informatique</option>
-                        <option value="2éme science">2éme science</option>
-                        <option value="2éme lettre">2éme lettre</option>
-                        <option value="3éme info">3éme informatique</option>
-                        <option value="3éme science exprimentale">3éme science exprimentale</option>
-                        <option value="3éme lettre">3éme lettre</option>
-                        <option value="3éme mathematique">3éme mathematique</option>
-                        <option value="3éme technique">3éme technique</option>
-                        <option value="BAC info">BAC informatique</option>
-                        <option value="3éme science exprimentale">BAC science exprimentale</option>
-                        <option value="3éme lettre">BAC lettre</option>
-                        <option value="3éme mathematique">BAC mathematique</option>
-                        <option value="3éme technique">BAC technique</option>
-                    </select><br>
-                    <label for="student_image">votre image</label>
-                    <input id="student_image" type="file">
-                </div>
-                <div id="prof"style="display:  none">
-                    <header>Teacher (Request Approval)</header>
-                    <select name="matier" id="matier">
-                        <option value="" selected disabled>matier pour educater</option>
-                    </select>
-                    <label for="CV">cv : </label><input type="file" name="cv" id="cv">
-                </div>
-
-            <input type="password" id="password" name="password" placeholder="Mot de passe" />
-            <div id="passwordCriteria" class="passwordCriteria">
-                <p>Votre mot de passe doit :</p>
-                <ul>
-                    <li id="lengthCriteria" class="invalid">Avoir au moins 8 caractères</li>
-                    <li id="uppercaseCriteria" class="invalid">Contenir une majuscule</li>
-                    <li id="numberCriteria" class="invalid">Contenir un chiffre</li>
-                    <li id="specialCharCriteria" class="invalid">Contenir un caractère spécial</li>
-                </ul>
+            <div id="student" style="display: none;">
+                <header>Student Details</header>
+                <select name="niveau" id="niveau">
+                    <option value="" disabled selected>Select your level</option>
+                    <option value="7eme">7ème</option>
+                    <option value="8eme">8ème</option>
+                    <!-- Add more levels as needed -->
+                </select>
+                <label for="student_image">Upload your image:</label>
+                <input type="file" id="student_image" name="student_image" accept="image/*" />
             </div>
-
-
-            <input type="password" id="cpassword" name="cpassword" placeholder="Confirmer le mot de passe" />
-
-                <input type="submit" id="signupSubmit" value="Signup" />
+            <div id="prof" style="display: none;">
+                <header>Teacher Details</header>
+                <select name="matier" id="matier">
+                    <option value="" disabled selected>Select your subject</option>
+                    <option value="Math">Math</option>
+                    <option value="Science">Science</option>
+                    <!-- Add more subjects as needed -->
+                </select>
+                <label for="cv">Upload your CV:</label>
+                <input type="file" id="cv" name="cv" accept="application/pdf" />
+            </div>
+            <input type="password" id="password" name="password" placeholder="Password" required />
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" required />
+            <input type="submit" id="signupSubmit" value="Signup" />
         </form>
+    </div>
+    <!-- Login Form -->
     <div class="form login">
         <header>Login</header>
-        <form id="loginForm" action="php/login.php" method="post">
-            <input type="email" id="loginEmail" name="loginEmail" placeholder="Email Address"  />
-            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password"  />
+        <form id="loginForm" action="../PHP/login.php" method="post" onsubmit="return validateLoginForm();">
+            <input type="email" id="loginEmail" name="loginEmail" placeholder="Email Address" required />
+            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" required />
             <a href="password.html" class="forgot-password">Forgot password?</a>
             <input type="submit" id="loginSubmit" value="Login" />
         </form>
