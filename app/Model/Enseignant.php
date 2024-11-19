@@ -1,26 +1,50 @@
 <?php
-include "utilisateur.php";
-class Enseignant extends Utilisateur {
-    protected $qualifications;
-    private $cv;
-    public function __construct($nom, $email, $mot_de_passe, $role, $statut,$cv,$qualifications)
+
+require_once "utilisateur.php";
+
+class Enseignant extends utilisateur
+{
+    protected string $qualifications; // Qualifications of the teacher
+    private mixed $cv;               // CV file (path or content as string)
+
+    // Constructor
+    public function __construct(
+        string $nom,
+        string $email,
+        string $tel,
+        string $mot_de_passe,
+        string $role,
+        string $statut,
+        mixed $cv,
+        string $qualifications
+    ) {
+        parent::__construct($nom, $email, $tel, $mot_de_passe, $role, $statut);
+        $this->cv = $cv;
+        $this->qualifications = $qualifications;
+    }
+
+    // Getter for CV
+    public function getCv(): string
     {
-        parent::__construct($nom, $email, $mot_de_passe, $role, $statut);
-        $this->cv = $cv;
-        $this->qualifications = $qualifications;
+        return $this->cv;
+    }
 
+    // Setter for CV
+    public function setCv(mixed $cv): void
+    {
+        $this->cv = $cv;
     }
-    public function getCv(){
-        return $this->cv ;
-    }
-    public function getQualifications(){
+
+    // Getter for Qualifications
+    public function getQualifications(): string
+    {
         return $this->qualifications;
+    }
 
-    }
-    public function setQualifications($qualifications){
+    // Setter for Qualifications
+    public function setQualifications(string $qualifications): void
+    {
         $this->qualifications = $qualifications;
-    }
-    public function setCv($cv){
-        $this->cv = $cv;
     }
 }
+?>

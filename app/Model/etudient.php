@@ -1,34 +1,49 @@
 <?php
-include "utilisateur.php";
 
-class Etudiant extends Utilisateur
+
+require_once("utilisateur.php");
+class Etudiant extends utilisateur
 {
-    protected $niveau;
-    private $image_profil;
-    public function __construct($nom, $email, $mot_de_passe, $role, $statut, $niveau, $image_profil)
-    {
-        parent::__construct($nom, $email, $mot_de_passe, $role, $statut);
+    protected string $niveau;          // Student's academic level
+    private ?string $image_profil;      // Path or content of the profile image
+
+    // Constructor
+    public function __construct(
+        string $nom,
+        string $email,
+        string $tel,
+        string $mot_de_passe,
+        string $role,
+        string $statut,
+        string $niveau,
+        mixed $image_profil
+    ) {
+        // Call the parent constructor
+        parent::__construct($nom, $email, $tel, $mot_de_passe, $role, $statut);
         $this->niveau = $niveau;
         $this->image_profil = $image_profil;
     }
 
-    public function getNiveau()
+    // Getter for Niveau
+    public function getNiveau(): string
     {
         return $this->niveau;
     }
 
-    public function setNiveau($niveau)
+    // Setter for Niveau
+    public function setNiveau(string $niveau): void
     {
         $this->niveau = $niveau;
     }
 
-    // Getters et setters pour l'image de profil
-    public function getImageProfil()
+    // Getter for Profile Image
+    public function getImageProfil(): mixed
     {
         return $this->image_profil;
     }
 
-    public function setImageProfil($image_profil)
+    // Setter for Profile Image
+    public function setImageProfil(mixed $image_profil): void
     {
         $this->image_profil = $image_profil;
     }

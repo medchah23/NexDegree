@@ -1,99 +1,96 @@
 <?php
-require_once('../../controller/add.php');           // Path to add.php in controller
-require_once('../../Model/Enseignant.php');         // Path to Enseignant.php in Model
-require_once('../../Model/etudient.php');           // Path to etudient.php in Model
-require_once('../../Model/utilisateur.php');        // Path to utilisateur.php in Model
-require_once('../../configdb.php');                 // Path to configdb.php
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    require_once("../../../controller/add.php");
+    require_once("../../../Model/etudient.php");
+    require_once("../../../Model/Enseignant.php");
+    require_once 'debug.php';
 
-include_once 'debug.php'; // Include debugging utility
+    $response = ['success' => false, 'message' => 'An unknown error occurred'];
 
-$response = ['success' => false, 'message' => 'Unknown error'];
+    try {
+        Debugger::log("Processing request.", $_POST);
 
-try {
-    Debugger::log("Processing request.", $_POST); // Log POST data
+        // Trim and sanitize inputs
+        $firstName = filter_var(trim($_POST['firstName'] ?? ''), FILTER_SANITIZE_STRING);
+        $secondName = filter_var(trim($_POST['secondName'] ?? ''), FILTER_SANITIZE_STRING);
+        $phoneNumber = filter_var(trim($_POST['phoneNumber'] ?? ''), FILTER_SANITIZE_STRING);
+        $email = filter_var(trim($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
+        $role = filter_var(trim($_POST['role'] ?? ''), FILTER_SANITIZE_STRING);
+        $password = $_POST['password'] ?? '';
 
-    // Retrieve and sanitize input
-    $firstName = trim($_POST['firstName']);
-    $secondName = trim($_POST['secondName']);
-    $phoneNumber = trim($_POST['phoneNumber']);
-    $email = trim($_POST['email']);
-    $role = trim($_POST['role']);
-    $niveau = isset($_POST['niveau']) ? trim($_POST['niveau']) : null;
-    $password = $_POST['password'];
-    $matier = isset($_POST['matier']) ? trim($_POST['matier']) : null;
-
-    // Validate required inputs
-    if (empty($firstName) || empty($secondName) || empty($email) || empty($role) || empty($password)) {
-        throw new Exception("Missing required fields.");
-    }
-
-    Debugger::log("Inputs validated successfully.");
-
-    // Validate email
-    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
-        throw new Exception("Invalid email address.");
-    }
-
-    // Validate and hash password
-    if (strlen($password) < 8) {
-        throw new Exception("Password must be at least 8 characters long.");
-    }
-    $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
-
-    // Combine first and last names
-    $nom = $firstName . ' ' . $secondName;
-
-    // Process file uploads (if applicable)
-    if ($role == 'etudient') {
-        Debugger::log("Processing student-specific fields.");
-        if (!isset($_FILES['student_image'])) {
-            throw new Exception("Student image is required.");
+        // Validate required fields
+        if (!$firstName || !$secondName || !$phoneNumber || !$email || !$role || !$password) {
+            throw new Exception("All fields are required.");
         }
-        $img = $_FILES['student_image'];
-        if (!file_exists($img['tmp_name']) || !getimagesize($img['tmp_name'])) {
-            throw new Exception("Invalid student image.");
-        }
-        $imgData = file_get_contents($img['tmp_name']);
-    } elseif ($role == 'enseignant') {
-        Debugger::log("Processing teacher-specific fields.");
-        if (!isset($_FILES['cv'])) {
-            throw new Exception("CV is required.");
-        }
-        $cvType = mime_content_type($_FILES['cv']['tmp_name']);
-        if ($cvType !== 'application/pdf') {
-            throw new Exception("CV must be a PDF file.");
-        }
-        $pdfData = file_get_contents($_FILES['cv']['tmp_name']);
-    }
-    $controller = new usercontroller();
 
-    if ($role == 'etudient') {
-        $etudiant = new Etudiant($nom, $email, $hashedPassword, $role, 'active', $niveau, $imgData);
-        $result = $controller->add($etudiant);
-        Debugger::log("Etudiant add result:", $result);
-        if ($result !== false) {
-            $response['success'] = true;
-            $response['message'] = 'Etudiant added successfully!';
+        $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
+        $nom = $firstName . ' ' . $secondName;
+
+        // Role-specific validations
+        $imgData = null;
+        $pdfData = null;
+        $niveau = null;
+        $matier = null;
+
+        if ($role === 'etudient') {
+            $niveau = filter_var(trim($_POST['niveau'] ?? ''), FILTER_SANITIZE_STRING);
+            if (!$niveau) throw new Exception("Niveau is required for students.");
+
+            // Handle image upload for students
+            if (isset($_FILES['student_image']) && $_FILES['student_image']['error'] === UPLOAD_ERR_OK) {
+                $allowedImageTypes = ['image/jpeg', 'image/png', 'image/gif'];
+                if (in_array($_FILES['student_image']['type'], $allowedImageTypes)) {
+                    $imgData = base64_encode(file_get_contents($_FILES['student_image']['tmp_name']));
+                } else {
+                    throw new Exception("Invalid file type for student image. Allowed: JPEG, PNG, GIF.");
+                }
+            }
+        } elseif ($role === 'prof') {
+            $matier = filter_var(trim($_POST['matier'] ?? ''), FILTER_SANITIZE_STRING);
+            if (!$matier) throw new Exception("Matier is required for professors.");
+
+            // Handle CV upload for professors
+            if (isset($_FILES['cv']) && $_FILES['cv']['error'] === UPLOAD_ERR_OK) {
+                $allowedCvTypes = ['application/pdf'];
+                if (in_array($_FILES['cv']['type'], $allowedCvTypes)) {
+                    $pdfData = base64_encode(file_get_contents($_FILES['cv']['tmp_name']));
+                } else {
+                    throw new Exception("Invalid file type for CV. Allowed: PDF.");
+                }
+            }
         } else {
-            throw new Exception("Failed to add Etudiant.");
+            throw new Exception("Invalid role specified.");
         }
-    } elseif ($role == 'enseignant') {
-        $enseignant = new Enseignant($nom, $email, $hashedPassword, $role, 'active', $matier, $pdfData);
-        $result = $controller->add($enseignant);
-        Debugger::log("Enseignant add result:", $result);
-        if ($result !== false) {
+
+        // Create user object and add to the database
+        $controller = new usercontroller();
+        $result = false;
+
+        if ($role === 'etudient') {
+            $etudiant = new Etudiant($nom, $email, $phoneNumber, $hashedPassword, $role, 'active', $niveau, $imgData);
+            Debugger::log("Attempting to add Etudiant.");
+            $result = $controller->add($etudiant);
+        } elseif ($role === 'prof') {
+            $enseignant = new Enseignant($nom, $email, $phoneNumber, $hashedPassword, $role, 'active', $matier, $pdfData);
+            Debugger::log("Attempting to add Enseignant.");
+            $result = $controller->add($enseignant);
+        }
+
+        // Handle result
+        if ($result['success']) {
+            Debugger::log("Add operation successful.", $result['message']);
             $response['success'] = true;
-            $response['message'] = 'Enseignant added successfully!';
+            $response['message'] = $result['message'];
+            $response['data'] = $result['data'] ?? null;
         } else {
-            throw new Exception("Failed to add Enseignant.");
+            throw new Exception($result['message'] ?? "Failed to add " . ($role === 'etudient' ? 'student' : 'teacher') . ".");
         }
-    } else {
-        throw new Exception("Invalid role specified.");
+    } catch (Exception $e) {
+        Debugger::log("Error encountered:", $e->getMessage());
+        $response['message'] = $e->getMessage();
     }
-} catch (Exception $e) {
-    Debugger::log("Error encountered:", $e->getMessage());
-    $response['message'] = $e->getMessage();
+
+    header('Content-Type: application/json');
+    echo json_encode($response, JSON_UNESCAPED_UNICODE | JSON_UNESCAPED_SLASHES);
 }
-Debugger::log("Final response sent:", $response);
-echo $response['message'];
 ?>
