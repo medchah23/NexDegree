@@ -4,13 +4,14 @@ include_once(__DIR__ . "../../configdb.php");
      public function add($user): array
      {
          try {
-             $sql = Config::getConnexion(); // Get PDO instance
+             $sql = Config::getConnexion();
              $response = ["success" => false, "message" => "", "data" => null];
 
              // Check if email already exists
              $checkQuery = "SELECT * FROM utilisateurs WHERE email = :email";
              $stmt = $sql->prepare($checkQuery);
              $stmt->bindValue(':email', $user->getEmail(), PDO::PARAM_STR);
+
              if ($stmt->execute() && $stmt->rowCount() > 0) {
                  $response["message"] = "Email already exists in the database.";
                  return $response;
@@ -23,26 +24,33 @@ include_once(__DIR__ . "../../configdb.php");
              $insertUserQuery = "INSERT INTO `utilisateurs`(`nom`, `email`, `numero_telephone`, `role`, `mot_de_passe`, `statut`)
                             VALUES (:nom, :email, :tel, :role, :mot_de_passe, :statut)";
              $stmt = $sql->prepare($insertUserQuery);
-             $stmt->execute([
+
+             if (!$stmt->execute([
                  ':nom' => $user->getNom(),
                  ':email' => $user->getEmail(),
                  ':tel' => $user->getTel(),
                  ':role' => $user->getRole(),
                  ':mot_de_passe' => $user->getMotDePasse(),
                  ':statut' => $user->getStatut()
-             ]);
+             ])) {
+                 $errorInfo = $stmt->errorInfo();
+                 $sql->rollBack();
+                 $response["message"] = "Failed to add user to 'utilisateurs': " . implode(", ", $errorInfo);
+                 return $response;
+             }
+
 
              $userId = $sql->lastInsertId();
 
              // Role-specific insertions
-             if ($user->getRole() === "etudient") {
+             if ($user->getRole() === "etudiant") {
                  $insertStudentQuery = "INSERT INTO etudiants (id_utilisateur, niveau, image_profil) 
                                    VALUES (:id_utilisateur, :niveau, :image_profil)";
                  $stmt = $sql->prepare($insertStudentQuery);
                  $stmt->bindParam(':id_utilisateur', $userId, PDO::PARAM_INT);
                  $stmt->bindParam(':niveau', $user->getNiveau(), PDO::PARAM_STR);
                  $stmt->bindParam(':image_profil', $user->getImageProfil(), PDO::PARAM_LOB);
-             } elseif ($user->getRole() === "prof") {
+             } elseif ($user->getRole() === "enseignant") {
                  $insertTeacherQuery = "INSERT INTO enseignants (utilisateur_id, qualifications, cv) 
                                    VALUES (:utilisateur_id, :qualifications, :cv)";
                  $stmt = $sql->prepare($insertTeacherQuery);
@@ -50,8 +58,8 @@ include_once(__DIR__ . "../../configdb.php");
                  $stmt->bindParam(':qualifications', $user->getQualifications(), PDO::PARAM_STR);
                  $stmt->bindParam(':cv', $user->getCv(), PDO::PARAM_LOB);
              } else {
-                 $response["message"] = "Invalid role provided.";
                  $sql->rollBack();
+                 $response["message"] = "Invalid role provided.";
                  return $response;
              }
 
@@ -59,7 +67,7 @@ include_once(__DIR__ . "../../configdb.php");
              if ($stmt->execute()) {
                  $sql->commit();
                  $response["success"] = true;
-                 $response["message"] = $user->getRole() === "etudient"
+                 $response["message"] = $user->getRole() === "etudiant"
                      ? "Student added successfully!"
                      : "Teacher added successfully!";
                  $response["data"] = ["id_utilisateur" => $userId];
@@ -78,8 +86,6 @@ include_once(__DIR__ . "../../configdb.php");
          }
      }
 
-
-
 // Show users by role
     public function show($role)
     {
@@ -97,16 +103,36 @@ include_once(__DIR__ . "../../configdb.php");
         }
     }
 
-    // Show users by role with a specific order
-    public function showByOrder($role, $order)
+    public function showByOrder($role, $order): array
     {
         try {
+            $allowedColumns = ['id', 'nom', 'email', 'role', 'cree_a'];
+            if (!in_array($order, $allowedColumns)) {
+                throw new Exception("Invalid column name for sorting: $order");
+            }
             $sql = config::getConnexion();
-            $query = "SELECT * FROM utilisateur WHERE role = :role ORDER BY " . $order;
-            $stmt = $sql->prepare($query);
-            $stmt->bindParam(':role', $role, PDO::PARAM_STR);
-            $stmt->execute();
+            if ($role === 'etudiant') {
+                $query = "SELECT id_etudiant, id_utilisateur, niveau, image_profil 
+                      FROM etudiants 
+                      WHERE 1 
+                      ORDER BY $order";
+            } elseif ($role === 'enseignant') {
+                $query = "SELECT id_enseignant, utilisateur_id, qualifications, cv 
+                      FROM enseignants 
+                      WHERE 1 
+                      ORDER BY $order";
+            } else {
+                $query = "SELECT * FROM utilisateur 
+                      WHERE role = :role 
+                      ORDER BY $order";
+            }
 
+            // Prepare and execute the query
+            $stmt = $sql->prepare($query);
+            if ($role !== 'etudiant' && $role !== 'enseignant') {
+                $stmt->bindParam(':role', $role, PDO::PARAM_STR);
+            }
+            $stmt->execute();
             return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (Exception $e) {
             error_log("Error in showByOrder method: " . $e->getMessage());
@@ -124,8 +150,6 @@ include_once(__DIR__ . "../../configdb.php");
             $updateQuery = "UPDATE utilisateur SET 
                                 nom = :nom,
                                 mot_de_passe = :mot_de_passe,
-                                role = :role,
-                                statut = :statut
                             WHERE id_utilisateur = :id";
             $stmt = $sql->prepare($updateQuery);
             $stmt->bindParam(':nom', $user->getNom(), PDO::PARAM_STR);
@@ -142,7 +166,6 @@ include_once(__DIR__ . "../../configdb.php");
         }
     }
 
-    // Delete a user and associated data
     public function delete($id)
     {
         try {
@@ -150,19 +173,19 @@ include_once(__DIR__ . "../../configdb.php");
             $sql->beginTransaction();
 
             // Delete from etudiant table
-            $deleteStudentQuery = "DELETE FROM etudiant WHERE id_utilisateur = :id";
+            $deleteStudentQuery = "DELETE FROM etudiants WHERE id_utilisateur = :id";
             $stmt = $sql->prepare($deleteStudentQuery);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
 
             // Delete from enseignant table
-            $deleteTeacherQuery = "DELETE FROM enseignant WHERE id_utilisateur = :id";
+            $deleteTeacherQuery = "DELETE FROM enseignants WHERE id_utilisateur = :id";
             $stmt = $sql->prepare($deleteTeacherQuery);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
 
             // Delete from utilisateur table
-            $deleteUserQuery = "DELETE FROM utilisateur WHERE id_utilisateur = :id";
+            $deleteUserQuery = "DELETE FROM utilisateurs WHERE id_utilisateur = :id";
             $stmt = $sql->prepare($deleteUserQuery);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();

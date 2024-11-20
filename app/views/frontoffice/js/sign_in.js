@@ -20,10 +20,10 @@ document.addEventListener("DOMContentLoaded", function () {
         const student = document.getElementById("student");
         const prof = document.getElementById("prof");
 
-        if (role === "etudient") {
+        if (role === "etudiant") {
             student.style.display = "block";
             prof.style.display = "none";
-        } else if (role === "prof") {
+        } else if (role === "enseignant") {
             prof.style.display = "block";
             student.style.display = "none";
         } else {
@@ -32,24 +32,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    function createPopup(message, status) {
+    const createPopup = (message, status) => {
+        const container = document.getElementById("popup-container");
+        if (!container) return; // Fallback in case the container is not found.
+
         const popup = document.createElement("div");
-        popup.classList.add("popup", status);
-        popup.innerText = message;
+        popup.className = `popup ${status}`;
+        popup.textContent = message;
 
-        document.body.appendChild(popup);
-
-        setTimeout(() => {
-            popup.classList.add("show");
-        }, 10);
-
+        container.appendChild(popup);
+        setTimeout(() => popup.classList.add("show"), 10);
         setTimeout(() => {
             popup.classList.remove("show");
-            setTimeout(() => {
-                popup.remove();
-            }, 300);
+            setTimeout(() => popup.remove(), 300);
         }, 3000);
-    }
+    };
+
+
 
     function validateForm(event) {
         const nom = document.getElementById("firstName");
@@ -137,32 +136,31 @@ document.addEventListener("DOMContentLoaded", function () {
         event.preventDefault();
         const form = document.getElementById("signupForm");
         const formData = new FormData(form);
-        const isValid = validateForm(event);
-        if (!isValid) return;
 
         try {
             const response = await fetch("../PHP/sign_in.php", {
-                method: 'POST',
+                method: "POST",
                 body: formData,
             });
 
             if (!response.ok) {
-                throw new Error('Network response was not ok.');
+                const errorData = await response.json();
+                createPopup(errorData.message || "An error occurred.", "error");
+                return;
             }
 
             const data = await response.json();
-
             if (data.success) {
-                createPopup(data.message, 'success');
+                createPopup(data.message || "Operation successful!", "success");
             } else {
-                createPopup(data.message, 'error');
+                createPopup(data.message || "An error occurred.", "error");
             }
-
         } catch (error) {
-            console.error('Error:', error);
-            createPopup("An error occurred while submitting the form.", 'error');
+            console.error("Error:", error);
+            createPopup("Failed to communicate with the server.", "error");
         }
     }
+
 
     async function validatelogin(event) {
         event.preventDefault();

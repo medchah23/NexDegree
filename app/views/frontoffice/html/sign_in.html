@@ -20,9 +20,10 @@
             <input type="email" id="email" name="email" placeholder="Email Address" />
             <select name="role" id="role">
                 <option selected disabled value="">Select Your Role</option>
-                <option value="etudient">Student</option>
-                <option value="prof">Teacher</option>
+                <option value="etudiant">Student</option>
+                <option value="enseignant">Teacher</option>
             </select>
+
             <div id="student" style="display: none;">
                 <header>Student Details</header>
                 <select name="niveau" id="niveau">
@@ -59,6 +60,9 @@
         </form>
     </div>
 </section>
+<!-- Popup container -->
+<div id="popup-container" class="popup-container"></div>
+
 <script src="../js/sign_in.js"></script>
 </body>
 </html>
