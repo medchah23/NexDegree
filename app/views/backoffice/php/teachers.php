@@ -45,8 +45,9 @@
                 require_once("../../../Model/Enseignant.php");
                 require_once 'debug.php';
 
-                $sort = $_GET['sort'] ?? 'enseignants';
-                $field = $_GET['field'] ?? 'id_enseignant';
+                // Get and sanitize query parameters
+                $sort = isset($_GET['sort']) ? htmlspecialchars($_GET['sort']) : 'enseignants';
+                $field = isset($_GET['field']) ? htmlspecialchars($_GET['field']) : 'id_enseignant';
 
                 try {
                     $sql = config::getConnexion();
@@ -55,30 +56,34 @@
                     $stmt->execute();
                     $teachers = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
-                    foreach ($teachers as $teacher) {
-                        $cv_data = !empty($teacher['cv']) ? base64_encode($teacher['cv']) : null;
-                        $cv_link = $cv_data ? "data:application/pdf;base64,{$cv_data}" : '#';
+                    if (empty($teachers)) {
+                        echo "<tr><td colspan='5' class='text-center'>No teachers found in the database.</td></tr>";
+                    } else {
+                        foreach ($teachers as $teacher) {
+                            $cv_data = !empty($teacher['cv']) ? base64_encode($teacher['cv']) : null;
+                            $cv_link = $cv_data ? "data:application/pdf;base64,{$cv_data}" : '#';
 
-                        echo "<tr>
-                                <td>{$teacher['id_enseignant']}</td>
-                                <td>{$teacher['utilisateur_id']}</td>
-                                <td>{$teacher['qualifications']}</td>
-                                <td>";
-                        if ($cv_data) {
-                            echo "<a href='{$cv_link}' download='cv_{$teacher['id_enseignant']}.pdf' class='btn btn-sm btn-primary'>Download CV</a>";
-                        } else {
-                            echo "No CV Available";
+                            echo "<tr>
+                                    <td>{$teacher['id_enseignant']}</td>
+                                    <td>{$teacher['utilisateur_id']}</td>
+                                    <td>{$teacher['qualifications']}</td>
+                                    <td>";
+                            if ($cv_data) {
+                                echo "<a href='{$cv_link}' download='cv_{$teacher['id_enseignant']}.pdf' class='btn btn-sm btn-primary'>Download CV</a>";
+                            } else {
+                                echo "No CV Available";
+                            }
+                            echo "</td>
+                                    <td>
+                                        <a href='modify_teacher.php?id={$teacher['id_enseignant']}' class='btn btn-warning btn-sm'>Modify</a>
+                                        <a href='delete-teacher.php?id={$teacher['utilisateur_id']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Are you sure?\")'>Delete</a>
+                                    </td>
+                                </tr>";
                         }
-                        echo "</td>
-                                <td>
-                                    <a href='modify_teacher.php?id={$teacher['id_enseignant']}' class='btn btn-warning btn-sm'>Modify</a>
-                                    <a href='delete-teacher.php?id={$teacher['id_utilisateur']}' class='btn btn-danger btn-sm' onclick='return confirm(\"Are you sure?\")'>Delete</a>
-                                </td>
-                            </tr>";
                     }
-
                 } catch (PDOException $e) {
-                    echo "<tr><td colspan='5'>Error loading teachers</td></tr>";
+                    echo "<tr><td colspan='5' class='text-center'>Error loading teachers: {$e->getMessage()}</td></tr>";
+                    Debugger::log("Error loading teachers: " . $e->getMessage());
                 }
                 ?>
                 </tbody>

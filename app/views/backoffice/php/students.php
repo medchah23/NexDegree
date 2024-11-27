@@ -32,11 +32,11 @@
             <table class="table table-striped table-hover">
                 <thead>
                 <tr>
-                    <th>ID <a href="?sort=etudiants&field=id_etudiant" class="btn btn-link btn-sm">Sort</a></th>
-                    <th>User ID <a href="?sort=etudiants&field=id_utilisateur" class="btn btn-link btn-sm">Sort</a></th>
-                    <th>Level <a href="?sort=etudiants&field=niveau" class="btn btn-link btn-sm">Sort</a></th>
+                    <th>ID <a href="?field=id_etudiant" class="btn btn-link btn-sm">Sort</a></th>
+                    <th>User ID <a href="?field=id_utilisateur" class="btn btn-link btn-sm">Sort</a></th>
+                    <th>Level <a href="?field=niveau" class="btn btn-link btn-sm">Sort</a></th>
                     <th>Profile Image</th>
-                    <th>Actions</th> <!-- New column for actions -->
+                    <th>Actions</th>
                 </tr>
                 </thead>
                 <tbody id="studentsBody">
@@ -45,22 +45,34 @@
                 require_once("../../../Model/etudient.php");
                 require_once 'debug.php';
 
-                $sort = $_GET['sort'] ?? 'etudiants';
                 $field = $_GET['field'] ?? 'id_etudiant';
+                Debugger::log("Sorting by field:", $field);
 
                 try {
-                    $sql = config::getConnexion();
-                    $query = "SELECT * FROM etudiants ORDER BY $field";
-                    $stmt = $sql->prepare($query);
-                    $stmt->execute();
-                    $students = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                    // Initialize the UserController
+                    $userController = new UserController();
+
+                    // Fetch sorted students
+                    $students = $userController->showByOrder('etudiants', $field);
+                    Debugger::log("Fetched students:", $students);
 
                     if (empty($students)) {
+                        Debugger::log("No students found in the database.");
                         echo "<tr><td colspan='5'>No students found</td></tr>";
                     } else {
                         foreach ($students as $student) {
-                            $image_data = !empty($student['image_profil']) ? base64_encode($student['image_profil']) : null;
-                            $image_src = $image_data ? "data:image/jpeg;base64,{$image_data}" : '#';
+                            Debugger::log("Processing student record:", $student);
+                            $image_data = !empty($student['image_profil']) ? $student['image_profil'] : null;
+                            if ($image_data) {
+                                // Base64 encoding for displaying the image in an <img> tag
+                                $image_src = "data:image/jpeg;base64," . base64_encode($image_data);
+                            } else {
+                                $image_src = '#'; // Fallback if no image is available
+                            }
+
+                            echo "<pre>";
+                            var_dump($student['image_profil']); // Debug the image data
+                            echo "</pre>";
 
                             echo "<tr>
                                     <td>{$student['id_etudiant']}</td>
@@ -80,8 +92,9 @@
                                 </tr>";
                         }
                     }
-                } catch (PDOException $e) {
-                    echo "<tr><td colspan='5'>Error loading students</td></tr>";
+                } catch (Exception $e) {
+                    Debugger::log("Error loading students:", $e->getMessage());
+                    echo "<tr><td colspan='5'>Error loading students: " . htmlspecialchars($e->getMessage()) . "</td></tr>";
                 }
                 ?>
                 </tbody>

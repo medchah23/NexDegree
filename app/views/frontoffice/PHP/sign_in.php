@@ -34,7 +34,9 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $matier = $_POST['matier'] ?? '';
 
         if ($role === 'etudiant') {
-            if (isset($_FILES['student_image']) && $_FILES['student_image']['error'] === UPLOAD_ERR_OK) {
+            // Validate image format (you can add additional checks for file types)
+            $allowedFormats = ['image/jpeg', 'image/png', 'image/gif'];
+            if (in_array(mime_content_type($_FILES['student_image']['tmp_name']), $allowedFormats)) {
                 $imgData = base64_encode(file_get_contents($_FILES['student_image']['tmp_name']));
             }
         } elseif ($role === 'enseignant') {
