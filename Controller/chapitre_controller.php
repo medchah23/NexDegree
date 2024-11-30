@@ -6,7 +6,44 @@ include(__DIR__ . '/../Model/chapitre.php');
 class chapitre_controller 
 
 {
-    public function show_all_chapitre() {
+    public function show_chapitre() {
+        // Initialize the database connection
+        $db = config::getConnexion(); // Ensure the correct DB connection method
+    
+        if ($_SERVER['REQUEST_METHOD'] == 'POST') {
+            $query = trim($_POST['query']); // Get search query from the POST request
+            if (!empty($query)) {
+                // Sanitize the query to prevent SQL injection
+                $query = htmlspecialchars($query);
+    
+                try {
+                    // Use LIKE with wildcard for a partial match on the title
+                    $sql = "SELECT * FROM chapitre WHERE titre LIKE :query";
+                    $stmt = $db->prepare($sql);
+                    
+                    // Bind the query with '%' on both sides to match the search string anywhere
+                    $stmt->bindValue(':query', '%' . $query . '%'); // Match titles that contain the query string
+                    
+                    $stmt->execute();
+    
+                    // Fetch the results dynamically
+                    $chapitres = $stmt->fetchAll(PDO::FETCH_ASSOC);
+                } catch (PDOException $e) {
+                    echo "Error: " . $e->getMessage();
+                    $chapitres = []; // Return an empty array if an error occurs
+                }
+            } else {
+                $chapitres = []; // Return an empty array if no search query is provided
+            }
+        } else {
+            $chapitres = []; // If no form is submitted, show nothing
+        }
+    
+        return $chapitres; // Return the chapters to the view
+    }
+    
+    
+        public function show_all_chapitre() {
         $sql = "SELECT * FROM chapitre"; 
         $db = config::getConnexion();
         

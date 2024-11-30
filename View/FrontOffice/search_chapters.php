@@ -1,13 +1,13 @@
-<?php 
-include(__DIR__ . '/../../Controller/matiere_controller.php');
+<?php
+// Include the controller
+include(__DIR__ . '/../../Controller/chapitre_controller.php');
 
-$matiereController = new matiere_controller();
+// Create an instance of the controller
+$chapitreController = new chapitre_controller();
 
+// Call the show_chapitre method to get the search results
+$chapitres = $chapitreController->show_chapitre();
 
-
-$semester = isset($_GET['semester']) ? $_GET['semester'] : null;
-
-$list = $matiereController->show_all_matiere($semester); 
 ?>
 
 <!DOCTYPE html>
@@ -17,7 +17,7 @@ $list = $matiereController->show_all_matiere($semester);
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Matiere </title>
+  <title>Dashboard </title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -40,32 +40,7 @@ $list = $matiereController->show_all_matiere($semester);
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
-<style>
-  .semester-selection {
-  margin: 20px 0;
-}
 
-.semester-btn {
-  background-color: #ffffff;
-  border: 1px solid #0096FF;
-  border-radius: 50px  ;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-right: 10px;
-}
-
-.semester-btn:hover {
-  background-color:#8fd9fb;
-}
-
-.semester-btn.active {
-  background-color: #0069d9;
-  color: white;
-  border-color: #0062cc;
-}
-
-</style>
   <!-- =======================================================
   * Template Name: NiceAdmin
   * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
@@ -93,7 +68,9 @@ $list = $matiereController->show_all_matiere($semester);
         <button type="submit" title="Search"><i class="bi bi-search"></i></button>
     </form>
 </div>
-    
+
+
+
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
@@ -167,90 +144,98 @@ $list = $matiereController->show_all_matiere($semester);
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
 
-<ul class="sidebar-nav" id="sidebar-nav">
+    <ul class="sidebar-nav" id="sidebar-nav">
 
-  
-<li class="nav-item">
-    <a class="nav-link collapsed" href="index.php">
-      <i class="bi bi-grid"></i>
-      <span>Chapitre</span>
-    </a>
-  </li>
-
- 
+      
     <li class="nav-item">
-    <a class="nav-link collapsed" href="affichematiere.php">
-      <i class="bi bi-grid"></i>
-      <span>Matiere</span>
-    </a>
-    
-    
-  <!-- End Dashboard Nav -->
+        <a class="nav-link collapsed" href="index.php">
+          <i class="bi bi-grid"></i>
+          <span>Dashboard</span>
+        </a>
+      </li>
 
-  
-  
+     
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="affichematiere.php">
+          <i class="bi bi-grid"></i>
+          <span>Matiere</span>
+        </a>
+        
+        
+      <!-- End Dashboard Nav -->
 
-  
+      
+      
 
-</aside><!-- End Sidebar-->
+      
+
+  </aside><!-- End Sidebar-->
+
 
   <main id="main" class="main">
 
     <div class="pagetitle">
-      <h1>Matiere</h1>
-      <br>
+      <h1>Search : </h1>
       
     </div><!-- End Page Title -->
     
     
-<!-- Semester Buttons -->
-<div class="semester-selection">
-  <form action="affichematiere.php" method="GET">
-    <button type="submit" name="semester" value="1" class="semester-btn <?= isset($_GET['semester']) && $_GET['semester'] == 1 ? 'active' : '' ?>">Semester 1</button>
-    <button type="submit" name="semester" value="2" class="semester-btn <?= isset($_GET['semester']) && $_GET['semester'] == 2 ? 'active' : '' ?>">Semester 2</button>
-    <button type="submit" name="semester" value="3" class="semester-btn <?= isset($_GET['semester']) && $_GET['semester'] == 3 ? 'active' : '' ?>">Semester 3</button>
-  </form>
-</div>
+
 
 
    
-
 
 
     
-    <!--AFFICHE Matiere-->
+    <!--AFFICHE CHAPITRE-->
 
 
 
-    <section class="section">
+<section class="section">
 
-    <?php if (empty($list)): ?>
-        <p class="text-muted">No Matiere available .</p>
+
+<h1 class="mb-4">Chapters </h1>
+
+    <?php if (empty($chapitres)): ?>
+        <p class="text-muted">No chapters available for this subject.</p>
     <?php else: ?>
-        <?php foreach ($list as $matiere): ?>
+        <?php foreach ($chapitres as $chapitre): ?>
             <div class="card mb-4">
-                <div class="card-header" style="color : rgb(201, 100, 29); font-weight: 600;">
-                    Matiere : <?= $matiere['nom']; ?>
+                <div class="card-header">
+                    Chapter: <?= htmlspecialchars($chapitre['titre']) ?>
                 </div>
                 <div class="card-body">
                     <ul>
-                    <li>Niveau : <?= $matiere['niveau']; ?></li>
-                      <li>Semseter : <?= $matiere['sems']; ?></li>
-                      <li>Credit : <?= $matiere['credit']; ?></li>
-                      <li>Prerequis : <?= $matiere['prerequis']; ?></li><br>
-                      <li>Description : <?= $matiere['description']; ?></li>
-                        
+                        <li>Date Start: <?= isset($chapitre['date_debut']) ? htmlspecialchars($chapitre['date_debut']) : 'N/A'; ?></li>
+                        <li>Duration: <?= isset($chapitre['duree']) ? htmlspecialchars($chapitre['duree']) : 'N/A'; ?></li>
+                        <li>Objective: <?= isset($chapitre['objectif']) ? htmlspecialchars($chapitre['objectif']) : 'N/A'; ?></li>
+                        <li>Activity: <?= isset($chapitre['activite']) ? htmlspecialchars($chapitre['activite']) : 'N/A'; ?></li>
+                        <li>Supplementary Resources: <?= isset($chapitre['res_supp']) ? htmlspecialchars($chapitre['res_supp']) : 'N/A'; ?></li>
+                        <li>Evaluation Included: <?= isset($chapitre['evaluation_incluse']) && $chapitre['evaluation_incluse'] ? 'Yes' : 'No'; ?></li>
+                        <li>Evaluation Type: 
+                            <?= isset($chapitre['type_de_evaluation']) && $chapitre['evaluation_incluse'] ? htmlspecialchars($chapitre['type_de_evaluation']) : 'NONE'; ?>
+                        </li>
                     </ul>
                 </div>
                 <div class="card-footer">
-                <p style="color: rgb(193, 18, 31);">Nombre de chapitre : <?= $matiere['nombre_chapitre']; ?></p>
-                <a style="font-weight:400;" href="affichechapitre.php?id_matiere=<?php echo $matiere['id_matiere']; ?>" >View Chapters</a>
+                <?php 
+                    $file_path = "../uploads/" . basename($chapitre['contenu']);?>
+                    <a href="<?= htmlspecialchars($file_path); ?>" style="margin-left:20px; margin-right:20px;" >View PDF</a>
+                <?php if (isset($chapitre['contenu']) && !empty($chapitre['contenu']) && file_exists("../uploads/" . $chapitre['contenu'])): ?>
+        <a href="../uploads/<?= htmlspecialchars($chapitre['contenu']); ?>" download="<?= htmlspecialchars($chapitre['contenu']); ?>">Download PDF</a>
+    <?php else: ?>
+        <span class="text-danger">No file uploaded</span>
+    <?php endif; ?>
 </div>
-</div>
-<?php endforeach; ?>
-<?php endif; ?>
 
+            </div>
+        <?php endforeach; ?>
+    <?php endif; ?>
 </section>
+
+
+         
+    </section>
 
 
 
@@ -265,7 +250,13 @@ $list = $matiereController->show_all_matiere($semester);
 
 
 
-  </main>
+
+
+
+
+
+
+  </main><!-- End #main -->
 
   <!-- ======= Footer ======= -->
   <footer id="footer" class="footer">

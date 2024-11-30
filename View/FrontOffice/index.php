@@ -1,14 +1,3 @@
-<?php 
-include(__DIR__ . '/../../Controller/chapitre_controller.php');
-
-$chapitreController = new chapitre_controller();
-$list = $chapitreController->show_all_chapitre(); 
-$sql_matiere = "SELECT id_matiere, nom FROM matiere";
-$db = config::getConnexion();
-$query_matiere = $db->query($sql_matiere);
-$matieres = $query_matiere->fetchAll();
-?>
-
 
 <!DOCTYPE html>
 <html lang="en">
@@ -62,8 +51,15 @@ $matieres = $query_matiere->fetchAll();
       </a>
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
+    <div class="search-bar">
+    <form class="search-form d-flex align-items-center" method="POST" action="search_chapters.php">
+        <input type="text" name="query" placeholder="Search Chapters..." title="Enter search keyword" value="<?= isset($_POST['query']) ? htmlspecialchars($_POST['query']) : '' ?>" />
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+    </form>
+</div>
 
-    
+
+
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
@@ -143,7 +139,7 @@ $matieres = $query_matiere->fetchAll();
     <li class="nav-item">
         <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
-          <span>Chapitre</span>
+          <span>Dashboard</span>
         </a>
       </li>
 
@@ -176,16 +172,7 @@ $matieres = $query_matiere->fetchAll();
 
 
 
-    <script>
-   document.getElementById("myform").addEventListener("submit", function (event) {
-    let errors = [];
-    
-    const idMatiere = document.querySelector("select[name='id_matiere']").value;
-    if (idMatiere === "") {
-        errors.push("Veuillez sélectionner une Matière.");
-    }
-    });
-</script>
+   
 
 
     
@@ -195,25 +182,7 @@ $matieres = $query_matiere->fetchAll();
 
 <section class="section">
 
-<section class="section">
-  <form action="affichechapitre.php" method="GET">
-    <div class="row mb-3">
-      <label class="col-sm-2 col-form-label">Select Matière</label>
-      <div class="col-sm-10">
-        <select name="id_matiere" class="form-select" aria-label="Default select example" required>
-          <option value="">Select Matière</option>
-          <?php foreach ($matieres as $matiere): ?>
-            <option value="<?= $matiere['id_matiere'] ?>"><?= $matiere['nom'] ?></option>
-          <?php endforeach; ?>
-        </select>
-      </div>
-    </div>
-    <div class="row mb-3">
-      <div class="col-sm-10">
-        <button type="submit" class="btn btn-primary">View Chapters</button>
-      </div>
-    </div>
-  </form>
+<h1>WELCOM</h1>
 </section>
 
 

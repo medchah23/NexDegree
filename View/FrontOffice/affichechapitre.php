@@ -72,7 +72,12 @@ $matiere_name = $query_matiere->fetchColumn();
       <i class="bi bi-list toggle-sidebar-btn"></i>
     </div><!-- End Logo -->
 
-    
+    <div class="search-bar">
+    <form class="search-form d-flex align-items-center" method="POST" action="search_chapters.php">
+        <input type="text" name="query" placeholder="Search Chapters..." title="Enter search keyword" value="<?= isset($_POST['query']) ? htmlspecialchars($_POST['query']) : '' ?>" />
+        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
+    </form>
+</div>
 
     <nav class="header-nav ms-auto">
       <ul class="d-flex align-items-center">
@@ -208,6 +213,9 @@ $matiere_name = $query_matiere->fetchColumn();
                     </ul>
                 </div>
                 <div class="card-footer">
+                <?php 
+                    $file_path = "../uploads/" . basename($chapitre['contenu']);?>
+                    <a href="<?= htmlspecialchars($file_path); ?>" style="margin-left:20px; margin-right:20px;" >View PDF</a>
                 <?php if (isset($chapitre['contenu']) && !empty($chapitre['contenu']) && file_exists("../uploads/" . $chapitre['contenu'])): ?>
         <a href="../uploads/<?= htmlspecialchars($chapitre['contenu']); ?>" download="<?= htmlspecialchars($chapitre['contenu']); ?>">Download PDF</a>
     <?php else: ?>

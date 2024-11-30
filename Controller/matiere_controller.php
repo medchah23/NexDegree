@@ -6,18 +6,33 @@ include(__DIR__ . '/../Model/matiere.php');
 class matiere_controller 
 
 {
-    public function show_all_matiere() {
-        $sql = "SELECT * FROM matiere"; 
+    
+    public function show_all_matiere($semester = null) {
         $db = config::getConnexion();
         
         try {
-            $matiere = $db->query($sql);
-            return $matiere;
-        } catch (Exception $e) {
-            die("Error show_all_chapitre: " . $e->getMessage());
+            $sql = "SELECT * FROM matiere";
+            
+            // If a semester is provided, filter the results
+            if ($semester) {
+                $sql .= " WHERE sems = :semester";
+            }
+    
+            $stmt = $db->prepare($sql);
+            
+            // If a semester is provided, bind the semester parameter
+            if ($semester) {
+                $stmt->bindValue(':semester', $semester, PDO::PARAM_INT);
+            }
+    
+            $stmt->execute();
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
+            
+        } catch (PDOException $e) {
+            echo "Error: " . $e->getMessage();
+            return [];
         }
     }
-    
     
 
      function delete_matiere($id_matiere)
