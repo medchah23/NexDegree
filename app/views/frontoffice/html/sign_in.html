@@ -1,66 +1,68 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>NexDegree - Login & Signup</title>
+    <title>NexDegree - Inscription & Connexion</title>
     <link rel="stylesheet" href="../css/style.css" />
 </head>
 <body>
 <div class="animated-bg"></div>
 <section class="wrapper">
-    <!-- Signup Form -->
+    <!-- Formulaire d'inscription -->
     <div class="form signup">
-        <header>Signup</header>
+        <header>Inscription</header>
         <form id="signupForm">
-            <input type="text" id="firstName" name="firstName" placeholder="First Name" />
-            <input type="text" id="secondName" name="secondName" placeholder="Last Name" />
-            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Phone Number" pattern="[0-9]{8}" />
-            <input type="email" id="email" name="email" placeholder="Email Address" />
-            <select name="role" id="role">
-                <option selected disabled value="">Select Your Role</option>
-                <option value="etudiant">Student</option>
-                <option value="enseignant">Teacher</option>
+            <input type="text" id="firstName" name="firstName" placeholder="Prénom"   />
+            <input type="text" id="secondName" name="secondName" placeholder="Nom"   />
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Numéro de téléphone"    />
+            <input type="email" id="email" name="email" placeholder="Adresse e-mail"   />
+            <select name="role" id="role"  >
+                <option selected disabled value="">Sélectionnez votre rôle</option>
+                <option value="etudiant">Étudiant</option>
+                <option value="enseignant">Enseignant</option>
             </select>
 
             <div id="student" style="display: none;">
-                <header>Student Details</header>
-                <select name="niveau" id="niveau">
-                    <option value="" selected>Select your level</option>
+                <header>Détails Étudiant</header>
+                <select name="niveau" id="niveau"  >
+                    <option value="" selected>Choisissez votre niveau</option>
                     <option value="7eme">7ème</option>
                     <option value="8eme">8ème</option>
                 </select>
-                <label for="student_image">Upload your image:</label>
-                <input type="file" id="student_image" name="student_image" />
+                <label for="student_image">Téléchargez votre photo :</label>
+                <input type="file" id="student_image" name="student_image" accept="image/*" />
             </div>
             <div id="prof" style="display: none;">
-                <header>Teacher Details</header>
-                <select name="matier" id="matier">
-                    <option value="" selected>Select your subject</option>
-                    <option value="Math">Math</option>
-                    <option value="Science">Science</option>
+                <header>Détails Enseignant</header>
+                <select name="matier" id="matier"  >
+                    <option value="" selected>Choisissez votre matière</option>
+                    <option value="Math">Mathématiques</option>
+                    <option value="Science">Sciences</option>
                 </select>
-                <label for="cv">Upload your CV:</label>
+                <label for="cv">Téléchargez votre CV :</label>
                 <input type="file" id="cv" name="cv" accept="application/pdf" />
+                <label for="ens_image">Téléchargez votre photo :</label>
+                <input type="file" id="ens_image" name="ens_image" accept="image/*" />
+
             </div>
-            <input type="password" id="password" name="password" placeholder="Password" />
-            <input type="password" id="cpassword" name="cpassword" placeholder="Confirm Password" />
-            <input type="submit" id="signupSubmit" value="Signup" />
+            <input type="password" id="password" name="password" placeholder="Mot de passe"   />
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirmez le mot de passe"   />
+            <input type="submit" id="signupSubmit" value="S'inscrire" />
         </form>
     </div>
-    <!-- Login Form -->
+    <!-- Formulaire de connexion -->
     <div class="form login">
-        <header>Login</header>
-        <form id="loginForm">
-            <input type="email" id="loginEmail" name="loginEmail" placeholder="Email Address" />
-            <input type="password" id="loginPassword" name="loginPassword" placeholder="Password" />
-            <a href="password.html" class="forgot-password">Forgot password?</a>
-            <input type="submit" id="loginSubmit" value="Login" />
+        <header>Connexion</header>
+        <form id="loginForm" action="../PHP/login.php">
+            <input type="email" id="loginEmail" name="loginEmail" placeholder="Adresse e-mail"/>
+            <input type="password" id="loginPassword" name="loginPassword" placeholder="Mot de passe"   />
+            <a href="password.html" class="forgot-password">Mot de passe oublié ?</a>
+            <input type="submit" id="loginSubmit" value="Se connecter" />
         </form>
     </div>
 </section>
-<!-- Popup container -->
 <div id="popup-container" class="popup-container"></div>
 
 <script src="../js/sign_in.js"></script>

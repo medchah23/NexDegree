@@ -3,6 +3,7 @@ document.addEventListener("DOMContentLoaded", function () {
     const signupHeader = document.querySelector(".form.signup header");
     const loginHeader = document.querySelector(".form.login header");
 
+    // Event listeners for toggling signup and login forms
     loginHeader.addEventListener("click", () => {
         wrapper.classList.add("active");
     });
@@ -11,10 +12,26 @@ document.addEventListener("DOMContentLoaded", function () {
         wrapper.classList.remove("active");
     });
 
+    // Role toggle event
     document.getElementById("role").addEventListener("change", toggleRole);
-    document.getElementById("signupForm").addEventListener("submit", submitForm);
-    document.getElementById("loginForm").addEventListener("submit", validatelogin);
 
+    // Signup form submit event
+    document.getElementById("signupForm").addEventListener("submit", async function (event) {
+        event.preventDefault();
+        if (validateForm()) {
+            await submitForm(event);
+        }
+    });
+
+    // Login form submit event
+    document.getElementById("loginForm").addEventListener("submit", async function (event) {
+        event.preventDefault();
+        if (validateLogin()) {
+            await submitLogin(event);
+        }
+    });
+
+    // Function to toggle role-specific form fields
     function toggleRole() {
         const role = document.getElementById("role").value;
         const student = document.getElementById("student");
@@ -32,9 +49,10 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    const createPopup = (message, status) => {
+    // Function to create popups for messages
+    function createPopup(message, status) {
         const container = document.getElementById("popup-container");
-        if (!container) return; // Fallback in case the container is not found.
+        if (!container) return;
 
         const popup = document.createElement("div");
         popup.className = `popup ${status}`;
@@ -46,11 +64,10 @@ document.addEventListener("DOMContentLoaded", function () {
             popup.classList.remove("show");
             setTimeout(() => popup.remove(), 300);
         }, 3000);
-    };
+    }
 
-
-
-    function validateForm(event) {
+    // Function to validate signup form
+    function validateForm() {
         const nom = document.getElementById("firstName");
         const prenom = document.getElementById("secondName");
         const email = document.getElementById("email");
@@ -64,48 +81,32 @@ document.addEventListener("DOMContentLoaded", function () {
             return /^[A-Za-z]+$/.test(ch);
         }
 
-        function removeShakeAnimation(element) {
-            element.addEventListener("animationend", () => {
-                element.classList.remove("error");
-            });
-        }
-
         if (!isStringValid(nom.value) || nom.value.trim() === "") {
-            nom.value = "";
-            nom.placeholder = "Prénom non valide";
             nom.classList.add("error");
-            removeShakeAnimation(nom);
+            createPopup("Prénom non valide", "error");
             isValid = false;
         }
 
         if (!isStringValid(prenom.value) || prenom.value.trim() === "") {
-            prenom.value = "";
-            prenom.placeholder = "Nom non valide";
             prenom.classList.add("error");
-            removeShakeAnimation(prenom);
+            createPopup("Nom non valide", "error");
             isValid = false;
         }
 
         const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
         if (!emailRegex.test(email.value)) {
-            email.value = "";
-            email.placeholder = "Adresse email non valide";
             email.classList.add("error");
-            removeShakeAnimation(email);
+            createPopup("Adresse email non valide", "error");
             isValid = false;
         }
 
         if (isNaN(tel.value) || tel.value.length !== 8) {
-            tel.value = "";
-            tel.placeholder = "Numéro de téléphone non valide";
             tel.classList.add("error");
-            removeShakeAnimation(tel);
+            createPopup("Numéro de téléphone non valide", "error");
             isValid = false;
         }
 
         if (role.value === "") {
-            role.classList.add("error");
-            removeShakeAnimation(role);
             createPopup("Veuillez sélectionner un rôle", "error");
             isValid = false;
         }
@@ -117,14 +118,12 @@ document.addEventListener("DOMContentLoaded", function () {
 
         if (!lengthCriteria || !uppercaseCriteria || !numberCriteria || !specialCharCriteria) {
             password.classList.add("error");
-            removeShakeAnimation(password);
             createPopup("Votre mot de passe ne respecte pas les critères", "error");
             isValid = false;
         }
 
         if (password.value !== confirm.value) {
             confirm.classList.add("error");
-            removeShakeAnimation(confirm);
             createPopup("Les mots de passe ne correspondent pas", "error");
             isValid = false;
         }
@@ -132,8 +131,30 @@ document.addEventListener("DOMContentLoaded", function () {
         return isValid;
     }
 
+    // Function to validate login form
+    function validateLogin() {
+        const email = document.getElementById("loginEmail");
+        const password = document.getElementById("loginPassword");
+        let isValid = true;
+
+        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+        if (!emailRegex.test(email.value)) {
+            email.classList.add("error");
+            createPopup("Adresse email non valide", "error");
+            isValid = false;
+        }
+
+        if (password.value.length < 8) {
+            password.classList.add("error");
+            createPopup("Mot de passe trop court", "error");
+            isValid = false;
+        }
+
+        return isValid;
+    }
+
+    // Function to handle signup form submission
     async function submitForm(event) {
-        event.preventDefault();
         const form = document.getElementById("signupForm");
         const formData = new FormData(form);
 
@@ -143,56 +164,37 @@ document.addEventListener("DOMContentLoaded", function () {
                 body: formData,
             });
 
-            if (!response.ok) {
-                const errorData = await response.json();
-                createPopup(errorData.message || "An error occurred.", "error");
-                return;
-            }
-
             const data = await response.json();
-            if (data.success) {
-                createPopup(data.message || "Operation successful!", "success");
+            if (response.ok && data.success) {
+                createPopup(data.message || "Inscription réussie !", "success");
             } else {
-                createPopup(data.message || "An error occurred.", "error");
+                createPopup(data.message || "Une erreur s'est produite.", "error");
             }
         } catch (error) {
             console.error("Error:", error);
-            createPopup("Failed to communicate with the server.", "error");
+            createPopup("Erreur de communication avec le serveur.", "error");
         }
     }
+    async function submitLogin(event) {
+        const form = document.getElementById("loginForm");
+        const formData = new FormData(form);
 
+        try {
+            const response = await fetch("../PHP/login.php", {
+                method: "POST",
+                body: formData,
+            });
 
-    async function validatelogin(event) {
-        event.preventDefault();
-        const email = document.getElementById("loginEmail");
-        const password = document.getElementById("loginPassword");
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        let isValid = true;
-
-        if (!emailRegex.test(email.value)) {
-            email.value = "";
-            email.placeholder = "Adresse email non valide";
-            email.classList.add("error");
-            removeShakeAnimation(email);
-            isValid = false;
+            const data = await response.json();
+            if (response.ok && data.success) {
+                createPopup(data.message || "Connexion réussie !", "success");
+                // Redirect or further actions
+            } else {
+                createPopup(data.message || "Échec de la connexion.", "error");
+            }
+        } catch (error) {
+            console.error("Error:", error);
+            createPopup("Erreur de communication avec le serveur.", "error");
         }
-
-        const lengthCriteria = password.value.length >= 8;
-        const uppercaseCriteria = /[A-Z]/.test(password.value);
-        const numberCriteria = /\d/.test(password.value);
-        const specialCharCriteria = /[!@#$%^&*(),.?":{}|<>]/.test(password.value);
-
-        if (!lengthCriteria || !uppercaseCriteria || !numberCriteria || !specialCharCriteria) {
-            password.classList.add("error");
-            removeShakeAnimation(password);
-            createPopup("Votre mot de passe ne respecte pas les critères", "error");
-            isValid = false;
-        }
-    }
-
-    function removeShakeAnimation(element) {
-        element.addEventListener("animationend", () => {
-            element.classList.remove("error");
-        });
     }
 });

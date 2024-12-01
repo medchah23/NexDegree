@@ -5,7 +5,8 @@ include_once(__DIR__ . "/debug.php");
 
 class UserController {
 
-    public function add($user): array {
+    public function add($user): array
+    {
         try {
             Debuggerr::log("Adding user:", $user);
 
@@ -18,7 +19,7 @@ class UserController {
             $stmt->bindValue(':email', $user->getEmail(), PDO::PARAM_STR);
 
             if ($stmt->execute() && $stmt->rowCount() > 0) {
-                $response["message"] = "Email already exists in the database.";
+                $response["message"] = "L'adresse e-mail existe déjà dans la base de données.";
                 Debuggerr::log("Email already exists", $response);
                 return $response;
             }
@@ -28,75 +29,63 @@ class UserController {
 
             // Insert into `utilisateurs`
             $insertUserQuery = "INSERT INTO `utilisateurs`(`nom`, `email`, `numero_telephone`, `role`, `mot_de_passe`, `statut`)
-                            VALUES (:nom, :email, :tel, :role, :mot_de_passe, :statut)";
+                                VALUES (:nom, :email, :tel, :role, :mot_de_passe, :statut)";
             $stmt = $sql->prepare($insertUserQuery);
 
-            if (!$stmt->execute([
+            $stmt->execute([
                 ':nom' => $user->getNom(),
                 ':email' => $user->getEmail(),
                 ':tel' => $user->getTel(),
                 ':role' => $user->getRole(),
                 ':mot_de_passe' => $user->getMotDePasse(),
-                ':statut' => $user->getStatut()
-            ])) {
-                $errorInfo = $stmt->errorInfo();
-                $sql->rollBack();
-                $response["message"] = "Failed to add user to 'utilisateurs': " . implode(", ", $errorInfo);
-                Debuggerr::log("Error adding user to 'utilisateurs'", $response);
-                return $response;
-            }
+                ':statut' => $user->getStatut(),
+            ]);
 
             $userId = $sql->lastInsertId();
 
             // Role-specific insertions
             if ($user->getRole() === "etudiant") {
                 $insertStudentQuery = "INSERT INTO etudiants (id_utilisateur, niveau, image_profil) 
-                                   VALUES (:id_utilisateur, :niveau, :image_profil)";
+                                       VALUES (:id_utilisateur, :niveau, :image_profil)";
                 $stmt = $sql->prepare($insertStudentQuery);
-                $stmt->bindParam(':id_utilisateur', $userId, PDO::PARAM_INT);
-                $stmt->bindParam(':niveau', $user->getNiveau(), PDO::PARAM_STR);
-                $stmt->bindParam(':image_profil', $user->getImageProfil(), PDO::PARAM_LOB);
+                $stmt->execute([
+                    ':id_utilisateur' => $userId,
+                    ':niveau' => $user->getNiveau(),
+                    ':image_profil' => $user->getImageProfil(),
+                ]);
             } elseif ($user->getRole() === "enseignant") {
-                $insertTeacherQuery = "INSERT INTO enseignants (utilisateur_id, qualifications, cv) 
-                                   VALUES (:utilisateur_id, :qualifications, :cv)";
+                $insertTeacherQuery = "INSERT INTO enseignants (utilisateur_id, qualifications, cv, image) 
+                                       VALUES (:utilisateur_id, :qualifications, :cv, :image)";
                 $stmt = $sql->prepare($insertTeacherQuery);
-                $stmt->bindParam(':utilisateur_id', $userId, PDO::PARAM_INT);
-                $stmt->bindParam(':qualifications', $user->getQualifications(), PDO::PARAM_STR);
-                $stmt->bindParam(':cv', $user->getCv(), PDO::PARAM_LOB);
+                $stmt->execute([
+                    ':utilisateur_id' => $userId,
+                    ':qualifications' => $user->getQualifications(),
+                    ':cv' => $user->getCv(),
+                    ':image' => $user->getImage(),
+                ]);
             } else {
                 $sql->rollBack();
-                $response["message"] = "Invalid role provided.";
+                $response["message"] = "Rôle invalide fourni.";
                 Debuggerr::log("Invalid role provided", $response);
                 return $response;
             }
-
-            // Execute role-specific query
-            if ($stmt->execute()) {
-                $sql->commit();
-                $response["success"] = true;
-                $response["message"] = $user->getRole() === "etudiant"
-                    ? "Student added successfully!"
-                    : "Teacher added successfully!";
-                $response["data"] = ["id_utilisateur" => $userId];
-                Debuggerr::log("User added successfully", $response);
-            } else {
-                $sql->rollBack();
-                $response["message"] = "Failed to add " . $user->getRole() . ": " . implode(", ", $stmt->errorInfo());
-                Debuggerr::log("Error in adding user role", $response);
-            }
+            $sql->commit();
+            $response["success"] = true;
+            $response["message"] = $user->getRole() === "etudiant"
+                ? "Étudiant ajouté avec succès !"
+                : "Enseignant ajouté avec succès !";
+            $response["data"] = ["id_utilisateur" => $userId];
+            Debuggerr::log("User added successfully", $response);
 
             return $response;
         } catch (Exception $e) {
-            error_log("Error in add method: " . $e->getMessage());
-            Debuggerr::log("Exception in add method", $e->getMessage());
             if (isset($sql) && $sql->inTransaction()) {
                 $sql->rollBack();
             }
+            Debuggerr::log("Exception in add method", $e->getMessage());
             return ["success" => false, "message" => "Exception: " . $e->getMessage(), "data" => null];
         }
     }
-
-    // Show users by role
     public function show($role): array {
         try {
             Debuggerr::log("Fetching users with role:", $role);
@@ -111,7 +100,7 @@ class UserController {
                       JOIN utilisateurs u ON e.id_utilisateur = u.id_utilisateur
                       WHERE u.role = :role";
             } elseif ($role === 'enseignant') {
-                $query = "SELECT t.id_enseignant, t.utilisateur_id, t.qualifications, t.cv, 
+                $query = "SELECT t.id_enseignant, t.utilisateur_id, t.qualifications, t.cv, t.image,
                              u.nom, u.email, u.numero_telephone, u.role 
                       FROM enseignants t
                       JOIN utilisateurs u ON t.utilisateur_id = u.id_utilisateur
@@ -119,14 +108,12 @@ class UserController {
             } else {
                 $query = "SELECT * FROM utilisateurs WHERE role = :role";
             }
-
             $stmt = $sql->prepare($query);
             $stmt->bindParam(':role', $role, PDO::PARAM_STR);
             $stmt->execute();
             $response = $stmt->fetchAll(PDO::FETCH_ASSOC);
 
             Debuggerr::log("Fetched users:", $response);
-
             return $response;
         } catch (Exception $e) {
             error_log("Error in show method: " . $e->getMessage());
@@ -135,13 +122,50 @@ class UserController {
         }
     }
 
-    // Show users by order
-    public function showByOrder($table, $field) {
-        try {
-            Debuggerr::log("Executing query in showByOrder:", "SELECT * FROM $table ORDER BY $field");
+    public function countAllStudents()
+    {
+        $conn = config::getConnexion();
+        $req = "select count(*) as total from etudiants";
+        $stmt = $conn->prepare($req);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result["total"];
 
+
+    }
+    public function countAllTeachers()
+    {
+        $conn = config::getConnexion();
+        $req = "select count(*) as total from enseignants";
+        $stmt = $conn->prepare($req);
+        $stmt->execute();
+        $result = $stmt->fetch(PDO::FETCH_ASSOC);
+        return $result["total"];
+
+
+    }
+    // Update a user
+    public function showByOrder($role, $field,$order) {
+        try {
+            Debuggerr::log("Executing showByOrder for role: $role, field: $field");
             $conn = config::getConnexion();
-            $query = "SELECT * FROM $table ORDER BY $field";
+            $normalizedRole = rtrim(strtolower($role), 's');
+            if ($normalizedRole === 'etudiant') {
+                $query = "SELECT e.id_etudiant, e.id_utilisateur, e.niveau, e.image_profil, 
+                             u.nom, u.email, u.numero_telephone, u.role 
+                      FROM etudiants e
+                      JOIN utilisateurs u ON e.id_utilisateur = u.id
+                      ORDER BY $field $order";
+            } elseif ($normalizedRole === 'enseignant') {
+                $query = "SELECT t.id_enseignant, t.utilisateur_id, t.qualifications, t.cv, t.image,
+                             u.nom, u.email, u.numero_telephone
+                      FROM enseignants t
+                      JOIN utilisateurs u ON t.utilisateur_id = u.id
+                      ORDER BY $field $order";
+            } else {
+                throw new Exception("Invalid role provided: $role. Allowed roles are 'etudiant' or 'enseignant'.");
+            }
+
             $stmt = $conn->prepare($query);
             $stmt->execute();
             $result = $stmt->fetchAll(PDO::FETCH_ASSOC);
@@ -152,33 +176,6 @@ class UserController {
         } catch (PDOException $e) {
             Debuggerr::log("Error in showByOrder:", $e->getMessage());
             throw $e;
-        }
-    }
-
-    // Update a user
-    public function update($user) {
-        try {
-            Debuggerr::log("Updating user:", $user);
-            $sql = config::getConnexion();
-            // Update query
-            $updateQuery = "UPDATE utilisateur SET 
-                                nom = :nom,
-                                mot_de_passe = :mot_de_passe
-                            WHERE id_utilisateur = :id";
-            $stmt = $sql->prepare($updateQuery);
-            $stmt->bindParam(':nom', $user->getNom(), PDO::PARAM_STR);
-            $stmt->bindParam(':mot_de_passe', $user->getMotDePasse(), PDO::PARAM_STR);
-            $stmt->bindParam(':role', $user->getRole(), PDO::PARAM_STR);
-            $stmt->bindParam(':statut', $user->getStatut(), PDO::PARAM_STR);
-            $stmt->bindParam(':id', $user->getIdUtilisateur(), PDO::PARAM_INT);
-            $stmt->execute();
-            Debuggerr::log("Update result:", ["rowCount" => $stmt->rowCount()]);
-
-            return $stmt->rowCount() > 0;
-        } catch (Exception $e) {
-            error_log("Error in update method: " . $e->getMessage());
-            Debuggerr::log("Error in update method", $e->getMessage());
-            return false;
         }
     }
 
@@ -219,6 +216,108 @@ class UserController {
             return false;
         }
     }
+    public function search($search) {
+        try {
+            $sql = config::getConnexion();
+            $query = "
+            SELECT 
+                u.*, e.* 
+            FROM 
+                utilisateurs AS u
+            LEFT JOIN 
+                etudiants AS e 
+            ON 
+                u.id = e.id_utilisateur
+            WHERE 
+                u.id LIKE :search 
+                OR u.email LIKE :search 
+                OR u.nom LIKE :search 
+                OR e.id_etudiant LIKE :search 
+                OR e.niveau LIKE :search
+        ";
+            $stmt = $sql->prepare($query);
+            $searchTerm = '%' . $search . '%';
+            $stmt->bindValue(':search', $searchTerm, PDO::PARAM_STR);
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $results;
+        } catch (Exception $e) {
+            error_log("Error in search method: " . $e->getMessage());
+            return [];
+        }
+    }
+    public function searche ($search)
+    {
+        try {
+            $sql = config::getConnexion();
+            $query = "SELECT u.*, e.* FROM utilisateurs AS uLEFT JOIN enseignants AS e 
+            ON 
+                u.id = e.utilisateur_id
+            WHERE 
+                u.id LIKE :search 
+                OR u.email LIKE :search 
+                OR u.nom LIKE :search 
+                OR e.utilisateur_id LIKE :search 
+                OR e.qualifications LIKE :search
+        ";
+            $stmt = $sql->prepare($query);
+            $searchTerm = '%' . $search . '%';
+            $stmt->bindValue(':search', $searchTerm, PDO::PARAM_STR);
+            $stmt->execute();
+            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
+            return $results;
+        } catch (Exception $e) {
+            error_log("Error in search method: " . $e->getMessage());
+            return [];
+        }
+    }
+    public function connexion($mail, $mdp)
+    {
+        try {
+            // Step 1: Establish a connection
+            $sql = config::getConnexion();
+
+            // Step 2: Prepare the query
+            $query = "SELECT * FROM utilisateurs WHERE email = :mail";
+            $stmt = $sql->prepare($query);
+            $stmt->bindParam(':mail', $mail, PDO::PARAM_STR);
+
+            // Step 3: Execute the query
+            $stmt->execute();
+
+
+            $results = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
+            if ($results) {
+
+                if (password_verify($mdp, $results['password'])) {
+
+
+                    $role = $results['role'];
+                    if ($role == 'admin') {
+                        return "admin";
+                    } elseif ($role == 'enseignant') {
+                        return "enseignant";
+                    } elseif ($role == 'etudiant') {
+                        return "etudiant";
+                    } else {
+                        return "Role inconnu.";
+                    }
+
+                } else {
+                    return "Mot de passe incorrect.";
+                }
+            } else {
+                // Email not found
+                return "Adresse e-mail introuvable.";
+            }
+        } catch (PDOException $e) {
+            // Handle database-related errors
+            return "Erreur: " . $e->getMessage();
+        }
+    }
+
 }
 
 ?>
