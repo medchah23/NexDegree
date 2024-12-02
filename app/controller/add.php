@@ -298,6 +298,7 @@ class UserController {
                     if ($role == 'admin') {
                         return "admin";
                     } elseif ($role == 'enseignant') {
+
                         return "enseignant";
                     } elseif ($role == 'etudiant') {
                         return "etudiant";
@@ -313,7 +314,6 @@ class UserController {
                 return "Adresse e-mail introuvable.";
             }
         } catch (PDOException $e) {
-            // Handle database-related errors
             return "Erreur: " . $e->getMessage();
         }
     }
