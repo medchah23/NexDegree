@@ -101,16 +101,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Debugger::log("Teacher image upload failed or not provided.", $_FILES['ens_image']);
             }
         }
-
-        // Debugging output before creating user objects
         Debugger::log("Image Path for User: ", $imagePath);
-
         $controller = new UserController();
         if ($role === 'etudiant') {
             $etudiant = new Etudiant($nom, $email, $phoneNumber, $hashedPassword, "etudiant", 'active', $niveau, $imagePath);
             $result = $controller->add($etudiant);
         } elseif ($role === 'enseignant') {
-            $enseignant = new Enseignant($nom, $email, $phoneNumber, $hashedPassword, "enseignant", 'active', $matier, $cvPath, $imagePath);
+            $enseignant = new Enseignant($nom, $email, $phoneNumber, $hashedPassword, "enseignant", 'inactive', $matier, $cvPath, $imagePath);
             $result = $controller->add($enseignant);
         }
 

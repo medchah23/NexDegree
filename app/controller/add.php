@@ -277,7 +277,7 @@ class UserController {
             // Step 1: Establish a connection
             $sql = config::getConnexion();
 
-            // Step 2: Prepare the query
+            // Step 2: Prepare the query to fetch user info by email
             $query = "SELECT * FROM utilisateurs WHERE email = :mail";
             $stmt = $sql->prepare($query);
             $stmt->bindParam(':mail', $mail, PDO::PARAM_STR);
@@ -285,39 +285,61 @@ class UserController {
             // Step 3: Execute the query
             $stmt->execute();
 
-
             $results = $stmt->fetch(PDO::FETCH_ASSOC);
 
-
+            // Check if user exists
             if ($results) {
-
-                if (password_verify($mdp, $results['password'])) {
-
-
-                    $role = $results['role'];
-                    if ($role == 'admin') {
-                        return "admin";
-                    } elseif ($role == 'enseignant') {
-
-                        return "enseignant";
-                    } elseif ($role == 'etudiant') {
-                        return "etudiant";
+                // Step 4: Check if account is active
+                $status = $results['statut'];
+                if ($status !== 'active') {
+                    // If not active, handle specific account statuses
+                    if ($status === 'locked') {
+                        return "Votre compte est verrouillé. Veuillez contacter l'administrateur.";
+                    } elseif ($status === 'banned') {
+                        return "Votre compte est banni. Veuillez contacter l'administrateur.";
+                    } elseif ($status === 'inactive') {
+                        return "Votre compte est inactif. Veuillez vérifier votre email pour l'activer.";
                     } else {
-                        return "Role inconnu.";
+                        return "Le statut de votre compte est inconnu.";
+                    }
+                }
+                if (password_verify($mdp, $results['mot_de_passe'])) {
+                    $role = $results['role'];
+                    $validRoles = ['admin', 'enseignant', 'etudiant'];
+
+                    if (in_array($role, $validRoles)) {
+                        return $role;
+                    } else {
+                        return "Role non reconnu.";
                     }
 
                 } else {
                     return "Mot de passe incorrect.";
                 }
             } else {
-                // Email not found
-                return "Adresse e-mail introuvable.";
+                return "Adresse e-mail non trouvée.";
             }
         } catch (PDOException $e) {
-            return "Erreur: " . $e->getMessage();
+            error_log("Login Error: " . $e->getMessage());
+            return "Erreur lors de la connexion.";
         }
     }
+    public function getUserIdByEmail($email)
+    {
+        $sql = config::getConnexion();
+        $query = "SELECT id FROM utilisateurs WHERE email = :email";
+        $stmt = $sql->prepare($query);
+        $stmt->bindParam(':email', $email, PDO::PARAM_STR);
+        $stmt->execute();
+        $results = $stmt->fetch(PDO::FETCH_ASSOC);
+        if($results){
+        return $results['id'];}
+        else{
+            return -1;
+        }
 
+
+    }
 }
 
 ?>
