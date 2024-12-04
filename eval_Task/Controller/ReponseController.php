@@ -4,7 +4,7 @@ include(__DIR__ . '/../Model/reponse.php');
 
 class ReponseController {
 
-    public function listReponse($id = null) { 
+    /*public function listReponse($id = null) { 
         $db = config::getConnexion();
         // Construire la requête SQL
         if ($id) {
@@ -24,7 +24,7 @@ class ReponseController {
         } catch (Exception $e) {
             die('Erreur : ' . $e->getMessage());
         }
-    }
+    }*/
 
     public function addReponse($reponse) {
         $sql = "INSERT INTO reponse (id,iduser,rep1,rep2,rep3,rep4,rep5) 

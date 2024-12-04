@@ -1,5 +1,7 @@
 <?php
 include '../../Controller/EvaluationController.php';
+//isset : true si la variable existe et n'est pas nulle
+//post  : méthode essentielle pour interagir avec les formulaires HTML.
 if(isset($_POST['matiere'])&& isset($_POST['duree'])&& isset($_POST['noteMax'])&& isset($_POST['date2'])&& isset($_POST['quest1']) && isset($_POST['quest2']) && isset($_POST['quest3']) && isset($_POST['quest4']) && isset($_POST['quest5'])){
     if(!empty($_POST['matiere'])&& !empty($_POST['duree'])&& !empty($_POST['noteMax'])&& !empty($_POST['date2'])&& !empty($_POST['quest1']) && !empty($_POST['quest2']) && !empty($_POST['quest3']) && !empty($_POST['quest4']) && !empty($_POST['quest5'])){
     $eval=new evaluation(

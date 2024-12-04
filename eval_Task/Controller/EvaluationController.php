@@ -46,6 +46,9 @@ class EvaluationController {
         }
     }
 
+    /*fetch() : Récupère une seule ligne du résultat.
+    fetchAll() : Récupère toutes les lignes du résultat sous forme de tableau.*/
+
     public function joinEvaluationReponseClient($user) {
         $db = config::getConnexion();
         $sql = "SELECT * FROM evaluation e JOIN reponse r 

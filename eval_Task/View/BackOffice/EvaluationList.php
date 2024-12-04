@@ -188,35 +188,35 @@ $evalc=new EvaluationController();
                                             ?>
                                         </table>
                                         <script>
-    document.getElementById("sortByMaxScore").addEventListener("click", function () {
-        const table = document.getElementById("evaluationTable");
-        const rows = Array.from(table.rows).slice(1); // Obtenir toutes les lignes sauf l'en-tête
-        const isAscending = this.dataset.order === "asc"; // Vérifier l'ordre actuel
-        this.dataset.order = isAscending ? "desc" : "asc"; // Basculer l'ordre
+                                            document.getElementById("sortByMaxScore").addEventListener("click", function () {
+                                                const table = document.getElementById("evaluationTable");
+                                                const rows = Array.from(table.rows).slice(1); // Obtenir toutes les lignes sauf l'en-tête
+                                                const isAscending = this.dataset.order === "asc"; // Vérifier l'ordre actuel
+                                                this.dataset.order = isAscending ? "desc" : "asc"; // Basculer l'ordre
 
-        rows.sort((a, b) => {
-            const valA = parseFloat(a.cells[3].textContent.trim()) || 0; // Colonne Max Score (index 3)
-            const valB = parseFloat(b.cells[3].textContent.trim()) || 0;
-            return isAscending ? valA - valB : valB - valA;
-        });
+                                                rows.sort((a, b) => {
+                                                    const valA = parseFloat(a.cells[3].textContent.trim()) || 0; // Colonne Max Score (index 3)
+                                                    const valB = parseFloat(b.cells[3].textContent.trim()) || 0;
+                                                    return isAscending ? valA - valB : valB - valA;
+                                                });
 
-        // Réorganiser les lignes dans le tableau
-        rows.forEach(row => table.appendChild(row));
-    });
-</script>
+                                                // Réorganiser les lignes dans le tableau
+                                                rows.forEach(row => table.appendChild(row));
+                                            });
+                                        </script>
 
-<script>
-    document.getElementById("filterSubject").addEventListener("change", function () {
-        const filterValue = this.value.toLowerCase();
-        const rows = document.querySelectorAll("#evaluationTable tr");
+                                        <script>
+                                            document.getElementById("filterSubject").addEventListener("change", function () {
+                                                const filterValue = this.value.toLowerCase();
+                                                const rows = document.querySelectorAll("#evaluationTable tr");
 
-        rows.forEach((row, index) => {
-            if (index === 0) return; // Ignorer l'en-tête
-            const subject = row.cells[1].textContent.toLowerCase();
-            row.style.display = (filterValue === "all" || subject === filterValue) ? "" : "none";
-        });
-    });
-</script>
+                                                rows.forEach((row, index) => {
+                                                    if (index === 0) return; // Ignorer l'en-tête
+                                                    const subject = row.cells[1].textContent.toLowerCase();
+                                                    row.style.display = (filterValue === "all" || subject === filterValue) ? "" : "none";
+                                                });
+                                            });
+                                        </script>
 
                                             
                                         </div>
