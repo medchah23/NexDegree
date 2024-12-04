@@ -11,11 +11,14 @@ class matiere_controller
         $db = config::getConnexion();
         
         try {
-            $sql = "SELECT * FROM matiere";
+            // Update SQL query to include a count of chapters
+            $sql = "SELECT m.*, 
+                           (SELECT COUNT(*) FROM chapitre c WHERE c.id_matiere = m.id_matiere) AS nombre_chapitre
+                    FROM matiere m";
             
             // If a semester is provided, filter the results
             if ($semester) {
-                $sql .= " WHERE sems = :semester";
+                $sql .= " WHERE m.sems = :semester";
             }
     
             $stmt = $db->prepare($sql);
@@ -33,6 +36,7 @@ class matiere_controller
             return [];
         }
     }
+    
     
 
      function delete_matiere($id_matiere)
