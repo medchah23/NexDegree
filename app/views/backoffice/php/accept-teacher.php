@@ -24,8 +24,10 @@ try {
 
         if ($emailResult['success']) {
             echo "Teacher accepted, and email notification sent successfully.";
+            header("Location: teachers.php");
         } else {
             echo "Teacher accepted, but email could not be sent: " . htmlspecialchars($emailResult['message']);
+            header("Location: teachers.php");
         }
     } else {
         echo "Error accepting teacher: " . htmlspecialchars($result['message']);
