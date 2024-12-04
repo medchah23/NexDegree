@@ -120,7 +120,8 @@ class UserController {
         $stmt->execute();
         $user = $stmt->fetch();
         return $user;
-    }public function updatetecher($id, $nom, $email, $tel, $image) {
+    }
+    public function updatetecher($id, $nom, $email, $tel, $image) {
     $sql = Config::getConnexion();
     $query = "
         UPDATE utilisateurs AS u
@@ -335,17 +336,18 @@ class UserController {
             return [];
         }
     }
-    public function searche ($search)
+    public function searche($search)
     {
         try {
             $sql = config::getConnexion();
-            $query = "SELECT u.*, e.* FROM utilisateurs AS uLEFT JOIN enseignants AS e 
-            ON 
-                u.id = e.utilisateur_id
+            $query = "
+            SELECT u.nom, u.email, u.numero_telephone, e.id_enseignant, e.qualifications, e.image, e.cv 
+            FROM utilisateurs AS u
+            LEFT JOIN enseignants AS e ON u.id = e.utilisateur_id
             WHERE 
-                u.id LIKE :search 
+                u.nom LIKE :search 
                 OR u.email LIKE :search 
-                OR u.nom LIKE :search 
+                OR u.numero_telephone LIKE :search 
                 OR e.id_enseignant LIKE :search 
                 OR e.qualifications LIKE :search
         ";
@@ -353,13 +355,13 @@ class UserController {
             $searchTerm = '%' . $search . '%';
             $stmt->bindValue(':search', $searchTerm, PDO::PARAM_STR);
             $stmt->execute();
-            $results = $stmt->fetchAll(PDO::FETCH_ASSOC);
-            return $results;
+            return $stmt->fetchAll(PDO::FETCH_ASSOC);
         } catch (Exception $e) {
-            error_log("Error in search method: " . $e->getMessage());
+            error_log("Error in searche method: " . $e->getMessage());
             return [];
         }
     }
+
 
     public function getUserIdByEmail($email)
     {

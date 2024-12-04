@@ -8965,3 +8965,54 @@
 
 )
 
+[2024-12-04 05:45:22] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 05:45:22] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 17
+            [utilisateur_id] => 37
+            [qualifications] => Science
+            [cv] => 
+            [image] => ../../../uploads/images/Picture1-removebg-preview.png
+            [nom] => 
+            [email] => 
+            [numero_telephone] => 
+        )
+
+)
+
+[2024-12-04 05:45:25] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 05:45:25] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 17
+            [utilisateur_id] => 37
+            [qualifications] => Science
+            [cv] => 
+            [image] => ../../../uploads/images/Picture1-removebg-preview.png
+            [nom] => 
+            [email] => 
+            [numero_telephone] => 
+        )
+
+)
+
+[2024-12-04 05:48:58] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 05:48:58] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 17
+            [utilisateur_id] => 37
+            [qualifications] => Science
+            [cv] => 
+            [image] => ../../../uploads/images/Picture1-removebg-preview.png
+            [nom] => 
+            [email] => 
+            [numero_telephone] => 
+        )
+
+)
+
