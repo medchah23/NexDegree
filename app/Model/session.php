@@ -1,32 +1,23 @@
 <?php
-require_once "../configdb.php";
-
+include_once(__DIR__ . "../../configdb.php");
 class Session
 {
-
     public function create_session(int $id)
     {
         try {
-            if (session_status() == PHP_SESSION_NONE) {
-                session_start();
-            }
             $sql = config::getConnexion();
             $query = "SELECT * FROM utilisateurs WHERE id = :id";
             $stmt = $sql->prepare($query);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
             $row = $stmt->fetch(PDO::FETCH_ASSOC);
-
             if ($row) {
                 $token = bin2hex(random_bytes(16));
                 $expiration = date('Y-m-d H:i:s', time() + (60 * 60 * 24));
-                $_SESSION['token'] = $token;
-                $_SESSION['expiration'] = $expiration;
                 $ip_address = $_SERVER['REMOTE_ADDR'] ?? 'UNKNOWN';
                 $device_info = $_SERVER['HTTP_USER_AGENT'];
-
-                $query = "INSERT INTO user_sessions (user_id, token, expires_at, device_info, ip_address) 
-                          VALUES (:id, :token, :expiration, :device_info, :ip_address)";
+                $query = "INSERT INTO user_sessions (user_id, session_token, expires_at, device_info, ip_address) 
+                      VALUES (:id, :token, :expiration, :device_info, :ip_address)";
                 $stmt = $sql->prepare($query);
                 $stmt->bindParam(':id', $id, PDO::PARAM_INT);
                 $stmt->bindParam(':token', $token, PDO::PARAM_STR);
@@ -36,18 +27,21 @@ class Session
                 $stmt->execute();
                 return $token;
             } else {
-                return false;
+                return "No user found with the provided ID.";
             }
         } catch (PDOException $e) {
             error_log("Error creating session: " . $e->getMessage());
-            return false;
+            return "Error creating session: " . $e->getMessage();  // Return the error message
+        } catch (Exception $e) {
+            error_log("Unexpected error: " . $e->getMessage());
+            return "An unexpected error occurred while creating the session.";  // Catch other exceptions
         }
     }
     public function validateSession(string $token)
     {
         try {
             $sql = config::getConnexion();
-            $query = "SELECT * FROM user_sessions WHERE token = :token";
+            $query = "SELECT * FROM user_sessions WHERE session_token = :token";
             $stmt = $sql->prepare($query);
             $stmt->bindParam(':token', $token, PDO::PARAM_STR);
             $stmt->execute();
@@ -71,16 +65,14 @@ class Session
             return false;
         }
     }
-
     public function destroySession(string $token)
     {
         try {
             if (session_status() == PHP_SESSION_NONE) {
                 session_start();
             }
-
             $sql = config::getConnexion();
-            $query = "DELETE FROM user_sessions WHERE token = :token";
+            $query = "DELETE FROM user_sessions WHERE session_token = :token";
             $stmt = $sql->prepare($query);
             $stmt->bindParam(':token', $token, PDO::PARAM_STR);
             $stmt->execute();

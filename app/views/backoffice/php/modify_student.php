@@ -32,14 +32,13 @@ if (isset($_GET['id'])) {
         exit;
     }
 }
-
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    // Get the form data
+
     $nom = $_POST['nom'];
     $email = $_POST['email'];
     $numero_telephone = $_POST['numero_telephone'];
     $role = $_POST['role'];
-    $mot_de_passe = $_POST['mot_de_passe']; // Hash password if necessary
+    $mot_de_passe = $_POST['mot_de_passe'];
     $statut = $_POST['statut'];
     $niveau = $_POST['niveau'];
 

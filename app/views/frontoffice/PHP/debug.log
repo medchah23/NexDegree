@@ -1,402 +1,431 @@
-[2024-11-29 21:05:58] Processing request.: Array
+[2024-12-04 02:15:39] Login attempt: Array
 (
-    [firstName] => Joao
-    [secondName] => Souza Silva
-    [phoneNumber] => 60195210
-    [email] => teste@exemplo.us
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [email] => bob.martin@examplee.com
 )
 
-[29-Nov-2024 21:05:58 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Enseignant::__construct(): Argument #9 ($image) must be of type string, null given, called in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91 and defined in C:\xampp\htdocs\NexDegree\app\Model\Enseignant.php:11
-Stack trace:
-#0 C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php(91): Enseignant->__construct('Joao Souza Silv...', 'teste@exemplo.u...', '60195210', '$2y$10$yRMZ/0Rk...', 'enseignant', 'active', 'Math', 'uploads/cvs/cv_...', NULL)
-#1 {main}
-  thrown in C:\xampp\htdocs\NexDegree\app\Model\Enseignant.php on line 11
-[2024-11-29 21:07:06] Processing request.: Array
+[2024-12-04 02:15:39] User role retrieved: Array
 (
-    [firstName] => Joao
-    [secondName] => Souza Silva
-    [phoneNumber] => 60195210
-    [email] => teste@exemplo.us
     [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
 )
 
-[29-Nov-2024 21:07:06 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Enseignant::__construct(): Argument #9 ($image) must be of type string, null given, called in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91 and defined in C:\xampp\htdocs\NexDegree\app\Model\Enseignant.php:11
-Stack trace:
-#0 C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php(91): Enseignant->__construct('Joao Souza Silv...', 'teste@exemplo.u...', '60195210', '$2y$10$aNpQVYMp...', 'enseignant', 'active', 'Math', 'uploads/cvs/cv_...', NULL)
-#1 {main}
-  thrown in C:\xampp\htdocs\NexDegree\app\Model\Enseignant.php on line 11
-[2024-11-29 21:09:34] Processing request.: Array
+[2024-12-04 02:15:39] Fetching user ID for email: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.us
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [email] => bob.martin@examplee.com
 )
 
-[29-Nov-2024 21:09:35 Europe/Berlin] PHP Warning:  Undefined variable $pdfData in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91
-[29-Nov-2024 21:09:35 Europe/Berlin] PHP Warning:  Undefined variable $imgData in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91
-[29-Nov-2024 21:09:35 Europe/Berlin] PHP Fatal error:  Uncaught TypeError: Enseignant::__construct(): Argument #8 ($cv) must be of type string, null given, called in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91 and defined in C:\xampp\htdocs\NexDegree\app\Model\Enseignant.php:11
-Stack trace:
-#0 C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php(91): Enseignant->__construct('mohamed chahban...', 'teste@exemplo.u...', '92308572', '$2y$10$MQ83NBAp...', 'enseignant', 'active', 'Math', NULL, NULL)
-#1 {main}
-  thrown in C:\xampp\htdocs\NexDegree\app\Model\Enseignant.php on line 11
-[2024-11-29 21:10:53] Processing request.: Array
+[2024-12-04 02:15:39] User ID retrieved: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.us
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [userId] => 37
 )
 
-[29-Nov-2024 21:10:53 Europe/Berlin] PHP Warning:  Undefined variable $pdfData in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91
-[29-Nov-2024 21:10:53 Europe/Berlin] PHP Warning:  Undefined variable $imgData in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91
-[29-Nov-2024 21:10:53 Europe/Berlin] Error encountered: Exception: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'image' cannot be null
-[2024-11-29 21:12:12] Processing request.: Array
+[2024-12-04 02:15:39] User status retrieved: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.us
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [status] => Array
+        (
+            [id] => 37
+            [nom] => hama azdazd
+            [email] => bob.martin@examplee.com
+            [numero_telephone] => 74185296
+            [role] => enseignant
+            [mot_de_passe] => @Medchah12@
+            [cree_a] => 2024-12-04 01:13:43
+            [statut] => inactive
+        )
+
 )
 
-[29-Nov-2024 21:12:12 Europe/Berlin] PHP Warning:  Undefined variable $pdfData in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91
-[29-Nov-2024 21:12:12 Europe/Berlin] PHP Warning:  Undefined variable $imgData in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 91
-[2024-11-29 21:14:03] Processing request.: Array
+[2024-12-04 02:15:51] Login attempt: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.uss
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [email] => bob.martin@examplee.com
 )
 
-[2024-11-29 21:14:59] Processing request.: Array
+[2024-12-04 02:15:51] User role retrieved: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.uss
     [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
 )
 
-[29-Nov-2024 21:15:00 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:15:05] Processing request.: Array
+[2024-12-04 02:15:51] Fetching user ID for email: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.ussx
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [email] => bob.martin@examplee.com
 )
 
-[2024-11-29 21:17:43] Processing request.: Array
+[2024-12-04 02:15:51] User ID retrieved: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.us
-    [role] => enseignant
-    [niveau] => 
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [userId] => 37
 )
 
-[29-Nov-2024 21:17:43 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:17:52] Processing request.: Array
+[2024-12-04 02:15:51] User status retrieved: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.us
-    [role] => enseignant
-    [niveau] => 
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [status] => Array
+        (
+            [id] => 37
+            [nom] => hama azdazd
+            [email] => bob.martin@examplee.com
+            [numero_telephone] => 74185296
+            [role] => enseignant
+            [mot_de_passe] => @Medchah12@
+            [cree_a] => 2024-12-04 01:13:43
+            [statut] => inactive
+        )
+
 )
 
-[29-Nov-2024 21:17:52 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:17:56] Processing request.: Array
+[2024-12-04 02:17:14] Login attempt: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.usx
-    [role] => enseignant
-    [niveau] => 
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [email] => bob.martin@examplee.com
 )
 
-[2024-11-29 21:20:36] Processing request.: Array
+[2024-12-04 02:17:14] User role retrieved: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.usx
     [role] => enseignant
-    [niveau] => 
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
 )
 
-[29-Nov-2024 21:20:36 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:20:50] Processing request.: Array
+[2024-12-04 02:17:14] Fetching user ID for email: Array
 (
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.usxt
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
+    [email] => bob.martin@examplee.com
 )
 
-[2024-11-29 21:23:11] Processing request.: Array
+[2024-12-04 02:17:14] User ID retrieved: Array
+(
+    [userId] => 37
+)
+
+[2024-12-04 02:17:14] User status retrieved: Array
+(
+    [status] => Array
+        (
+            [statut] => inactive
+        )
+
+)
+
+[2024-12-04 02:17:15] Login attempt: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:17:15] User role retrieved: Array
+(
+    [role] => enseignant
+)
+
+[2024-12-04 02:17:15] Fetching user ID for email: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:17:15] User ID retrieved: Array
+(
+    [userId] => 37
+)
+
+[2024-12-04 02:17:15] User status retrieved: Array
+(
+    [status] => Array
+        (
+            [statut] => inactive
+        )
+
+)
+
+[2024-12-04 02:17:28] Login attempt: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:17:28] User role retrieved: Array
+(
+    [role] => enseignant
+)
+
+[2024-12-04 02:17:28] Fetching user ID for email: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:17:28] User ID retrieved: Array
+(
+    [userId] => 37
+)
+
+[2024-12-04 02:17:28] User status retrieved: Array
+(
+    [status] => Array
+        (
+            [statut] => inactive
+        )
+
+)
+
+[2024-12-04 02:17:59] Login attempt: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:17:59] User role retrieved: Array
+(
+    [role] => enseignant
+)
+
+[2024-12-04 02:17:59] Fetching user ID for email: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:17:59] User ID retrieved: Array
+(
+    [userId] => 37
+)
+
+[2024-12-04 02:17:59] User status retrieved: Array
+(
+    [status] => Array
+        (
+            [statut] => inactive
+        )
+
+)
+
+[2024-12-04 02:18:07] Login attempt: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:18:07] User role retrieved: Array
+(
+    [role] => enseignant
+)
+
+[2024-12-04 02:18:07] Fetching user ID for email: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:18:07] User ID retrieved: Array
+(
+    [userId] => 37
+)
+
+[2024-12-04 02:18:07] User status retrieved: Array
+(
+    [status] => Array
+        (
+            [statut] => inactive
+        )
+
+)
+
+[2024-12-04 02:18:39] Login attempt: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:18:39] User role retrieved: Array
+(
+    [role] => enseignant
+)
+
+[2024-12-04 02:18:39] Fetching user ID for email: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:18:39] User ID retrieved: Array
+(
+    [userId] => 37
+)
+
+[2024-12-04 02:18:39] User status retrieved: Array
+(
+    [status] => inactive
+)
+
+[2024-12-04 02:21:52] Login attempt: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:21:52] User role retrieved: Array
+(
+    [role] => enseignant
+)
+
+[2024-12-04 02:21:52] Fetching user ID for email: Array
+(
+    [email] => bob.martin@examplee.com
+)
+
+[2024-12-04 02:21:52] User ID retrieved: Array
+(
+    [userId] => 37
+)
+
+[2024-12-04 02:21:52] User status retrieved: Array
+(
+    [status] => inactive
+)
+
+[2024-12-04 04:50:00] Processing request.: Array
 (
     [firstName] => Jon
     [secondName] => Doe
     [phoneNumber] => 60195210
     [email] => teste@exemplo.us
-    [role] => etudiant
-    [niveau] => 8eme
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[29-Nov-2024 21:23:12 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:23:18] Processing request.: Array
-(
-    [firstName] => Jon
-    [secondName] => Doe
-    [phoneNumber] => 60195210
-    [email] => teste@exemplo.usk
-    [role] => etudiant
-    [niveau] => 8eme
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[2024-11-29 21:25:23] Processing request.: Array
-(
-    [firstName] => Jon
-    [secondName] => Doe
-    [phoneNumber] => 60195210
-    [email] => teste@exemplo.usk
-    [role] => etudiant
-    [niveau] => 8eme
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[29-Nov-2024 21:25:24 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:25:32] Processing request.: Array
-(
-    [firstName] => Jon
-    [secondName] => Doe
-    [phoneNumber] => 60195210
-    [email] => teste@exemplo.usk
-    [role] => etudiant
-    [niveau] => 8eme
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[29-Nov-2024 21:25:33 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:25:36] Processing request.: Array
-(
-    [firstName] => Jon
-    [secondName] => Doe
-    [phoneNumber] => 60195210
-    [email] => teste@exemplo.uskm
-    [role] => etudiant
-    [niveau] => 8eme
-    [matier] => 
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[2024-11-29 21:32:23] Processing request.: Array
-(
-    [firstName] => Jon
-    [secondName] => Doe
-    [phoneNumber] => 60195210
-    [email] => teste@exemplo.usm
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Science
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[2024-11-29 21:32:24] Student image upload failed or not provided.: Array
-(
-    [name] => diagram (3).png
-    [full_path] => diagram (3).png
-    [type] => image/png
-    [tmp_name] => C:\xampp\tmp\phpC5D.tmp
-    [error] => 0
-    [size] => 239186
-)
-
-[29-Nov-2024 21:32:24 Europe/Berlin] PHP Warning:  Undefined array key "ens_image" in C:\xampp\htdocs\NexDegree\app\views\frontoffice\PHP\sign_in.php on line 101
-[2024-11-29 21:32:24] Teacher image upload failed or not provided.
-[2024-11-29 21:32:24] Image Path for User: 
-[2024-11-29 21:33:26] Processing request.: Array
-(
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.usm
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[2024-11-29 21:33:26] Student image upload failed or not provided.: Array
-(
-    [name] => 
-    [full_path] => 
-    [type] => 
-    [tmp_name] => 
-    [error] => 4
-    [size] => 0
-)
-
-[2024-11-29 21:33:26] Image Path for User: : uploads/images/teacher_674a25165b610.png
-[29-Nov-2024 21:33:26 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
-[2024-11-29 21:33:32] Processing request.: Array
-(
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.usmm
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Math
-    [password] => @Medchah12@
-    [cpassword] => @Medchah12@
-)
-
-[2024-11-29 21:33:32] Student image upload failed or not provided.: Array
-(
-    [name] => 
-    [full_path] => 
-    [type] => 
-    [tmp_name] => 
-    [error] => 4
-    [size] => 0
-)
-
-[2024-11-29 21:33:32] Image Path for User: : uploads/images/teacher_674a251c54995.png
-[2024-11-29 21:38:45] Processing request.: Array
-(
-    [firstName] => mohamed
-    [secondName] => chahbani
-    [phoneNumber] => 92308572
-    [email] => teste@exemplo.usmml
     [role] => etudiant
     [niveau] => 7eme
-    [matier] => Math
+    [matier] => 
     [password] => @Medchah12@
     [cpassword] => @Medchah12@
 )
 
-[2024-11-29 21:38:45] Image Path for User: : uploads/images/student_674a2655af5d7.png
-[2024-12-01 20:35:06] Processing request.: Array
+[2024-12-04 04:50:00] Image Path for User: : uploads/images/student_674fd16829417.png
+[2024-12-04 04:50:04] Login attempt: Array
 (
-    [firstName] => chahbani
-    [secondName] => mohamed
-    [phoneNumber] => 23565400
-    [email] => medchah606@gmail.com
-    [role] => enseignant
-    [niveau] => 
-    [matier] => Science
-    [password] => HamaEya12
-    [cpassword] => HamaEya12
+    [email] => teste@exemplo.us
 )
 
-[2024-12-01 20:35:06] Student image upload failed or not provided.: Array
+[2024-12-04 04:50:04] User role retrieved: Array
 (
-    [name] => 
-    [full_path] => 
-    [type] => 
-    [tmp_name] => 
-    [error] => 4
-    [size] => 0
+    [role] => etudiant
 )
 
-[2024-12-01 20:35:06] Image Path for User: : uploads/images/teacher_674cba6a95d13.png
-[2024-12-01 20:41:38] Processing request.: Array
+[2024-12-04 04:50:04] Fetching user ID for email: Array
 (
-    [firstName] => 
-    [secondName] => 
-    [phoneNumber] => 
-    [email] => 
-    [niveau] => 
-    [matier] => 
-    [password] => 
-    [cpassword] => 
+    [email] => teste@exemplo.us
 )
 
-[01-Dec-2024 20:41:38 Europe/Berlin] Error encountered: Invalid role provided.
-[2024-12-01 20:41:38] Processing request.: Array
+[2024-12-04 04:50:04] User ID retrieved: Array
 (
-    [firstName] => 
-    [secondName] => 
-    [phoneNumber] => 
-    [email] => 
-    [niveau] => 
-    [matier] => 
-    [password] => 
-    [cpassword] => 
+    [userId] => 38
 )
 
-[01-Dec-2024 20:41:39 Europe/Berlin] Error encountered: Invalid role provided.
+[2024-12-04 04:50:04] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-04 04:50:04] Session token creation: Array
+(
+    [sessionToken] => 50124b1db1270a238de5c269de3703af
+)
+
+[2024-12-04 04:50:53] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 04:50:53] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-04 04:50:53] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 04:50:53] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-04 04:50:53] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-04 04:50:53] Session token creation: Array
+(
+    [sessionToken] => a3ce5a537e64efb003dec068536810c9
+)
+
+[2024-12-04 04:57:14] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 04:57:14] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-04 04:57:14] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 04:57:14] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-04 04:57:14] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-04 04:57:14] Session token creation: Array
+(
+    [sessionToken] => 8372f81a7b0d9efa544ae436f0a92251
+)
+
+[2024-12-04 05:06:30] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 05:06:30] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-04 05:06:30] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 05:06:30] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-04 05:06:30] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-04 05:06:30] Session token creation: Array
+(
+    [sessionToken] => 89ed1887670f4457ea2931226aaf12b0
+)
+
+[2024-12-04 05:06:49] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 05:06:49] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-04 05:06:49] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-04 05:06:49] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-04 05:06:49] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-04 05:06:49] Session token creation: Array
+(
+    [sessionToken] => 096ca2d3a287fb223c23763c02c66ddf
+)
+

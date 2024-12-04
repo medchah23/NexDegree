@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NexDegree - Inscription & Connexion</title>
-    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/style2.css" />
 </head>
 <body>
 <div class="animated-bg"></div>
@@ -52,10 +52,10 @@
             <input type="submit" id="signupSubmit" value="S'inscrire" />
         </form>
     </div>
-    <!-- Formulaire de connexion -->
+
     <div class="form login">
         <header>Connexion</header>
-        <form id="loginForm" action="../PHP/login.php">
+        <form id="loginForm" method="post" action="../PHP/login.php" >
             <input type="email" id="loginEmail" name="loginEmail" placeholder="Adresse e-mail"/>
             <input type="password" id="loginPassword" name="loginPassword" placeholder="Mot de passe"   />
             <a href="password.html" class="forgot-password">Mot de passe oublié ?</a>
@@ -64,7 +64,6 @@
     </div>
 </section>
 <div id="popup-container" class="popup-container"></div>
-
 <script src="../js/sign_in.js"></script>
 </body>
 </html>

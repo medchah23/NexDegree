@@ -3,7 +3,6 @@ document.addEventListener("DOMContentLoaded", function () {
     const signupHeader = document.querySelector(".form.signup header");
     const loginHeader = document.querySelector(".form.login header");
 
-    // Event listeners for toggling signup and login forms
     loginHeader.addEventListener("click", () => {
         wrapper.classList.add("active");
     });
@@ -12,10 +11,8 @@ document.addEventListener("DOMContentLoaded", function () {
         wrapper.classList.remove("active");
     });
 
-    // Role toggle event
     document.getElementById("role").addEventListener("change", toggleRole);
 
-    // Signup form submit event
     document.getElementById("signupForm").addEventListener("submit", async function (event) {
         event.preventDefault();
         if (validateForm()) {
@@ -23,15 +20,12 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    // Login form submit event
-    document.getElementById("loginForm").addEventListener("submit", async function (event) {
-        event.preventDefault();
-        if (validateLogin()) {
-            await submitLogin(event);
+    document.getElementById("loginForm").addEventListener("submit", function (event) {
+        if (!validateLogin()) {
+            event.preventDefault(); // Prevent submission if validation fails
         }
     });
 
-    // Function to toggle role-specific form fields
     function toggleRole() {
         const role = document.getElementById("role").value;
         const student = document.getElementById("student");
@@ -49,7 +43,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     }
 
-    // Function to create popups for messages
     function createPopup(message, status) {
         const container = document.getElementById("popup-container");
         if (!container) return;
@@ -66,7 +59,6 @@ document.addEventListener("DOMContentLoaded", function () {
         }, 3000);
     }
 
-    // Function to validate signup form
     function validateForm() {
         const nom = document.getElementById("firstName");
         const prenom = document.getElementById("secondName");
@@ -131,7 +123,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return isValid;
     }
 
-    // Function to validate login form
     function validateLogin() {
         const email = document.getElementById("loginEmail");
         const password = document.getElementById("loginPassword");
@@ -153,7 +144,6 @@ document.addEventListener("DOMContentLoaded", function () {
         return isValid;
     }
 
-    // Function to handle signup form submission
     async function submitForm(event) {
         const form = document.getElementById("signupForm");
         const formData = new FormData(form);
@@ -169,28 +159,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 createPopup(data.message || "Inscription réussie !", "success");
             } else {
                 createPopup(data.message || "Une erreur s'est produite.", "error");
-            }
-        } catch (error) {
-            console.error("Error:", error);
-            createPopup("Erreur de communication avec le serveur.", "error");
-        }
-    }
-    async function submitLogin(event) {
-        const form = document.getElementById("loginForm");
-        const formData = new FormData(form);
-
-        try {
-            const response = await fetch("../PHP/login.php", {
-                method: "POST",
-                body: formData,
-            });
-
-            const data = await response.json();
-            if (response.ok && data.success) {
-                createPopup(data.message || "Connexion réussie !", "success");
-                // Redirect or further actions
-            } else {
-                createPopup(data.message || "Échec de la connexion.", "error");
             }
         } catch (error) {
             console.error("Error:", error);

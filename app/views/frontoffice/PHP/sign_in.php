@@ -8,9 +8,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     ini_set('log_errors', 1);
     ini_set('error_log', 'debug.log'); // Set appropriate log path
     error_reporting(E_ALL);
-
     $response = ['success' => false, 'message' => 'An unknown error occurred'];
-
     try {
         Debugger::log("Processing request.", $_POST);
 
@@ -21,7 +19,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $email = filter_var(trim($_POST['email'] ?? ''), FILTER_VALIDATE_EMAIL);
         $role = trim($_POST['role'] ?? '');
         $password = $_POST['password'] ?? '';
-        $hashedPassword = password_hash($password, PASSWORD_BCRYPT);
         $nom = $firstName . ' ' . $secondName;
 
         // Validate role
@@ -82,7 +79,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
                 Debugger::log("Teacher CV upload failed or not provided.", $_FILES['cv']);
             }
 
-            // Upload image
             if (isset($_FILES['ens_image']) && $_FILES['ens_image']['error'] === UPLOAD_ERR_OK) {
                 $allowedFormats = ['image/jpeg', 'image/png', 'image/gif'];
                 $fileType = mime_content_type($_FILES['ens_image']['tmp_name']);
@@ -104,10 +100,10 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         Debugger::log("Image Path for User: ", $imagePath);
         $controller = new UserController();
         if ($role === 'etudiant') {
-            $etudiant = new Etudiant($nom, $email, $phoneNumber, $hashedPassword, "etudiant", 'active', $niveau, $imagePath);
+            $etudiant = new Etudiant($nom, $email, $phoneNumber, $password, "etudiant", 'active', $niveau, $imagePath);
             $result = $controller->add($etudiant);
         } elseif ($role === 'enseignant') {
-            $enseignant = new Enseignant($nom, $email, $phoneNumber, $hashedPassword, "enseignant", 'inactive', $matier, $cvPath, $imagePath);
+            $enseignant = new Enseignant($nom, $email, $phoneNumber, $password, "enseignant", 'inactive', $matier, $cvPath, $imagePath);
             $result = $controller->add($enseignant);
         }
 

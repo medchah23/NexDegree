@@ -15,9 +15,7 @@ if (isset($_GET['id'])) {
         $teacher = $stmt->fetch(PDO::FETCH_ASSOC);
 
         if ($teacher) {
-            $user_id = $teacher['utilisateur_id']; // Use user ID to fetch user info
-
-            // Fetch user data
+            $user_id = $teacher['utilisateur_id'];
             $query_user = "SELECT * FROM utilisateurs WHERE id = :id_utilisateur";
             $stmt_user = $sql->prepare($query_user);
             $stmt_user->bindParam(':id_utilisateur', $user_id, PDO::PARAM_INT);

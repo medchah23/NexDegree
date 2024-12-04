@@ -74,11 +74,10 @@
                     $userController = new UserController();
 
                     if (!empty($searchQuery)) {
-                        $teachers = $userController->search($searchQuery);
+                        $teachers = $userController->searche($searchQuery);
                     } else {
                         $teachers = $userController->showByOrder('enseignants', $sortColumn, $sortOrder);
                     }
-
                     if (empty($teachers)) {
                         echo "<tr><td colspan='11' class='text-center'>Aucun enseignant trouvé</td></tr>";
                     } else {
@@ -89,10 +88,9 @@
                             $cv_link = (isset($teacher['cv']) && file_exists("../../../uploads/cvs/" . basename($teacher['cv'])))
                                 ? "../../../uploads/cvs/" . basename($teacher['cv'])
                                 : null;
-
                             echo "<tr>
                                     <td class='text-center'>
-                                        <img src='{$image_src}' alt='Photo' width='50' height='50' class='rounded'>
+                                    <img src='{$image_src}' alt='Photo' width='50' height='50' class='rounded'>
                                     </td>
                                     <td>{$teacher['nom']}</td>
                                     <td>{$teacher['email']}</td>

@@ -4671,3 +4671,4297 @@
 
 )
 
+[2024-12-03 21:25:54] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => medchah606@gmail.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => $2y$10$1WDjMBTGWb07USH5Tfu6l.vGWOqFlsuNDPD6YBnWxcqH9bGjhUAnq
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_674f6952da0c0.pdf
+    [image:Enseignant:private] => uploads/images/teacher_674f6952da36b.png
+)
+
+[2024-12-03 21:25:54] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-03 21:26:30] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => medchah606@gmail.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => $2y$10$tYbzbVQ6YyI2x4ZVi.s4KuCnXGfOQdb3Cpv6usIgpQ1l0i7AUrJBy
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_674f697682bb9.pdf
+    [image:Enseignant:private] => uploads/images/teacher_674f697682ef2.png
+)
+
+[2024-12-03 21:26:30] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 30
+        )
+
+)
+
+[2024-12-03 21:26:32] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => medchah606@gmail.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => $2y$10$csdxhqwjFlSvohhXCqqIGOg635oc31cRXe2YRywyA0nJIki8eCQuu
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_674f697850749.pdf
+    [image:Enseignant:private] => uploads/images/teacher_674f6978509b0.png
+)
+
+[2024-12-03 21:26:32] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-03 21:26:37] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => medchah606@gmail.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => $2y$10$tCkj5eK9QUg0dV/BH5r/oeh6wVDyO2wIDNRhAIpF29TTfQrI1mk/S
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_674f697d8a8fb.pdf
+    [image:Enseignant:private] => uploads/images/teacher_674f697d8ab57.png
+)
+
+[2024-12-03 21:26:37] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-03 21:43:47] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => amine chaieb
+    [email:protected] => teste@exemplo.uss
+    [tel:utilisateur:private] => 93654987
+    [mot_de_passe:utilisateur:private] => $2y$10$sRMFv743wUlDG.3o5dFjVOKvnRHQqX0cIj3UnFCBnIhEa9Cu2HQie
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_674f6d82efb27.pdf
+    [image:Enseignant:private] => uploads/images/teacher_674f6d82efdd3.jfif
+)
+
+[2024-12-03 21:43:47] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 31
+        )
+
+)
+
+[2024-12-03 21:46:02] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 21:46:02] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 21:46:06] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 21:46:06] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+)
+
+[2024-12-03 21:46:12] Executing showByOrder for role: enseignants, field: qualifications
+[2024-12-03 21:46:12] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+)
+
+[2024-12-03 21:46:13] Executing showByOrder for role: enseignants, field: qualifications
+[2024-12-03 21:46:13] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+)
+
+[2024-12-03 21:46:14] Executing showByOrder for role: enseignants, field: numero_telephone
+[2024-12-03 21:46:14] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+)
+
+[2024-12-03 23:43:43] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => azdazdaz azdazdazd
+    [email:protected] => Medchah606@gmaiil.comzzz
+    [tel:utilisateur:private] => 12345678
+    [mot_de_passe:utilisateur:private] => $2y$10$xkmhWOwqbgdJUQOQ.X8n9ebINz7IvBwfeatQCvXbIhmt2JYRDy5Ke
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => 
+    [cv:Enseignant:private] => uploads/cvs/cv_674f899fdad31.pdf
+    [image:Enseignant:private] => uploads/images/teacher_674f899fdafb8.png
+)
+
+[2024-12-03 23:43:44] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 32
+        )
+
+)
+
+[2024-12-03 23:44:47] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:44:47] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:44:50] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:44:50] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:46:17] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:46:17] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:27] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:46:27] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:29] Executing showByOrder for role: etudiant, field: nom
+[2024-12-03 23:46:29] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:29] Executing showByOrder for role: etudiant, field: nom
+[2024-12-03 23:46:29] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:29] Executing showByOrder for role: etudiant, field: nom
+[2024-12-03 23:46:29] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:29] Executing showByOrder for role: etudiant, field: nom
+[2024-12-03 23:46:29] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:30] Executing showByOrder for role: etudiant, field: nom
+[2024-12-03 23:46:30] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:30] Executing showByOrder for role: etudiant, field: nom
+[2024-12-03 23:46:30] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:30] Executing showByOrder for role: etudiant, field: nom
+[2024-12-03 23:46:30] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:31] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:46:31] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:32] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:46:32] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:32] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:46:32] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:32] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:46:32] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 3
+            [id_utilisateur] => 5
+            [niveau] => Master 1
+            [image_profil] => eve.png
+            [nom] => Eve Lambert
+            [email] => eve.lambert@example.com
+            [numero_telephone] => 3344556677
+            [role] => etudiant
+        )
+
+    [1] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+    [2] => Array
+        (
+            [id_etudiant] => 1
+            [id_utilisateur] => 1
+            [niveau] => Licence 1
+            [image_profil] => alice.png
+            [nom] => Alice Dupont
+            [email] => alice.dupont@example.com
+            [numero_telephone] => 1234567890
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:46:37] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:46:37] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:47:04] Deleting user with id:: 15
+[2024-12-03 23:47:04] User with id 15 deleted successfully.
+[2024-12-03 23:47:04] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:47:04] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:47:13] Deleting user with id:: 15
+[2024-12-03 23:47:13] User with id 15 deleted successfully.
+[2024-12-03 23:47:13] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:47:13] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:47:16] Deleting user with id:: 15
+[2024-12-03 23:47:16] User with id 15 deleted successfully.
+[2024-12-03 23:47:16] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:47:16] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:47:19] Deleting user with id:: 15
+[2024-12-03 23:47:19] User with id 15 deleted successfully.
+[2024-12-03 23:47:19] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:47:19] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:47:21] Deleting user with id:: 1
+[2024-12-03 23:47:21] User with id 1 deleted successfully.
+[2024-12-03 23:47:21] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:47:22] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:47:30] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:47:30] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:47:30] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:47:30] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:49:38] Deleting user with id:: 5
+[2024-12-03 23:49:38] User with id 5 deleted successfully.
+[2024-12-03 23:49:38] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:49:38] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:49:39] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:49:39] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:49:44] Deleting user with id:: 5
+[2024-12-03 23:49:44] User with id 5 deleted successfully.
+[2024-12-03 23:49:44] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:49:44] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:49:47] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:49:47] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:49:54] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:49:54] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:50:52] Deleting user with id:: 1
+[2024-12-03 23:50:52] User with id 1 deleted successfully.
+[2024-12-03 23:50:52] Deleting user with id:: 1
+[2024-12-03 23:50:52] User with id 1 deleted successfully.
+[2024-12-03 23:50:52] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:50:52] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:50:55] Deleting user with id:: 15
+[2024-12-03 23:50:55] User with id 15 deleted successfully.
+[2024-12-03 23:50:55] Deleting user with id:: 15
+[2024-12-03 23:50:55] User with id 15 deleted successfully.
+[2024-12-03 23:50:55] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:50:55] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:50:59] Deleting user with id:: 14
+[2024-12-03 23:50:59] User with id 14 deleted successfully.
+[2024-12-03 23:50:59] Deleting user with id:: 14
+[2024-12-03 23:50:59] User with id 14 deleted successfully.
+[2024-12-03 23:50:59] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:50:59] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:51:24] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:51:24] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:51:26] Deleting user with id:: 1
+[2024-12-03 23:51:26] User with id 1 deleted successfully.
+[2024-12-03 23:51:26] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:51:26] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:51:40] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:51:40] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 2
+            [id_utilisateur] => 3
+            [niveau] => Licence 2
+            [image_profil] => charlie.png
+            [nom] => Charlie Leroux
+            [email] => charlie.leroux@example.com
+            [numero_telephone] => 1122334455
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-03 23:51:42] Deleting user with id:: 3
+[2024-12-03 23:51:42] User with id 3 deleted successfully.
+[2024-12-03 23:51:42] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-03 23:51:42] showByOrder result:: Array
+(
+)
+
+[2024-12-03 23:51:44] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:51:44] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:51:46] Deleting user with id:: 1
+[2024-12-03 23:51:46] User with id 1 deleted successfully.
+[2024-12-03 23:51:46] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:51:46] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:53:06] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:53:06] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:53:08] Deleting user with id:: 1
+[2024-12-03 23:53:08] User with id 1 deleted successfully.
+[2024-12-03 23:53:08] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:53:08] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:53:25] Deleting user with id:: 1
+[2024-12-03 23:53:25] User with id 1 deleted successfully.
+[2024-12-03 23:53:25] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:53:25] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:53:27] Deleting user with id:: 1
+[2024-12-03 23:53:27] User with id 1 deleted successfully.
+[2024-12-03 23:53:27] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:53:27] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654321
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:54:58] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:54:58] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simon
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:55:05] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:55:05] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simozn
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:55:12] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:55:12] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:55:19] Deleting user with id:: 3
+[2024-12-03 23:55:19] User with id 3 deleted successfully.
+[2024-12-03 23:55:19] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:55:19] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:55:27] Deleting user with id:: 13
+[2024-12-03 23:55:27] User with id 13 deleted successfully.
+[2024-12-03 23:55:27] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:55:27] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:55:32] Deleting user with id:: 13
+[2024-12-03 23:55:32] User with id 13 deleted successfully.
+[2024-12-03 23:55:32] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:55:32] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:56:59] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:56:59] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:57:02] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:57:02] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:57:05] Deleting user with id:: 3
+[2024-12-03 23:57:05] User with id 3 deleted successfully.
+[2024-12-03 23:57:05] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:57:05] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:57:09] Deleting user with id:: 3
+[2024-12-03 23:57:09] User with id 3 deleted successfully.
+[2024-12-03 23:57:09] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:57:09] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:59:31] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:59:31] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:59:32] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:59:32] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-03 23:59:47] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-03 23:59:47] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-04 00:16:00] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 00:16:00] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-04 00:16:02] Deleting user with id:: 15
+[2024-12-04 00:16:02] User with id 15 deleted successfully.
+[2024-12-04 00:16:02] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 00:16:02] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-04 00:16:04] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 00:16:04] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-04 00:16:06] Deleting user with id:: 15
+[2024-12-04 00:16:06] User with id 15 deleted successfully.
+[2024-12-04 00:16:06] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 00:16:06] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 1
+            [utilisateur_id] => 2
+            [qualifications] => PhD in Mathematics
+            [cv] => bob_cv.pdf
+            [image] => bob.png
+            [nom] => Bob Martin
+            [email] => bob.martin@example.com
+            [numero_telephone] => 0987654327
+        )
+
+    [1] => Array
+        (
+            [id_enseignant] => 2
+            [utilisateur_id] => 4
+            [qualifications] => PhD in Physics
+            [cv] => diane_cv.pdf
+            [image] => diane.png
+            [nom] => Diane Dubois
+            [email] => diane.dubois@example.com
+            [numero_telephone] => 2233445566
+        )
+
+    [2] => Array
+        (
+            [id_enseignant] => 3
+            [utilisateur_id] => 6
+            [qualifications] => Masters in Computer Science
+            [cv] => frank_cv.pdf
+            [image] => frank.png
+            [nom] => Frank Simoznz
+            [email] => frank.simon@example.com
+            [numero_telephone] => 4455667788
+        )
+
+    [3] => Array
+        (
+            [id_enseignant] => 13
+            [utilisateur_id] => 30
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f697682bb9.pdf
+            [image] => uploads/images/teacher_674f697682ef2.png
+            [nom] => mohamed chahbani
+            [email] => medchah606@gmail.com
+            [numero_telephone] => 92308572
+        )
+
+    [4] => Array
+        (
+            [id_enseignant] => 14
+            [utilisateur_id] => 31
+            [qualifications] => Math
+            [cv] => uploads/cvs/cv_674f6d82efb27.pdf
+            [image] => uploads/images/teacher_674f6d82efdd3.jfif
+            [nom] => amine chaieb
+            [email] => teste@exemplo.uss
+            [numero_telephone] => 93654987
+        )
+
+    [5] => Array
+        (
+            [id_enseignant] => 15
+            [utilisateur_id] => 32
+            [qualifications] => 
+            [cv] => uploads/cvs/cv_674f899fdad31.pdf
+            [image] => uploads/images/teacher_674f899fdafb8.png
+            [nom] => azdazdaz azdazdazd
+            [email] => Medchah606@gmaiil.comzzz
+            [numero_telephone] => 12345678
+        )
+
+)
+
+[2024-12-04 00:54:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@example.comm
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => $2y$10$84xDqb1Ed0gCMLaqaB3fwOyOswQ2H6xkU2SkshJlUZYiMMXv4nBau
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_674f9a2744969.png
+)
+
+[2024-12-04 00:54:15] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 33
+        )
+
+)
+
+[2024-12-04 01:00:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@example.comm
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => $2y$10$E2Bi4owcej6cPDiwHy5fcOPlicwUiJu2X.KWRWMyQ7J/ZDy6/a6.O
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_674f9b8f6b88e.png
+)
+
+[2024-12-04 01:00:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-04 01:00:28] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@example.comm
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => $2y$10$hFihzekKC/gtEUfO7.1XF.x7FD0Zh8PP/hjfbv.S23FSIFh3ZMl52
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_674f9b9c1bc77.png
+)
+
+[2024-12-04 01:00:28] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 34
+        )
+
+)
+
+[2024-12-04 01:01:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@example.com
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => $2y$10$cCGHNGMDBWVQ8y0l/FA7suTIp3u7liirQWhJN0OA2um3TV7KyQ78S
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_674f9bcba3d71.png
+)
+
+[2024-12-04 01:01:15] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 35
+        )
+
+)
+
+[2024-12-04 01:03:00] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@examplee.com
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => $2y$10$lQ18j2eADa2r7U3BJ0p5DOdJdrFkUnvVrD55EqOD6.ZAXGA.KSE96
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Science
+    [cv:Enseignant:private] => uploads/cvs/cv_674f9c343b37c.pdf
+    [image:Enseignant:private] => uploads/images/teacher_674f9c343b65b.png
+)
+
+[2024-12-04 01:03:00] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 36
+        )
+
+)
+
+[2024-12-04 01:12:13] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@examplee.com
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Science
+    [cv:Enseignant:private] => 
+    [image:Enseignant:private] => uploads/images/teacher_674f9e5d65e0d.png
+)
+
+[2024-12-04 01:12:13] Exception in add method: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'mot_de_passe' cannot be null
+[2024-12-04 01:12:31] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@examplee.com
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Science
+    [cv:Enseignant:private] => 
+    [image:Enseignant:private] => uploads/images/teacher_674f9e6fe03aa.png
+)
+
+[2024-12-04 01:12:31] Exception in add method: SQLSTATE[23000]: Integrity constraint violation: 1048 Column 'mot_de_passe' cannot be null
+[2024-12-04 01:13:43] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => hama azdazd
+    [email:protected] => bob.martin@examplee.com
+    [tel:utilisateur:private] => 74185296
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Science
+    [cv:Enseignant:private] => 
+    [image:Enseignant:private] => uploads/images/teacher_674f9eb7ee68b.png
+)
+
+[2024-12-04 01:13:44] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 37
+        )
+
+)
+
+[2024-12-04 03:07:10] Executing showByOrder for role: enseignants, field: id_enseignant
+[2024-12-04 03:07:10] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_enseignant] => 17
+            [utilisateur_id] => 37
+            [qualifications] => Science
+            [cv] => 
+            [image] => uploads/images/teacher_674f9eb7ee68b.png
+            [nom] => hama azdazd
+            [email] => bob.martin@examplee.com
+            [numero_telephone] => 74185296
+        )
+
+)
+
+[2024-12-04 04:50:00] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.us
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_674fd16829417.png
+)
+
+[2024-12-04 04:50:00] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 38
+        )
+
+)
+

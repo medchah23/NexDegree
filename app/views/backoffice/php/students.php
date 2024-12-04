@@ -37,23 +37,17 @@
                 require_once("../../../controller/add.php");
                 require_once("../../../Model/etudient.php");
                 require_once 'debug.php';
-
                 $field = $_GET['field'] ?? 'id_etudiant';
                 $order = $_GET['order'] ?? 'asc';
-
-                // Pagination setup
                 $currentPage = isset($_GET['page']) ? (int)$_GET['page'] : 1;
                 $perPage = 10;
                 $offset = ($currentPage - 1) * $perPage;
-
-                // Search and sorting logic
                 $searchQuery = $_GET['search'] ?? '';
                 try {
                     $userController = new UserController();
                     $students = !empty($searchQuery)
                         ? $userController->search($searchQuery)
                         : $userController->showByOrder('etudiant', $field, $order, $offset, $perPage);
-
                     if (empty($students)) {
                         echo "<tr><td colspan='7' class='text-center'>Aucun étudiant trouvé</td></tr>";
                     } else {

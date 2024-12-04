@@ -3,13 +3,14 @@
 
 class utilisateur
 {
-    private ?int $id_utilisateur = null; // Auto-increment ID, default null
-    protected string $nom;              // Protected for inheritance
-    protected string $email;            // Protected for inheritance
-    private string $tel;                // Private for encapsulation
-    private string $mot_de_passe;       // Encrypted password
-    public string $role;                // Publicly accessible
-    public string $statut;              // Publicly accessible
+
+    private ?int $id_utilisateur = null;
+    protected string $nom;
+    protected string $email;
+    private string $tel;
+    private string $mot_de_passe;
+    public string $role;
+    public string $statut;
 
     // Constructor
     public function __construct(string $nom, string $email, string $tel, string $mot_de_passe, string $role, string $statut)
@@ -62,19 +63,14 @@ class utilisateur
     {
         $this->tel = $tel;
     }
-
     public function getMotDePasse(): string
     {
         return $this->mot_de_passe;
     }
-
-    // Hash password before setting it
     public function setMotDePasse(string $mot_de_passe): void
     {
-        $this->mot_de_passe = password_hash($mot_de_passe, PASSWORD_BCRYPT);
+        $this->mot_de_passe = $mot_de_passe;
     }
-
-    // Verify password
     public function verifyMotDePasse(string $mot_de_passe): bool
     {
         return password_verify($mot_de_passe, $this->mot_de_passe);

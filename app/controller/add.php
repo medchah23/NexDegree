@@ -2,7 +2,6 @@
 include_once(__DIR__ . "../../configdb.php");
 include_once(__DIR__ . "/debug.php");
 
-
 class UserController {
 
     public function add($user): array
@@ -86,6 +85,70 @@ class UserController {
             return ["success" => false, "message" => "Exception: " . $e->getMessage(), "data" => null];
         }
     }
+    public function getUserStatusById($userId){
+        $sql = Config::getConnexion();
+        $quary = "SELECT statut FROM utilisateurs WHERE id = :id";
+        $stmt = $sql->prepare($quary);
+        $stmt->bindParam(":id", $userId, PDO::PARAM_INT);
+        $stmt->execute();
+        $user = $stmt->fetch();
+        return $user["statut"];
+    }
+    public function getUserById2($userId)
+    {
+        $sql = Config::getConnexion();
+        $quary = "SELECT u.nom, u.email, u.numero_telephone,u.cree_a,u.statut,u.role, e.image_profil 
+              FROM utilisateurs u 
+              INNER JOIN etudiants e ON u.id = e.id_utilisateur
+              WHERE u.id = :id";
+        $stmt = $sql->prepare($quary);
+        $stmt->bindParam(":id", $userId, PDO::PARAM_INT);
+        $stmt->execute();
+        $user = $stmt->fetch();
+        return $user;
+
+        
+    }
+    public function getUserById($userId) {
+        $sql = Config::getConnexion();
+        $query = "SELECT u.nom, u.email, u.numero_telephone, e.image 
+              FROM utilisateurs u 
+              INNER JOIN enseignants e ON u.id = e.utilisateur_id
+              WHERE u.id = :id";
+        $stmt = $sql->prepare($query);
+        $stmt->bindParam(":id", $userId, PDO::PARAM_INT);
+        $stmt->execute();
+        $user = $stmt->fetch();
+        return $user;
+    }public function updatetecher($id, $nom, $email, $tel, $image) {
+    $sql = Config::getConnexion();
+    $query = "
+        UPDATE utilisateurs AS u
+        INNER JOIN enseignants AS e
+        ON e.utilisateur_id = u.id
+        SET u.nom = :nom,
+            u.email = :email,
+            u.numero_telephone = :tel,
+            e.image = :image
+        WHERE u.id = :id
+    ";
+    $stmt = $sql->prepare($query);
+    $stmt->bindParam(":id", $id, PDO::PARAM_INT);
+    $stmt->bindParam(":nom", $nom, PDO::PARAM_STR);
+    $stmt->bindParam(":email", $email, PDO::PARAM_STR);
+    $stmt->bindParam(":tel", $tel, PDO::PARAM_STR);
+    $stmt->bindParam(":image", $image, PDO::PARAM_STR);
+
+    try {
+        $stmt->execute();
+        return true; // Indicate success
+    } catch (Exception $e) {
+        // Log or handle the error as needed
+        echo "Error updating teacher: " . $e->getMessage();
+        return false; // Indicate failure
+    }
+}
+
     public function show($role): array {
         try {
             Debuggerr::log("Fetching users with role:", $role);
@@ -121,7 +184,6 @@ class UserController {
             return [];
         }
     }
-
     public function countAllStudents()
     {
         $conn = config::getConnexion();
@@ -144,7 +206,52 @@ class UserController {
 
 
     }
-    // Update a user
+    public function connexion($mail, $mdp)
+    {
+        try {
+            $sql = config::getConnexion();
+            $query = "SELECT * FROM utilisateurs WHERE email = :mail";
+            $stmt = $sql->prepare($query);
+            $stmt->bindParam(':mail', $mail, PDO::PARAM_STR);
+            $stmt->execute();
+
+            $results = $stmt->fetch(PDO::FETCH_ASSOC);
+
+            if (!$results) {
+                return "Adresse e-mail non trouvée.";
+
+            }
+
+            $status = $results['statut'];
+            $role = $results['role'];
+            if ($mdp==$results['mot_de_passe']) {
+                return $role;
+            } else {
+                return "Mot de passe incorrect.";
+            }
+            $validRoles = ['admin', 'enseignant', 'etudiant'];
+            if (!in_array($role, $validRoles)) {
+                return "Role non reconnu.";
+            }
+
+            if ($status !== 'active') {
+                if ($status === 'locked') {
+                    return "Votre compte est verrouillé. Veuillez contacter l'administrateur.";
+                } elseif ($status === 'banned') {
+                    return "Votre compte est banni. Veuillez contacter l'administrateur.";
+                } elseif ($status === 'inactive') {
+                    return "Votre compte est inactif. Veuillez vérifier votre email pour l'activer.";
+                } else {
+                    return "Le statut de votre compte est inconnu.";
+                }
+            }
+
+        } catch (PDOException $e) {
+            error_log("Login Error: " . $e->getMessage());
+            return "Erreur lors de la connexion.";
+        }
+    }
+
     public function showByOrder($role, $field,$order) {
         try {
             Debuggerr::log("Executing showByOrder for role: $role, field: $field");
@@ -179,35 +286,17 @@ class UserController {
         }
     }
 
-    // Delete a user
     public function delete($id) {
         try {
             Debuggerr::log("Deleting user with id:", $id);
-
             $sql = config::getConnexion();
             $sql->beginTransaction();
-
-            $deleteStudentQuery = "DELETE FROM etudiants WHERE id_utilisateur = :id";
-            $stmt = $sql->prepare($deleteStudentQuery);
-            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-            $stmt->execute();
-
-            // Delete from enseignant table
-            $deleteTeacherQuery = "DELETE FROM enseignants WHERE utilisateur_id = :id";
-            $stmt = $sql->prepare($deleteTeacherQuery);
-            $stmt->bindParam(':id', $id, PDO::PARAM_INT);
-            // Delete from enseignant table
-
-
-            // Delete from utilisateur table
             $deleteUserQuery = "DELETE FROM utilisateurs WHERE id = :id";
             $stmt = $sql->prepare($deleteUserQuery);
             $stmt->bindParam(':id', $id, PDO::PARAM_INT);
             $stmt->execute();
-
             $sql->commit();
             Debuggerr::log("User with id $id deleted successfully.");
-
             return true;
         } catch (Exception $e) {
             $sql->rollBack();
@@ -257,7 +346,7 @@ class UserController {
                 u.id LIKE :search 
                 OR u.email LIKE :search 
                 OR u.nom LIKE :search 
-                OR e.utilisateur_id LIKE :search 
+                OR e.id_enseignant LIKE :search 
                 OR e.qualifications LIKE :search
         ";
             $stmt = $sql->prepare($query);
@@ -271,59 +360,7 @@ class UserController {
             return [];
         }
     }
-    public function connexion($mail, $mdp)
-    {
-        try {
-            // Step 1: Establish a connection
-            $sql = config::getConnexion();
 
-            // Step 2: Prepare the query to fetch user info by email
-            $query = "SELECT * FROM utilisateurs WHERE email = :mail";
-            $stmt = $sql->prepare($query);
-            $stmt->bindParam(':mail', $mail, PDO::PARAM_STR);
-
-            // Step 3: Execute the query
-            $stmt->execute();
-
-            $results = $stmt->fetch(PDO::FETCH_ASSOC);
-
-            // Check if user exists
-            if ($results) {
-                // Step 4: Check if account is active
-                $status = $results['statut'];
-                if ($status !== 'active') {
-                    // If not active, handle specific account statuses
-                    if ($status === 'locked') {
-                        return "Votre compte est verrouillé. Veuillez contacter l'administrateur.";
-                    } elseif ($status === 'banned') {
-                        return "Votre compte est banni. Veuillez contacter l'administrateur.";
-                    } elseif ($status === 'inactive') {
-                        return "Votre compte est inactif. Veuillez vérifier votre email pour l'activer.";
-                    } else {
-                        return "Le statut de votre compte est inconnu.";
-                    }
-                }
-                if (password_verify($mdp, $results['mot_de_passe'])) {
-                    $role = $results['role'];
-                    $validRoles = ['admin', 'enseignant', 'etudiant'];
-
-                    if (in_array($role, $validRoles)) {
-                        return $role;
-                    } else {
-                        return "Role non reconnu.";
-                    }
-
-                } else {
-                    return "Mot de passe incorrect.";
-                }
-            } else {
-                return "Adresse e-mail non trouvée.";
-            }
-        } catch (PDOException $e) {
-            error_log("Login Error: " . $e->getMessage());
-            return "Erreur lors de la connexion.";
-        }
-    }
     public function getUserIdByEmail($email)
     {
         $sql = config::getConnexion();
@@ -340,7 +377,64 @@ class UserController {
 
 
     }
+
+public function accept($id)
+{
+    try {
+        $sql = config::getConnexion();
+
+        // SQL query with a join to update the 'statut'
+        $query = "UPDATE utilisateurs u 
+                  INNER JOIN enseignants e ON u.id = e.utilisateur_id 
+                  SET u.statut = 'active' 
+                  WHERE e.id_enseignant = :id";
+
+        $stmt = $sql->prepare($query);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+
+        if ($stmt->execute()) {
+            return ["success" => true, "message" => "Teacher approved successfully."];
+        } else {
+            return ["success" => false, "message" => "Failed to approve teacher."];
+        }
+    } catch (PDOException $e) {
+        error_log("Error in accept method: " . $e->getMessage());
+        return ["success" => false, "message" => "Error: " . $e->getMessage()];
+    }
+}public function reject($id)
+{
+    try {
+        $sql = config::getConnexion();
+        $query = "SELECT u.email, u.nom 
+                  FROM utilisateurs u 
+                  INNER JOIN enseignants e ON u.id = e.utilisateur_id 
+                  WHERE e.id_enseignant = :id";
+        $stmt = $sql->prepare($query);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+        $stmt->execute();
+        $teacher = $stmt->fetch(PDO::FETCH_ASSOC);
+        if (!$teacher) {
+            return ["success" => false, "message" => "Teacher not found."];
+        }
+
+        $query = "UPDATE utilisateurs u 
+                  INNER JOIN enseignants e ON u.id = e.utilisateur_id 
+                  SET u.statut = 'rejected' 
+                  WHERE e.id_enseignant = :id";
+        $stmt = $sql->prepare($query);
+        $stmt->bindParam(':id', $id, PDO::PARAM_INT);
+
+        if ($stmt->execute()) {
+            return ["success" => true, "message" => "Teacher rejected successfully.", "data" => $teacher];
+        } else {
+            return ["success" => false, "message" => "Failed to reject teacher."];
+        }
+    } catch (PDOException $e) {
+        error_log("Error in reject method: " . $e->getMessage());
+        return ["success" => false, "message" => "Error: " . $e->getMessage()];
+    }
 }
 
+}
 ?>
 

@@ -4,10 +4,9 @@
 require_once("utilisateur.php");
 class Etudiant extends utilisateur
 {
-    protected string $niveau;          // Student's academic level
-    private ?string $image_profil;      // Path or content of the profile image
+    protected string $niveau;
+    private ?string $image_profil;
 
-    // Constructor
     public function __construct(
         string $nom,
         string $email,
@@ -18,7 +17,6 @@ class Etudiant extends utilisateur
         string $niveau,
         mixed $image_profil
     ) {
-        // Call the parent constructor
         parent::__construct($nom, $email, $tel, $mot_de_passe, $role, $statut);
         $this->niveau = $niveau;
         $this->image_profil = $image_profil;
