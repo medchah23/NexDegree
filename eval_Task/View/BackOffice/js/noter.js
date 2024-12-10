@@ -15,7 +15,7 @@ document.getElementById('noterForm').addEventListener(
         }
 
         if(remarque.value.trim().length <= 0) {
-                remarque_error.innerHTML = "Le champs rémarque est requis";
+                remarque_error.innerHTML = "Le champs remarque est requis";
                 hasError = true;
         } else {
                 remarque_error.innerHTML = '';

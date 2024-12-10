@@ -2,6 +2,31 @@
 include '../../Controller/EvaluationController.php';
 $evalc=new EvaluationController();
     $list=$evalc->listEvaluation();
+
+
+    //code pour lier la recherche par id
+    if ($_SERVER['REQUEST_METHOD'] === 'POST' && !empty($_POST['query'])) {
+        $query = trim($_POST['query']);
+        if (is_numeric($query)) {
+            // Recherche par ID
+            $list = [];
+            $result = $evalc->getEvaluation($query);
+            if ($result) {
+                $list[] = $result; // Ajoutez le résultat à la liste
+            }
+        } else {
+            // Message pour indiquer que l'ID est invalide
+            $list = [];
+            echo '<p>No evaluation found for the given ID.</p>';
+        }
+    } else {
+        // Charger toutes les évaluations
+        $list = $evalc->listEvaluation();
+    }
+    
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -72,13 +97,14 @@ $evalc=new EvaluationController();
             <i class="bi bi-list toggle-sidebar-btn"></i>
 
             <div class="search-bar">
-        <form class="search-form d-flex align-items-center" method="POST" action="#">
-          <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
-          <button type="submit" title="Search">
+    <form class="search-form d-flex align-items-center" method="POST" action="">
+        <input type="text" name="query" placeholder="Search by ID" title="Enter ID to search" />
+        <button type="submit" title="Search">
             <i class="bi bi-search"></i>
-          </button>
-        </form>
-      </div>
+        </button>
+    </form>
+</div>
+
       <!-- End Search Bar -->
         </div>
     </header>
@@ -153,7 +179,7 @@ $evalc=new EvaluationController();
                                                 <th> Subject </th>
                                                 <th> Duration </th>
                                                 <th id="sortByMaxScore" style="cursor: pointer;">Max Score</th>
-                                                <th> Date </th>
+                                                <th id="sortByDate" style="cursor: pointer;"> Date </th>
                                                 <th> Question 1 </th>
                                                 <th> Question 2 </th>
                                                 <th> Question 3 </th>
@@ -217,6 +243,41 @@ $evalc=new EvaluationController();
                                                 });
                                             });
                                         </script>
+
+                                        <script>
+                                            document.getElementById("sortByDate").addEventListener("click", function () {
+                                            const table = document.getElementById("evaluationTable");
+                                            const rows = Array.from(table.rows).slice(1); // Exclure l'en-tête
+                                            const isAscending = this.dataset.order === "asc"; // Vérifier l'ordre actuel
+                                            this.dataset.order = isAscending ? "desc" : "asc"; // Alterner entre ascendant et descendant
+
+                                            rows.sort((a, b) => {
+                                                // Extraire et convertir les valeurs des dates
+                                                const dateA = new Date(a.cells[4].textContent.trim()); // Colonne Date (index 4)
+                                                const dateB = new Date(b.cells[4].textContent.trim());
+
+                                                // Comparer les années, puis les mois, puis les jours
+                                                if (dateA.getFullYear() !== dateB.getFullYear()) {
+                                                    return isAscending 
+                                                        ? dateA.getFullYear() - dateB.getFullYear()
+                                                        : dateB.getFullYear() - dateA.getFullYear();
+                                                }
+                                                if (dateA.getMonth() !== dateB.getMonth()) {
+                                                    return isAscending 
+                                                        ? dateA.getMonth() - dateB.getMonth()
+                                                        : dateB.getMonth() - dateA.getMonth();
+                                                }
+                                                return isAscending 
+                                                    ? dateA.getDate() - dateB.getDate()
+                                                    : dateB.getDate() - dateA.getDate();
+                                            });
+
+                                            // Réorganiser les lignes triées dans le tableau
+                                            rows.forEach(row => table.appendChild(row));
+                                        });
+
+                         </script>
+
 
                                             
                                         </div>

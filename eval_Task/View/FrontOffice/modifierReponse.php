@@ -80,13 +80,8 @@ if(isset($_GET['id_reponse'])){
     <nav
         class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5"
     >
-        <a
-            href=""
-            class="navbar-brand font-weight-bold text-secondary"
-            style="font-size: 50px"
-        >
-            <i class="flaticon-043-teddy-bear"></i>
-            <span class="text-primary">NexDegree</span>
+    <a href="index.php" class="navbar-brand">
+          <img src="logo web.png" alt="Logo" style="height: 50px;" />
         </a>
         <button
             type="button"

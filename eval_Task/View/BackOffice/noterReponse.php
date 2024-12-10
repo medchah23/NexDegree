@@ -187,7 +187,7 @@ if(isset($_POST['idrep']) && isset($_POST['note']) && isset($_POST['remarque']))
                                 <label for="note">Note :</label><br>
                                 <input class="form-control form-control-user" id="note" type="number" name="note" formnovalidate>
                                 <span id="note_error" style="color: red;"></span><br>
-                                <label for="remarque">Rémarques :</label><br>
+                                <label for="remarque">Remarque :</label><br>
                                 <textarea class="form-control form-control-user" id="remarque" name="remarque" rows="4"
                                           cols="50"></textarea>
                                 <span id="remarque_error" style="color: red;"></span><br>

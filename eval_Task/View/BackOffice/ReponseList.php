@@ -7,6 +7,12 @@ if (isset($_GET['id_evaluation'])) {
     $evaluations = $evaluationController->joinEvaluationResponse($id_evaluation);
 } else
     header("Location:EvaluationList.php");
+
+
+
+
+
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -42,7 +48,7 @@ if (isset($_GET['id_evaluation'])) {
 
     <style>
         .table {
-            width: 88%;
+            width: 150%;
             table-layout: fixed;
         }
 
@@ -61,7 +67,7 @@ if (isset($_GET['id_evaluation'])) {
         }
 
         .table-responsive {
-            margin-left: 180px;
+            margin-left: 10px;
             overflow-x: auto;
         }
     </style>
@@ -77,14 +83,13 @@ if (isset($_GET['id_evaluation'])) {
         <i class="bi bi-list toggle-sidebar-btn"></i>
 
         <div class="search-bar">
-            <form class="search-form d-flex align-items-center" method="POST" action="#">
-                <input type="text" name="query" placeholder="Search" title="Enter search keyword" />
-                <button type="submit" title="Search">
-                    <i class="bi bi-search"></i>
-                </button>
-            </form>
-        </div>
-        <!-- End Search Bar -->
+    <form class="search-form d-flex align-items-center" method="POST" action="">
+        <input type="text" name="query" placeholder="Search by ID" title="Enter ID to search" />
+        <button type="submit" title="Search">
+            <i class="bi bi-search"></i>
+        </button>
+    </form>
+</div>
     </div>
 </header>
 
@@ -119,25 +124,32 @@ if (isset($_GET['id_evaluation'])) {
       </li> -->
         </ul>
     </aside>
+    <main id="main" class="main">
+      <div class="pagetitle">
+        <h1>Evaluation</h1>
+        <nav>
+          <ol class="breadcrumb">
+            <li class="breadcrumb-item"><a href="index.php">Home</a></li>
+            <li class="breadcrumb-item active">Evaluation</li>
+          </ol>
+        </nav>
+      </div>
+      <!-- End Page Title -->
 
-    <div id="content-wrapper" class="d-flex flex-column">
-        <div id="content">
-            <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
-                <button id="sidebarToggleTop" class="btn btn-link d-md-none rounded-circle mr-3">
-                    <i class="fa fa-bars"></i>
-                </button>
-            </nav>
-
-            <div class="container-fluid">
-                <div class="row" style="margin-top: 50px;">
-                    <div class="col-xl-12 col-md-6 mb-4">
-                        <div class="card border-left-primary shadow h-100 py-2">
-                            <div class="card-body">
-                                <div class="row no-gutters align-items-center">
-                                    <div class="table-responsive">
-                                        <h2 class="sidebar-nav">Réponse pour Evaluation #<?php echo $id_evaluation; ?></h2>
-                                        <br>
-                                        <table class="table table-bordered">
+        <div id="content-wrapper" class="d-flex flex-column">
+            <!-- Page Heading -->
+        <div class="d-sm-flex align-items-center justify-content-between mb-4">
+        <h2 class="sidebar-nav">Response to Feedback #<?php echo $id_evaluation; ?></h2>
+        </div>
+            
+                    <div class="row" style="margin-top: 8px;">
+                        <div class="col-xl-12 col-md-6 mb-4">
+                            <div class="card border-left-primary shadow h-100 py-2">
+                                <div class="card-body">
+                                    <div class="row no-gutters align-items-center">
+                                        <div class="table-responsive">
+                                        
+                                        <table class="table table-bordered" id="reponseTable" >
                                             <tr>
                                                 <th> #ID Evaluation </th>
                                                 <th> #ID Reponse </th>
@@ -147,8 +159,8 @@ if (isset($_GET['id_evaluation'])) {
                                                 <th> Réponse 3 </th>
                                                 <th> Réponse 4 </th>
                                                 <th> Réponse 5 </th>
-                                                <th> Note </th>
-                                                <th> Rémarque </th>
+                                                <th id="sortByNote" style="cursor: pointer;">Note</th>
+                                                <th> Remarque </th>
                                             </tr>
                                             <?php
                                             foreach($evaluations as $eval){
@@ -180,6 +192,24 @@ if (isset($_GET['id_evaluation'])) {
                                                 ?>
                                         </table>
 
+                                        <script>
+                                            document.getElementById("sortByNote").addEventListener("click", function () {
+                                                const table = document.getElementById("reponseTable");
+                                                const rows = Array.from(table.rows).slice(1); // Obtenir toutes les lignes sauf l'en-tête
+                                                const isAscending = this.dataset.order === "asc"; // Vérifier l'ordre actuel
+                                                this.dataset.order = isAscending ? "desc" : "asc"; // Basculer l'ordre
+
+                                                rows.sort((a, b) => {
+                                                    const valA = parseFloat(a.cells[3].textContent.trim()) || 0; // Colonne Max Score (index 3)
+                                                    const valB = parseFloat(b.cells[3].textContent.trim()) || 0;
+                                                    return isAscending ? valA - valB : valB - valA;
+                                                });
+
+                                                // Réorganiser les lignes dans le tableau
+                                                rows.forEach(row => table.appendChild(row));
+                                            });
+                                        </script>
+
                                     </div>
                                 </div>
                             </div>
@@ -188,6 +218,8 @@ if (isset($_GET['id_evaluation'])) {
                 </div>
             </div>
         </div>
+        </main>
+
 
         <footer id="footer" class="footer">
             <div class="copyright">
