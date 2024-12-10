@@ -14,278 +14,266 @@ $chapitres = $chapitreController->show_chapitre();
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta charset="utf-8">
+    <title>NexDegree</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Free HTML Templates">
+    <meta name="description" content="Free HTML Templates">
 
-  <title>Dashboard </title>
-  <meta content="" name="description">
-  <meta content="" name="keywords">
+    <!-- Favicon -->
+    <link href="img/icon.png" rel="icon">
 
-  <!-- Favicons -->
-  <link href="assets/img/icon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Nunito&display=swap" rel="stylesheet">
 
-  <!-- Google Fonts -->
-  <link href="https://fonts.gstatic.com" rel="preconnect">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Nunito:300,300i,400,400i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
 
-  <!-- Vendor CSS Files -->
-  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
-  <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
-  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
-  <link href="assets/vendor/simple-datatables/style.css" rel="stylesheet">
+    <!-- Flaticon Font -->
+    <link href="lib/flaticon/font/flaticon.css" rel="stylesheet">
 
-  <!-- Template Main CSS File -->
-  <link href="assets/css/style.css" rel="stylesheet">
+    <!-- Libraries Stylesheet -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+    <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
 
-  <!-- =======================================================
-  * Template Name: NiceAdmin
-  * Template URL: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/
-  * Updated: Apr 20 2024 with Bootstrap v5.3.3
-  * Author: BootstrapMade.com
-  * License: https://bootstrapmade.com/license/
-  ======================================================== -->
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <style>
+        .search-bar {
+        width: auto;
+        margin: 0;
+        right: 0;
+    }
+
+    .search-form {
+        display: flex;
+        align-items: center;
+        background-color: #f8f9fa;
+        border: 1px solid #ced4da;
+        border-radius: 5px;
+        overflow: hidden;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .search-form input {
+        flex-grow: 1;
+        padding: 8px 12px;
+        border: none;
+        outline: none;
+        font-size: 14px;
+        min-width: 150px;
+    }
+
+    .search-form input::placeholder {
+        color: #adb5bd;
+    }
+
+    .search-form button {
+        background: none;
+        border: none;
+        padding: 8px;
+        cursor: pointer;
+        color: #6c757d;
+        transition: color 0.3s ease;
+    }
+
+    ul {
+    list-style: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+}
+
+ul li {
+    position: relative; /* Position relative for pseudo-element */
+    padding-left: 20px; /* Add padding to make space for the ">" symbol */
+}
+
+ul li::before {
+    content: ">"; /* Insert the ">" symbol */
+    position: absolute; /* Position the symbol */
+    left: 0; /* Align it to the left of the item */
+    color:  #0069d9; /* Set color for the symbol */
+    font-weight: bold; /* Make it bold */
+}
+
+    .search-form button:hover {
+        color: #495057;
+    }
+
+        .semester-selection {
+            margin: 20px 0;
+        }
+
+        .semester-btn {
+            background-color: #ffffff;
+            border: 1px solid #0096FF;
+            border-radius: 50px;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            margin-right: 10px;
+        }
+
+        .semester-btn:hover {
+            background-color: #8fd9fb;
+        }
+
+        .semester-btn.active {
+            background-color: #0069d9;
+            color: white;
+            border-color: #0062cc;
+        }
+    </style>
 </head>
 
 <body>
-
-  <!-- ======= Header ======= -->
-  <header id="header" class="header fixed-top d-flex align-items-center">
-
-    <div class="d-flex align-items-center justify-content-between">
-      <a href="index.php" class="logo d-flex align-items-center">
-        <img src="assets/img/nexdegree.png" alt="">
-        
-      </a>
-      <i class="bi bi-list toggle-sidebar-btn"></i>
-    </div><!-- End Logo -->
-    <div class="search-bar">
-    <form class="search-form d-flex align-items-center" method="POST" action="search_chapters.php">
-        <input type="text" name="query" placeholder="Search Chapters..." title="Enter search keyword" value="<?= isset($_POST['query']) ? htmlspecialchars($_POST['query']) : '' ?>" />
-        <button type="submit" title="Search"><i class="bi bi-search"></i></button>
-    </form>
-</div>
-
-
-
-
-    <nav class="header-nav ms-auto">
-      <ul class="d-flex align-items-center">
-
-        
-        <li class="nav-item dropdown">
-
-          
-
-        <li class="nav-item dropdown pe-3">
-
-          <a class="nav-link nav-profile d-flex align-items-center pe-0" href="#" data-bs-toggle="dropdown">
-            <img src="assets/img/profile-img.jpg" alt="Profile" class="rounded-circle">
-            <span class="d-none d-md-block dropdown-toggle ps-2">K. Anderson</span>
-          </a><!-- End Profile Iamge Icon -->
-
-          <ul class="dropdown-menu dropdown-menu-end dropdown-menu-arrow profile">
-            <li class="dropdown-header">
-              <h6>Kevin Anderson</h6>
-              <span>Web Designer</span>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-person"></i>
-                <span>My Profile</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="users-profile.html">
-                <i class="bi bi-gear"></i>
-                <span>Account Settings</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="pages-faq.html">
-                <i class="bi bi-question-circle"></i>
-                <span>Need Help?</span>
-              </a>
-            </li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
-
-            <li>
-              <a class="dropdown-item d-flex align-items-center" href="#">
-                <i class="bi bi-box-arrow-right"></i>
-                <span>Sign Out</span>
-              </a>
-            </li>
-
-          </ul><!-- End Profile Dropdown Items -->
-        </li><!-- End Profile Nav -->
-
-      </ul>
-    </nav><!-- End Icons Navigation -->
-
-  </header><!-- End Header -->
-
-  <!-- ======= Sidebar ======= -->
-  <aside id="sidebar" class="sidebar">
-
-    <ul class="sidebar-nav" id="sidebar-nav">
-
-      
-    <li class="nav-item">
-        <a class="nav-link collapsed" href="index.php">
-          <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+    <!-- Navbar Start -->
+    <div class="container-fluid bg-light position-relative shadow">
+    <nav class="navbar navbar-expand-lg bg-light navbar-light py-3 py-lg-0 px-0 px-lg-5">
+        <a href="affichematiere.php" class="navbar-brand font-weight-bold text-secondary" style="font-size: 50px;">
+        <img src="img/logo.png" style="width: 270px; height: 50px;" alt="NexDegree">
         </a>
-      </li>
-
-     
-        <li class="nav-item">
-        <a class="nav-link collapsed" href="affichematiere.php">
-          <i class="bi bi-grid"></i>
-          <span>Matiere</span>
-        </a>
-        
-        
-      <!-- End Dashboard Nav -->
-
-      
-      
-
-      
-
-  </aside><!-- End Sidebar-->
-
-
-  <main id="main" class="main">
-
-    <div class="pagetitle">
-      <h1>Search : </h1>
-      
-    </div><!-- End Page Title -->
-    
-    
-
-
-
-   
-
-
-    
-    <!--AFFICHE CHAPITRE-->
-
-
-
-<section class="section">
-
-
-<h1 class="mb-4">Chapters </h1>
-
-    <?php if (empty($chapitres)): ?>
-        <p class="text-muted">No chapters available for this subject.</p>
-    <?php else: ?>
-        <?php foreach ($chapitres as $chapitre): ?>
-            <div class="card mb-4">
-                <div class="card-header">
-                    Chapter: <?= htmlspecialchars($chapitre['titre']) ?>
+        <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+            <div class="navbar-nav font-weight-bold mx-auto py-0 d-flex align-items-center">
+                <a href="affichematiere.php" class="nav-item nav-link active">Matiere</a>
+                <div class="search-bar ml-4">
+                    <form class="search-form d-flex align-items-center" method="POST" action="search_chapters.php">
+                        <input type="text" name="query" placeholder="Search Chapters..." 
+                               value="<?= isset($_POST['query']) ? htmlspecialchars($_POST['query']) : '' ?>" />
+                        <button type="submit" title="Search">
+                            <i class="bi bi-search"></i>
+                        </button>
+                    </form>
                 </div>
-                <div class="card-body">
-                    <ul>
-                        <li>Date Start: <?= isset($chapitre['date_debut']) ? htmlspecialchars($chapitre['date_debut']) : 'N/A'; ?></li>
-                        <li>Duration: <?= isset($chapitre['duree']) ? htmlspecialchars($chapitre['duree']) : 'N/A'; ?></li>
-                        <li>Objective: <?= isset($chapitre['objectif']) ? htmlspecialchars($chapitre['objectif']) : 'N/A'; ?></li>
-                        <li>Activity: <?= isset($chapitre['activite']) ? htmlspecialchars($chapitre['activite']) : 'N/A'; ?></li>
-                        <li>Supplementary Resources: <?= isset($chapitre['res_supp']) ? htmlspecialchars($chapitre['res_supp']) : 'N/A'; ?></li>
-                        <li>Evaluation Included: <?= isset($chapitre['evaluation_incluse']) && $chapitre['evaluation_incluse'] ? 'Yes' : 'No'; ?></li>
-                        <li>Evaluation Type: 
-                            <?= isset($chapitre['type_de_evaluation']) && $chapitre['evaluation_incluse'] ? htmlspecialchars($chapitre['type_de_evaluation']) : 'NONE'; ?>
-                        </li>
-                    </ul>
-                </div>
-                <div class="card-footer">
-                <?php 
-                    $file_path = "../uploads/" . basename($chapitre['contenu']);?>
-                    <a href="<?= htmlspecialchars($file_path); ?>" style="margin-left:20px; margin-right:20px;" >View PDF</a>
-                <?php if (isset($chapitre['contenu']) && !empty($chapitre['contenu']) && file_exists("../uploads/" . $chapitre['contenu'])): ?>
-        <a href="../uploads/<?= htmlspecialchars($chapitre['contenu']); ?>" download="<?= htmlspecialchars($chapitre['contenu']); ?>">Download PDF</a>
-    <?php else: ?>
-        <span class="text-danger">No file uploaded</span>
-    <?php endif; ?>
-</div>
-
             </div>
-        <?php endforeach; ?>
-    <?php endif; ?>
-</section>
+        </div>
+    </nav>
+</div>
+    <!-- Navbar End -->
 
+    <!-- Semester Selection and Matiere Display -->
+    <div class="container-fluid py-5">
+        <div class="container">
+        <h1 class="mb-4">Chapters </h1>
 
-         
-    </section>
+<?php if (empty($chapitres)): ?>
+    <p class="text-muted">No chapters available for this subject.</p>
+<?php else: ?>
+    <?php foreach ($chapitres as $chapitre): ?>
+        <div class="card mb-4">
+            <div class="card-header" style="color : rgb(201, 100, 29);">
+                Chapter: <?= htmlspecialchars($chapitre['titre']) ?>
+            </div>
+            <div class="card-body" style="color:black;">
+                <ul>
+                    <li>Date Start: <?= isset($chapitre['date_debut']) ? htmlspecialchars($chapitre['date_debut']) : 'N/A'; ?></li>
+                    <li>Duration: <?= isset($chapitre['duree']) ? htmlspecialchars($chapitre['duree']) : 'N/A'; ?></li>
+                    <li>Objective: <?= isset($chapitre['objectif']) ? htmlspecialchars($chapitre['objectif']) : 'N/A'; ?></li>
+                    <li>Activity: <?= isset($chapitre['activite']) ? htmlspecialchars($chapitre['activite']) : 'N/A'; ?></li>
+                    <li>Supplementary Resources: <?= isset($chapitre['res_supp']) ? htmlspecialchars($chapitre['res_supp']) : 'N/A'; ?></li>
+                    <li>Evaluation Included: <?= isset($chapitre['evaluation_incluse']) && $chapitre['evaluation_incluse'] ? 'Yes' : 'No'; ?></li>
+                    <li>Evaluation Type: 
+                        <?= isset($chapitre['type_de_evaluation']) && $chapitre['evaluation_incluse'] ? htmlspecialchars($chapitre['type_de_evaluation']) : 'NONE'; ?>
+                    </li>
+                </ul>
+            </div>
+            <div class="card-footer">
+            <?php 
+                $file_path = "../uploads/" . basename($chapitre['contenu']);?>
+                <a href="<?= htmlspecialchars($file_path); ?>" style="margin-left:20px; margin-right:20px;" >View PDF</a>
+            <?php if (isset($chapitre['contenu']) && !empty($chapitre['contenu']) && file_exists("../uploads/" . $chapitre['contenu'])): ?>
+    <a href="../uploads/<?= htmlspecialchars($chapitre['contenu']); ?>" download="<?= htmlspecialchars($chapitre['contenu']); ?>">Download PDF</a>
+<?php else: ?>
+    <span class="text-danger">No file uploaded</span>
+<?php endif; ?>
+</div>
 
-
-
-   
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  </main><!-- End #main -->
-
-  <!-- ======= Footer ======= -->
-  <footer id="footer" class="footer">
-    <div class="copyright">
-      &copy; Copyright <strong><span>NexDegree</span></strong>. All Rights Reserved
+        </div>
+    <?php endforeach; ?>
+<?php endif; ?>
+        </div>
     </div>
-    <div class="credits">
-      <!-- All the links in the footer should remain intact. -->
-      <!-- You can delete the links only if you purchased the pro version. -->
-      <!-- Licensing information: https://bootstrapmade.com/license/ -->
-      <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/nice-admin-bootstrap-admin-html-template/ -->
+    <!-- Semester Selection and Matiere Display End -->
+
+    <!-- Footer -->
+    <div class="container-fluid bg-secondary text-white mt-5 py-5 px-sm-3 px-md-5">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="#" class="navbar-brand font-weight-bold text-primary m-0 mb-4 p-0" style="font-size: 40px; line-height: 40px;">
+                
+                    <span class="text-white">NexDegree</span>
+                </a>
+                <p>Its the New Way of education</p>
+                <div class="d-flex justify-content-start mt-4">
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary rounded-circle text-center mr-2 px-0"
+                        style="width: 38px; height: 38px;" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Get In Touch</h3>
+                <div class="d-flex">
+                    <h4 class="fa fa-map-marker-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Address</h5>
+                        <p>123 Street, New York, USA</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-envelope text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Email</h5>
+                        <p>info@example.com</p>
+                    </div>
+                </div>
+                <div class="d-flex">
+                    <h4 class="fa fa-phone-alt text-primary"></h4>
+                    <div class="pl-3">
+                        <h5 class="text-white">Phone</h5>
+                        <p>+012 345 67890</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h3 class="text-primary mb-4">Quick Links</h3>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white mb-2" href="affichematiere.php"><i class="fa fa-angle-right mr-2"></i>Matiere</a>
+                    
+                </div>
+            </div>
+           
+        </div>
+        <div class="container-fluid pt-5" style="border-top: 1px solid rgba(23, 162, 184, .2);;">
+            <p class="m-0 text-center text-white">
+                &copy; <a class="text-primary font-weight-bold" href="#">NexDegree</a>. All Rights Reserved. 
+				
+				<!--/*** This template is free as long as you keep the footer author’s credit link/attribution link/backlink. If you'd like to use the template without the footer author’s credit link/attribution link/backlink, you can purchase the Credit Removal License from "https://htmlcodex.com/credit-removal". Thank you for your support. ***/-->
+				
+            </p>
+        </div>
     </div>
-  </footer><!-- End Footer -->
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-primary p-3 back-to-top"><i class="fa fa-angle-double-up"></i></a>
 
-  <!-- Vendor JS Files -->
-  <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
-  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/vendor/chart.js/chart.umd.js"></script>
-  <script src="assets/vendor/echarts/echarts.min.js"></script>
-  <script src="assets/vendor/quill/quill.js"></script>
-  <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
-  <script src="assets/vendor/tinymce/tinymce.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
-
-  <!-- Template Main JS File -->
-  <script src="assets/js/main.js"></script>
-
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+    <script src="lib/lightbox/js/lightbox.min.js"></script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
