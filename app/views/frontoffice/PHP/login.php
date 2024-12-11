@@ -1,5 +1,5 @@
 <?php
-require_once("../../../controller/add.php");
+require_once("../../../controller/UserController.php");
 require_once("../../../Model/session.php");
 require_once("debug.php");
 

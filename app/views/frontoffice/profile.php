@@ -1,6 +1,6 @@
 <?php
 session_start();
-require_once("../../controller/add.php");
+require_once("../../controller/UserController.php");
 require_once("../../Model/session.php");
 if (!isset($_SESSION['user_token']) || !isset($_SESSION['user_id'])) {
     // If not logged in, redirect to login page

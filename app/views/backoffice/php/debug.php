@@ -1,24 +1,26 @@
 <?php
-class Debugger {
-    private static $logFile = __DIR__ . '/debug.log';
-
-    public static function log($message, $data = null) {
-        $timestamp = date("Y-m-d H:i:s");
-        $formattedMessage = "[$timestamp] $message";
-
-        if ($data !== null) {
-            $formattedMessage .= ": " . print_r($data, true);
-        }
-
-        file_put_contents(self::$logFile, $formattedMessage . PHP_EOL, FILE_APPEND);
+class Debugger
+{
+    public static function log($message)
+    {
+        $logFile = __DIR__ . '/debug.log';
+        $timestamp = date('Y-m-d H:i:s');
+        $formattedMessage = "[{$timestamp}] {$message}" . PHP_EOL;
+        file_put_contents($logFile, $formattedMessage, FILE_APPEND);
     }
 
-    public static function clearLog() {
-        file_put_contents(self::$logFile, ""); // Clear log file
+    public static function dump($variable, $label = 'Dump')
+    {
+        ob_start();
+        var_dump($variable);
+        $output = ob_get_clean();
+        self::log("{$label}: {$output}");
     }
 
-    public static function getLogFilePath() {
-        return self::$logFile;
+    public static function display($variable, $label = 'Debug')
+    {
+        echo "<pre><strong>{$label}:</strong> ";
+        var_dump($variable);
+        echo "</pre>";
     }
 }
-?>

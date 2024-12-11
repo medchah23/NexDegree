@@ -429,3 +429,139 @@
     [sessionToken] => 096ca2d3a287fb223c23763c02c66ddf
 )
 
+[2024-12-09 02:49:08] Processing request.: Array
+(
+    [firstName] => chahbani
+    [secondName] => mohamed
+    [phoneNumber] => 92308572
+    [email] => medchah606@gmail.Com
+    [role] => enseignant
+    [niveau] => 
+    [matier] => Math
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+)
+
+[2024-12-09 02:49:08] Student image upload failed or not provided.: Array
+(
+    [name] => 
+    [full_path] => 
+    [type] => 
+    [tmp_name] => 
+    [error] => 4
+    [size] => 0
+)
+
+[09-Dec-2024 02:49:08 Europe/Berlin] Error encountered: Invalid image format for teacher.
+[2024-12-09 02:49:15] Processing request.: Array
+(
+    [firstName] => chahbani
+    [secondName] => mohamed
+    [phoneNumber] => 92308572
+    [email] => medchah606@gmail.Com
+    [role] => enseignant
+    [niveau] => 
+    [matier] => Math
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+)
+
+[2024-12-09 02:49:15] Student image upload failed or not provided.: Array
+(
+    [name] => 
+    [full_path] => 
+    [type] => 
+    [tmp_name] => 
+    [error] => 4
+    [size] => 0
+)
+
+[2024-12-09 02:49:15] Image Path for User: : uploads/images/teacher_67564c9b9857e.jpg
+[2024-12-09 02:50:34] Processing request.: Array
+(
+    [firstName] => chahbani
+    [secondName] => mohamed
+    [phoneNumber] => 92308572
+    [email] => medchah606@gmail.Com
+    [role] => enseignant
+    [niveau] => 
+    [matier] => Math
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+)
+
+[2024-12-09 02:50:34] Student image upload failed or not provided.: Array
+(
+    [name] => 
+    [full_path] => 
+    [type] => 
+    [tmp_name] => 
+    [error] => 4
+    [size] => 0
+)
+
+[2024-12-09 02:50:34] Image Path for User: : uploads/images/teacher_67564cea94ce9.jpg
+[09-Dec-2024 02:50:34 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
+[2024-12-09 02:50:34] Processing request.: Array
+(
+    [firstName] => chahbani
+    [secondName] => mohamed
+    [phoneNumber] => 92308572
+    [email] => medchah606@gmail.Com
+    [role] => enseignant
+    [niveau] => 
+    [matier] => Math
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+)
+
+[2024-12-09 02:50:34] Student image upload failed or not provided.: Array
+(
+    [name] => 
+    [full_path] => 
+    [type] => 
+    [tmp_name] => 
+    [error] => 4
+    [size] => 0
+)
+
+[2024-12-09 02:50:35] Image Path for User: : uploads/images/teacher_67564ceb012bd.jpg
+[09-Dec-2024 02:50:35 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
+[2024-12-10 22:24:24] Processing request.: Array
+(
+    [firstName] => mohamed
+    [secondName] => chahbani
+    [phoneNumber] => 92308572
+    [email] => medchah606@gmail.com
+    [role] => enseignant
+    [niveau] => 
+    [matier] => Science
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+)
+
+[2024-12-10 22:24:24] Student image upload failed or not provided.: Array
+(
+    [name] => 
+    [full_path] => 
+    [type] => 
+    [tmp_name] => 
+    [error] => 4
+    [size] => 0
+)
+
+[2024-12-10 22:24:24] Image Path for User: : uploads/images/teacher_6758b188b08a5.png
+[2024-12-10 22:25:51] Processing request.: Array
+(
+    [firstName] => mohamed
+    [secondName] => chahbani
+    [phoneNumber] => 92308572
+    [email] => chahbani.mohammed@esprit.tn
+    [role] => etudiant
+    [niveau] => 8eme
+    [matier] => Science
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+)
+
+[2024-12-10 22:25:51] Image Path for User: : uploads/images/student_6758b1df273c9.png

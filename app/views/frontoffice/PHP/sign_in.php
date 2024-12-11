@@ -1,6 +1,6 @@
 <?php
 if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    require_once("../../../controller/add.php");
+    require_once("../../../controller/UserController.php");
     require_once("../../../Model/Etudient.php");
     require_once("../../../Model/Enseignant.php");
     require_once 'debug.php';
