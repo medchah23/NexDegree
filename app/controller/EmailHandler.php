@@ -4,23 +4,9 @@ use PHPMailer\PHPMailer\Exception;
 
 class EmailHandler
 {
-    public static function sendEmail($to, $subject, $body, $imagePath)
+    public static function sendEmail($to, $subject, $body)
     {
-        // First, process face recognition
-        $faceRecognitionResult = self::performFaceRecognition($imagePath);
 
-        // Append the face recognition result to the email body
-        $body .= "<br><br><strong>Face Recognition Result:</strong><br>";
-        if (isset($faceRecognitionResult['error'])) {
-            $body .= "Error: " . $faceRecognitionResult['error'];
-        } else {
-            $body .= "Gender: " . $faceRecognitionResult['gender'] . "<br>";
-            $body .= "Age: " . $faceRecognitionResult['age'] . "<br>";
-            $body .= "Race: " . $faceRecognitionResult['dominant_race'] . "<br>";
-            $body .= "Emotion: " . $faceRecognitionResult['dominant_emotion'] . "<br>";
-        }
-
-        // Now, send the email
         $mail = new PHPMailer(true);
         try {
             $mail->isSMTP();
@@ -40,14 +26,6 @@ class EmailHandler
         } catch (Exception $e) {
             return ["success" => false, "message" => "Email could not be sent. Mailer Error: {$mail->ErrorInfo}"];
         }
-    }
-    public static function performFaceRecognition($imagePath)
-    {
-        $command = "python3 face_recognition.py " . escapeshellarg($imagePath);
-        $output = shell_exec($command);
-        $result = json_decode($output, true);
-
-        return $result;
     }
 }
 ?>

@@ -565,3 +565,433 @@
 )
 
 [2024-12-10 22:25:51] Image Path for User: : uploads/images/student_6758b1df273c9.png
+[2024-12-16 01:39:53] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:39:53] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:39:53] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:39:55] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:39:55] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:39:55] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:41:18] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:41:18] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:41:18] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:41:22] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:41:22] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:41:22] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:42:56] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:42:56] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:42:56] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:42:57] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:42:57] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:42:57] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:43:00] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:43:00] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:43:00] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:43:14] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:43:14] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:43:14] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:43:24] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:43:24] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:43:24] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:44:31] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:44:31] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:44:31] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:44:37] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:44:37] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:44:37] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:45:05] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:45:05] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:45:05] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:45:35] Login attempt: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:45:35] User role retrieved: Array
+(
+    [role] => Adresse e-mail non trouvée.
+)
+
+[2024-12-16 01:45:35] Invalid email/password: Array
+(
+    [email] => 
+)
+
+[2024-12-16 01:50:13] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:50:13] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-16 01:50:13] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:50:13] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-16 01:50:13] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-16 01:50:13] Session token creation: Array
+(
+    [sessionToken] => ad76fd30cf97454847e61768031effbe
+)
+
+[2024-12-16 01:50:23] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:50:23] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-16 01:50:23] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:50:23] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-16 01:50:23] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-16 01:50:23] Session token creation: Array
+(
+    [sessionToken] => c70f998e4c280794a375c2647de84a74
+)
+
+[2024-12-16 01:50:32] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:50:32] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-16 01:50:32] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:50:32] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-16 01:50:32] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-16 01:50:32] Session token creation: Array
+(
+    [sessionToken] => 45ec0a88f9a810e8c8504e58c309e33f
+)
+
+[2024-12-16 01:52:15] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:52:15] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-16 01:52:15] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:52:15] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-16 01:52:15] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-16 01:52:15] Session token creation: Array
+(
+    [sessionToken] => 1bb8ff2cbe13c92ab56747c9ad290baa
+)
+
+[2024-12-16 01:52:21] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:52:21] User role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-16 01:52:21] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:52:21] User ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-16 01:52:21] User status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-16 01:52:21] Session token creation: Array
+(
+    [sessionToken] => bbc6276481b2ee5790531c5fe2c681f5
+)
+
+[2024-12-16 01:54:16] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:54:16] User  role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-16 01:54:16] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 01:54:16] User  ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-16 01:54:16] User  status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-16 01:54:16] Session token creation: Array
+(
+    [sessionToken] => 9cd95ea5d459de9ab2dbd23611983e4b
+)
+
+[2024-12-16 02:10:30] Login attempt: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 02:10:30] User  role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-16 02:10:30] Fetching user ID for email: Array
+(
+    [email] => teste@exemplo.us
+)
+
+[2024-12-16 02:10:30] User  ID retrieved: Array
+(
+    [userId] => 38
+)
+
+[2024-12-16 02:10:30] User  status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-16 02:10:30] Session token creation: Array
+(
+    [sessionToken] => fc653989fc7e712abfddb259ddc7a46c
+)
+
+[2024-12-16 02:16:04] Processing request.: Array
+(
+    [firstName] => mohamed
+    [secondName] => chahbani
+    [phoneNumber] => 92308572
+    [email] => teste@exemplo.ussss
+    [role] => enseignant
+    [niveau] => 
+    [matier] => Math
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+    [faceImage] => 
+)
+
+[2024-12-16 02:16:04] Student image upload failed or not provided.: Array
+(
+    [name] => 
+    [full_path] => 
+    [type] => 
+    [tmp_name] => 
+    [error] => 4
+    [size] => 0
+)
+
+[2024-12-16 02:16:04] Image Path for User: : uploads/images/teacher_675f7f5456508.png

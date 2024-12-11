@@ -1,0 +1,3256 @@
+[2024-12-09 03:13:20] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:13:20] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:14:29] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:14:29] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:14:49] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:14:49] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:15:01] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:15:01] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:16] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:18:16] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:20] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:18:20] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:25] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:18:25] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:29] Fetching teachers sorted by nom in asc order.
+[2024-12-09 03:18:29] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:30] Fetching teachers sorted by numero_telephone in asc order.
+[2024-12-09 03:18:30] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:44] Fetching teachers sorted by numero_telephone in asc order.
+[2024-12-09 03:18:44] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:45] Fetching teachers sorted by numero_telephone in asc order.
+[2024-12-09 03:18:45] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:45] Fetching teachers sorted by numero_telephone in asc order.
+[2024-12-09 03:18:45] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:45] Fetching teachers sorted by numero_telephone in asc order.
+[2024-12-09 03:18:45] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:46] Fetching teachers sorted by numero_telephone in asc order.
+[2024-12-09 03:18:46] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:18:46] Fetching teachers sorted by numero_telephone in asc order.
+[2024-12-09 03:18:46] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:19:19] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:19:19] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:23:17] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:23:17] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:23:18] Teacher Data: array(4) {
+  ["nom"]=>
+  string(16) "chahbani mohamed"
+  ["email"]=>
+  string(20) "medchah606@gmail.Com"
+  ["numero_telephone"]=>
+  string(8) "92308572"
+  ["image"]=>
+  string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+}
+
+[2024-12-09 03:23:24] Teacher ID: int(18)
+
+[2024-12-09 03:23:24] Name: string(22) "chahbani mohamedezfzef"
+
+[2024-12-09 03:23:24] Phone Number: string(8) "92308566"
+
+[2024-12-09 03:23:24] Password: string(0) ""
+
+[2024-12-09 03:23:24] Qualifications: string(0) ""
+
+[2024-12-09 03:23:24] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 03:23:24] Profile picture path: 
+[2024-12-09 03:23:24] Hashed Password: NULL
+
+[2024-12-09 03:23:24] Update response: Success
+[2024-12-09 03:23:24] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:23:24] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:23:51] Teacher Data: array(4) {
+  ["nom"]=>
+  string(16) "chahbani mohamed"
+  ["email"]=>
+  string(20) "medchah606@gmail.Com"
+  ["numero_telephone"]=>
+  string(8) "92308572"
+  ["image"]=>
+  string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+}
+
+[2024-12-09 03:24:05] Teacher ID: int(18)
+
+[2024-12-09 03:24:05] Name: string(16) "chahbani mohamed"
+
+[2024-12-09 03:24:05] Phone Number: string(8) "92308572"
+
+[2024-12-09 03:24:05] Password: string(11) "Medchah606@"
+
+[2024-12-09 03:24:05] Qualifications: string(10) "dzazdazdaz"
+
+[2024-12-09 03:24:05] Profile Picture: array(6) {
+  ["name"]=>
+  string(52) "458924463_2178793879171966_3531364833004995170_n.jpg"
+  ["full_path"]=>
+  string(52) "458924463_2178793879171966_3531364833004995170_n.jpg"
+  ["type"]=>
+  string(10) "image/jpeg"
+  ["tmp_name"]=>
+  string(24) "C:\xampp\tmp\php2FCE.tmp"
+  ["error"]=>
+  int(0)
+  ["size"]=>
+  int(8012)
+}
+
+[2024-12-09 03:24:05] Profile picture path: ../../../../uploads/images/458924463_2178793879171966_3531364833004995170_n.jpg
+[2024-12-09 03:24:05] Hashed Password: string(60) "$2y$10$AaA1zlMapZZVHSJ0YtuAheOUKCbs1csMH0SMq3S6wYy3BA2aRVNOK"
+
+[2024-12-09 03:24:05] Update response: Success
+[2024-12-09 03:24:05] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:24:05] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:24:19] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:24:19] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:24:20] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:24:20] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:26:08] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:26:08] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:26:08] Teacher Data: array(4) {
+  ["nom"]=>
+  string(16) "chahbani mohamed"
+  ["email"]=>
+  string(20) "medchah606@gmail.Com"
+  ["numero_telephone"]=>
+  string(8) "92308572"
+  ["image"]=>
+  string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+}
+
+[2024-12-09 03:26:11] Teacher ID: int(18)
+
+[2024-12-09 03:26:11] Name: string(16) "chahbani mohamed"
+
+[2024-12-09 03:26:11] Phone Number: string(8) "92308572"
+
+[2024-12-09 03:26:11] Password: string(0) ""
+
+[2024-12-09 03:26:11] Qualifications: string(10) "dazdazdazd"
+
+[2024-12-09 03:26:11] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 03:26:11] Profile picture path: 
+[2024-12-09 03:26:11] Hashed Password: NULL
+
+[2024-12-09 03:26:11] Update response: Success
+[2024-12-09 03:26:11] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:26:11] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 03:26:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 03:26:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 12:37:05] Invalid teacher ID.
+[2024-12-09 14:00:06] Invalid teacher ID.
+[2024-12-09 14:01:33] Invalid teacher ID.
+[2024-12-09 14:05:29] Invalid teacher ID.
+[2024-12-09 14:05:41] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:05:42] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:05:51] Teacher ID: int(18)
+
+[2024-12-09 14:05:51] Name: string(21) "chahbani mohamedzazaz"
+
+[2024-12-09 14:05:51] Phone Number: string(8) "92308576"
+
+[2024-12-09 14:05:51] Password: string(0) ""
+
+[2024-12-09 14:05:51] Qualifications: string(0) ""
+
+[2024-12-09 14:05:51] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:05:51] Hashed Password: NULL
+
+[2024-12-09 14:05:51] Update response: Success
+[2024-12-09 14:05:51] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:05:51] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:07:07] Invalid teacher ID.
+[2024-12-09 14:07:12] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:07:12] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:07:12] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:07:12] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:07:16] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:07:16] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:08:23] Invalid teacher ID.
+[2024-12-09 14:08:29] Teacher ID: int(18)
+
+[2024-12-09 14:08:29] Name: string(16) "chahbani mohamed"
+
+[2024-12-09 14:08:29] Phone Number: string(8) "92308572"
+
+[2024-12-09 14:08:29] Password: string(0) ""
+
+[2024-12-09 14:08:29] Qualifications: string(0) ""
+
+[2024-12-09 14:08:29] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:08:29] Hashed Password: NULL
+
+[2024-12-09 14:08:29] Update response: Success
+[2024-12-09 14:08:52] Teacher ID: int(18)
+
+[2024-12-09 14:08:52] Name: string(31) "chahbani mohamedzefzefzefzefzef"
+
+[2024-12-09 14:08:52] Phone Number: string(8) "92308555"
+
+[2024-12-09 14:08:52] Password: string(14) "zefzefzefzefze"
+
+[2024-12-09 14:08:52] Qualifications: string(15) "zefzefezfzefzef"
+
+[2024-12-09 14:08:52] Profile Picture: array(6) {
+  ["name"]=>
+  string(12) "Picture1.png"
+  ["full_path"]=>
+  string(12) "Picture1.png"
+  ["type"]=>
+  string(9) "image/png"
+  ["tmp_name"]=>
+  string(24) "C:\xampp\tmp\php7FEB.tmp"
+  ["error"]=>
+  int(0)
+  ["size"]=>
+  int(7235)
+}
+
+[2024-12-09 14:08:52] File uploaded to: ../../../../uploads/images/4af2eb5c846b8ce62b274c4498d76dfa.png
+[2024-12-09 14:08:52] Hashed Password: string(60) "$2y$10$bA8gOC/cW.Z9MCC0MmO.BukqRGCegrTnWfOC8ATNJbckqsDe8r9Ei"
+
+[2024-12-09 14:08:52] Update response: Success
+[2024-12-09 14:09:28] Teacher ID: int(18)
+
+[2024-12-09 14:09:28] Name: string(31) "chahbani mohamedzefzefzefzefzef"
+
+[2024-12-09 14:09:28] Phone Number: string(8) "92308555"
+
+[2024-12-09 14:09:28] Password: string(14) "zefzefzefzefze"
+
+[2024-12-09 14:09:28] Qualifications: string(15) "zefzefezfzefzef"
+
+[2024-12-09 14:09:28] Profile Picture: array(6) {
+  ["name"]=>
+  string(12) "Picture1.png"
+  ["full_path"]=>
+  string(12) "Picture1.png"
+  ["type"]=>
+  string(9) "image/png"
+  ["tmp_name"]=>
+  string(23) "C:\xampp\tmp\phpDA5.tmp"
+  ["error"]=>
+  int(0)
+  ["size"]=>
+  int(7235)
+}
+
+[2024-12-09 14:09:28] File uploaded to: ../../../../uploads/images/e0737d000088f012ae9590cbd9764867.png
+[2024-12-09 14:09:28] Hashed Password: string(60) "$2y$10$oWklSDeG5iPVOEmdu.Cay.f0vGi9jVBIW5aQ.5dY9dAMnaBj6mIUm"
+
+[2024-12-09 14:09:28] Update response: Success
+[2024-12-09 14:09:34] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:09:34] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:09:34] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:09:34] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:09:35] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:09:35] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:09:35] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:09:35] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:09:35] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:09:35] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:09:44] Teacher ID: int(18)
+
+[2024-12-09 14:09:44] Name: string(16) "chahbani mohamed"
+
+[2024-12-09 14:09:44] Phone Number: string(8) "92308555"
+
+[2024-12-09 14:09:44] Password: string(0) ""
+
+[2024-12-09 14:09:44] Qualifications: string(17) "dzaazdazdazdazdaz"
+
+[2024-12-09 14:09:44] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:09:44] Hashed Password: NULL
+
+[2024-12-09 14:09:44] Update response: Success
+[2024-12-09 14:10:02] Invalid teacher ID.
+[2024-12-09 14:10:04] Teacher ID: int(18)
+
+[2024-12-09 14:10:04] Name: string(16) "chahbani mohamed"
+
+[2024-12-09 14:10:04] Phone Number: string(8) "92308555"
+
+[2024-12-09 14:10:04] Password: string(0) ""
+
+[2024-12-09 14:10:04] Qualifications: string(17) "dzaazdazdazdazdaz"
+
+[2024-12-09 14:10:04] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:10:04] Hashed Password: NULL
+
+[2024-12-09 14:10:04] Update response: Success
+[2024-12-09 14:10:04] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:10:04] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:10:23] Teacher ID: int(18)
+
+[2024-12-09 14:10:23] Name: string(16) "chahbani mohamed"
+
+[2024-12-09 14:10:23] Phone Number: string(8) "92308574"
+
+[2024-12-09 14:10:23] Password: string(19) "dfzefzefzefzefzefze"
+
+[2024-12-09 14:10:23] Qualifications: string(0) ""
+
+[2024-12-09 14:10:23] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:10:23] Hashed Password: string(60) "$2y$10$Hp/ktqgSTF1kozt.RKpzQ.FMBbo1zHPVf0K646YytBcJNLqTWaagK"
+
+[2024-12-09 14:10:23] Update response: Success
+[2024-12-09 14:10:23] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:10:23] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:11:05] Invalid teacher ID.
+[2024-12-09 14:22:04] Teacher ID: int(18)
+
+[2024-12-09 14:22:04] Name: string(16) "chahbani mohamed"
+
+[2024-12-09 14:22:04] Phone Number: string(8) "92308572"
+
+[2024-12-09 14:22:04] Password: string(11) "efezfzefzef"
+
+[2024-12-09 14:22:04] Qualifications: string(0) ""
+
+[2024-12-09 14:22:04] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:22:04] Hashed Password: string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+
+[2024-12-09 14:22:04] Update response: Success
+[2024-12-09 14:22:04] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:22:04] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(0) ""
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(16) "chahbani mohamed"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:22:08] Teacher ID: int(18)
+
+[2024-12-09 14:22:08] Name: string(28) "chahbani mohamedzeafzefzefes"
+
+[2024-12-09 14:22:08] Phone Number: string(8) "92308572"
+
+[2024-12-09 14:22:08] Password: string(0) ""
+
+[2024-12-09 14:22:08] Qualifications: string(0) ""
+
+[2024-12-09 14:22:08] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:22:08] Hashed Password: NULL
+
+[2024-12-09 14:22:08] Update response: Success
+[2024-12-09 14:22:08] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:22:08] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(0) ""
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:27:36] Teacher ID: int(18)
+
+[2024-12-09 14:27:36] Name: string(28) "chahbani mohamedzeafzefzefes"
+
+[2024-12-09 14:27:36] Phone Number: string(8) "92308572"
+
+[2024-12-09 14:27:36] Password: string(0) ""
+
+[2024-12-09 14:27:36] Qualifications: string(9) "arzedazdz"
+
+[2024-12-09 14:27:36] Profile Picture: array(6) {
+  ["name"]=>
+  string(0) ""
+  ["full_path"]=>
+  string(0) ""
+  ["type"]=>
+  string(0) ""
+  ["tmp_name"]=>
+  string(0) ""
+  ["error"]=>
+  int(4)
+  ["size"]=>
+  int(0)
+}
+
+[2024-12-09 14:27:36] Hashed Password: NULL
+
+[2024-12-09 14:27:36] Update response: Success
+[2024-12-09 14:27:36] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:27:36] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 14:29:05] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 14:29:05] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-09 16:47:50] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 16:47:50] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 16:47:50] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 16:47:50] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 16:47:53] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 16:47:53] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:08:31] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:08:31] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:12:51] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:12:51] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:12:54] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:12:54] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:12:55] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:12:55] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:12:56] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:12:56] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:12:57] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:12:57] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:12:57] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:12:57] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:11] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:11] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:12] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:12] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:12] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:12] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:12] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:12] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:12] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:12] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:49:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:49:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:55:13] Email sending failed to . Error: Email could not be sent. Mailer Error: Invalid address:  (to): 
+[2024-12-09 17:55:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:55:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:55:13] Email sending failed to . Error: Email could not be sent. Mailer Error: Invalid address:  (to): 
+[2024-12-09 17:55:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:55:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:55:13] Email sending failed to . Error: Email could not be sent. Mailer Error: Invalid address:  (to): 
+[2024-12-09 17:55:13] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:55:13] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:55:14] Email sending failed to . Error: Email could not be sent. Mailer Error: Invalid address:  (to): 
+[2024-12-09 17:55:14] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:55:14] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:55:14] Email sending failed to . Error: Email could not be sent. Mailer Error: Invalid address:  (to): 
+[2024-12-09 17:55:14] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:55:14] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:55:14] Email sending failed to . Error: Email could not be sent. Mailer Error: Invalid address:  (to): 
+[2024-12-09 17:55:14] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:55:14] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:55:14] Email sending failed to . Error: Email could not be sent. Mailer Error: Invalid address:  (to): 
+[2024-12-09 17:55:14] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:55:14] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:56:34] Error accepting teacher with ID 18: 
+[2024-12-09 17:58:32] Email sent successfully to medchah606@gmail.Com. Subject: Application Accepted
+[2024-12-09 17:58:32] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:58:32] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 17:58:36] Email sent successfully to medchah606@gmail.Com. Subject: Application Accepted
+[2024-12-09 17:58:36] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 17:58:36] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 18:01:26] Email sent successfully to medchah606@gmail.Com. Subject: 🎉 Welcome to NexDegree: Your Application is Accepted!
+[2024-12-09 18:01:26] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 18:01:26] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(6) "active"
+  }
+}
+
+[2024-12-09 18:04:32] Email sent successfully to medchah606@gmail.Com. Subject: Application Rejected - NexDegree
+[2024-12-09 18:04:32] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 18:04:32] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "rejected"
+  }
+}
+
+[2024-12-09 18:05:47] Email sent successfully to medchah606@gmail.Com. Subject: 🎉 Welcome to NexDegree: Your Application is Accepted!
+[2024-12-09 18:05:49] Email sent successfully to medchah606@gmail.Com. Subject: Application Rejected - NexDegree
+[2024-12-09 18:05:51] Email sent successfully to medchah606@gmail.Com. Subject: 🎉 Welcome to NexDegree: Your Application is Accepted!
+[2024-12-09 18:05:53] Email sent successfully to medchah606@gmail.Com. Subject: Application Rejected - NexDegree
+[2024-12-09 18:05:53] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 18:05:53] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(18)
+    ["utilisateur_id"]=>
+    int(39)
+    ["qualifications"]=>
+    string(9) "arzedazdz"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_67564c9b98290.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_67564c9b9857e.jpg"
+    ["id"]=>
+    int(39)
+    ["nom"]=>
+    string(28) "chahbani mohamedzeafzefzefes"
+    ["email"]=>
+    string(20) "medchah606@gmail.Com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(60) "$2y$10$Cp3Lam3RPT/XUBTetghNJ.zddNFmLBxy4Da3gY.UTI3GQOirB1E7y"
+    ["cree_a"]=>
+    string(19) "2024-12-09 02:49:15"
+    ["statut"]=>
+    string(8) "rejected"
+  }
+}
+
+[2024-12-09 18:06:15] Email sent successfully to medchah606@gmail.Com. Subject: Application Rejected - NexDegree
+[2024-12-09 18:06:15] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-09 18:06:15] Fetched Teachers Data: array(0) {
+}
+
+[2024-12-10 22:24:36] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-10 22:24:37] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(19)
+    ["utilisateur_id"]=>
+    int(40)
+    ["qualifications"]=>
+    string(7) "Science"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_6758b188b0307.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_6758b188b08a5.png"
+    ["id"]=>
+    int(40)
+    ["nom"]=>
+    string(16) "mohamed chahbani"
+    ["email"]=>
+    string(20) "medchah606@gmail.com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-10 22:24:24"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-10 23:17:44] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:17:44] Total Students: 2, Total Pages: 1
+[2024-12-10 23:17:46] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:17:46] Total Students: 2, Total Pages: 1
+[2024-12-10 23:21:00] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:21:00] Total Students: 2, Total Pages: 1
+[2024-12-10 23:21:04] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:21:04] Total Students: 2, Total Pages: 1
+[2024-12-10 23:21:05] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:21:05] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:11] Fetching students with searchQuery: , field: nom, order: DESC, currentPage: 1
+[2024-12-10 23:30:11] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:11] Fetching students with searchQuery: , field: nom, order: ASC, currentPage: 1
+[2024-12-10 23:30:11] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:12] Fetching students with searchQuery: , field: nom, order: DESC, currentPage: 1
+[2024-12-10 23:30:12] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:12] Fetching students with searchQuery: , field: nom, order: ASC, currentPage: 1
+[2024-12-10 23:30:12] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:15] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:30:15] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:15] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:30:15] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:16] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:30:16] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:16] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:30:16] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:16] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:30:16] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:16] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:30:16] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:17] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:30:17] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:17] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:30:17] Total Students: 2, Total Pages: 1
+[2024-12-10 23:30:18] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:30:18] Total Students: 2, Total Pages: 1
+[2024-12-10 23:46:51] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:46:51] Total Students: 2, Total Pages: 1
+[2024-12-10 23:46:52] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:46:52] Total Students: 2, Total Pages: 1
+[2024-12-10 23:46:52] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:46:52] Total Students: 2, Total Pages: 1
+[2024-12-10 23:46:52] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:46:52] Total Students: 2, Total Pages: 1
+[2024-12-10 23:51:42] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:51:42] Total Students: 2, Total Pages: 1
+[2024-12-10 23:51:43] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:51:43] Total Students: 2, Total Pages: 1
+[2024-12-10 23:51:44] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:51:44] Total Students: 2, Total Pages: 1
+[2024-12-10 23:51:45] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:51:45] Total Students: 2, Total Pages: 1
+[2024-12-10 23:51:46] Fetching students with searchQuery: , field: id_etudiant, order: DESC, currentPage: 1
+[2024-12-10 23:51:46] Total Students: 2, Total Pages: 1
+[2024-12-10 23:52:17] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:52:17] Total Students: 2, Total Pages: 1
+[2024-12-10 23:54:50] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-10 23:54:50] Total Students: 2, Total Pages: 1
+[2024-12-10 23:54:52] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-10 23:54:52] Total Students: 2, Total Pages: 1
+[2024-12-10 23:59:07] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-10 23:59:07] Total Students: 2, Total Pages: 1
+[2024-12-10 23:59:10] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-10 23:59:10] Total Students: 2, Total Pages: 1
+[2024-12-11 00:09:33] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-11 00:09:33] Total Students: 2, Total Pages: 1
+[2024-12-11 00:09:34] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-11 00:09:34] Total Students: 2, Total Pages: 1
+[2024-12-11 00:09:34] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-11 00:09:34] Total Students: 2, Total Pages: 1
+[2024-12-11 00:09:34] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-11 00:09:34] Total Students: 2, Total Pages: 1
+[2024-12-11 00:09:34] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-11 00:09:34] Total Students: 2, Total Pages: 1
+[2024-12-11 00:09:57] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:09:57] Total Students: 2, Total Pages: 1
+[2024-12-11 00:09:57] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:09:57] Total Students: 2, Total Pages: 1
+[2024-12-11 00:10:47] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:10:47] Total Students: 2, Total Pages: 1
+[2024-12-11 00:10:49] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:10:49] Total Students: 2, Total Pages: 1
+[2024-12-11 00:10:56] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:10:56] Total Students: 2, Total Pages: 1
+[2024-12-11 00:11:02] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:11:02] Total Students: 2, Total Pages: 1
+[2024-12-11 00:11:54] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:11:54] Total Students: 2, Total Pages: 1
+[2024-12-11 00:12:16] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-11 00:12:16] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(19)
+    ["utilisateur_id"]=>
+    int(40)
+    ["qualifications"]=>
+    string(7) "Science"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_6758b188b0307.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_6758b188b08a5.png"
+    ["id"]=>
+    int(40)
+    ["nom"]=>
+    string(16) "mohamed chahbani"
+    ["email"]=>
+    string(20) "medchah606@gmail.com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-10 22:24:24"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-11 00:14:06] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:14:06] Total Students: 2, Total Pages: 1
+[2024-12-11 00:14:44] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:14:44] Total Students: 2, Total Pages: 1
+[2024-12-11 00:14:46] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-11 00:14:46] Fetched Teachers Data: array(1) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(19)
+    ["utilisateur_id"]=>
+    int(40)
+    ["qualifications"]=>
+    string(7) "Science"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_6758b188b0307.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_6758b188b08a5.png"
+    ["id"]=>
+    int(40)
+    ["nom"]=>
+    string(16) "mohamed chahbani"
+    ["email"]=>
+    string(20) "medchah606@gmail.com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-10 22:24:24"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-11 00:15:02] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:15:02] Total Students: 2, Total Pages: 1
+[2024-12-11 00:15:04] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:15:04] Total Students: 2, Total Pages: 1
+[2024-12-11 00:17:34] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:17:34] Total Students: 2, Total Pages: 1
+[2024-12-11 00:19:22] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:19:22] Total Students: 2, Total Pages: 1
+[2024-12-11 00:19:36] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:19:36] Total Students: 2, Total Pages: 1
+[2024-12-11 00:19:39] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:19:39] Total Students: 2, Total Pages: 1
+[2024-12-11 00:19:40] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:19:40] Total Students: 2, Total Pages: 1
+[2024-12-11 00:22:08] Fetching students with searchQuery: , field: id_etudiant, order: ASC, currentPage: 1
+[2024-12-11 00:22:08] Total Students: 2, Total Pages: 1
+[2024-12-11 00:22:08] Rendering student ID: 7, Name: Jon Doe, Image: https://via.placeholder.com/50
+[2024-12-11 00:22:08] Rendering student ID: 8, Name: mohamed chahbani, Image: ../../../../uploads/images/student_6758b1df273c9.png
+[2024-12-11 00:22:17] Fetching students with searchQuery: , field: niveau, order: DESC, currentPage: 1
+[2024-12-11 00:22:17] Total Students: 2, Total Pages: 1
+[2024-12-11 00:22:17] Rendering student ID: 8, Name: mohamed chahbani, Image: ../../../../uploads/images/student_6758b1df273c9.png
+[2024-12-11 00:22:17] Rendering student ID: 7, Name: Jon Doe, Image: https://via.placeholder.com/50
+[2024-12-11 00:22:18] Fetching students with searchQuery: , field: niveau, order: ASC, currentPage: 1
+[2024-12-11 00:22:18] Total Students: 2, Total Pages: 1
+[2024-12-11 00:22:18] Rendering student ID: 7, Name: Jon Doe, Image: https://via.placeholder.com/50
+[2024-12-11 00:22:18] Rendering student ID: 8, Name: mohamed chahbani, Image: ../../../../uploads/images/student_6758b1df273c9.png
+[2024-12-16 00:32:01] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-16 00:32:01] Fetched Teachers Data: array(2) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(19)
+    ["utilisateur_id"]=>
+    int(40)
+    ["qualifications"]=>
+    string(7) "Science"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_6758b188b0307.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_6758b188b08a5.png"
+    ["id"]=>
+    int(40)
+    ["nom"]=>
+    string(16) "mohamed chahbani"
+    ["email"]=>
+    string(20) "medchah606@gmail.com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-10 22:24:24"
+    ["statut"]=>
+    string(6) "active"
+  }
+  [1]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(20)
+    ["utilisateur_id"]=>
+    int(42)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_675f658f92557.pdf"
+    ["image"]=>
+    string(41) "uploads/images/teacher_675f658f9281b.jfif"
+    ["id"]=>
+    int(42)
+    ["nom"]=>
+    string(7) "Jon Doe"
+    ["email"]=>
+    string(27) "chahbani.mohammed@esprit.tn"
+    ["numero_telephone"]=>
+    string(8) "60195210"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-16 00:26:07"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-16 00:33:16] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-16 00:33:16] Fetched Teachers Data: array(2) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(19)
+    ["utilisateur_id"]=>
+    int(40)
+    ["qualifications"]=>
+    string(7) "Science"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_6758b188b0307.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_6758b188b08a5.png"
+    ["id"]=>
+    int(40)
+    ["nom"]=>
+    string(16) "mohamed chahbani"
+    ["email"]=>
+    string(20) "medchah606@gmail.com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-10 22:24:24"
+    ["statut"]=>
+    string(6) "active"
+  }
+  [1]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(20)
+    ["utilisateur_id"]=>
+    int(42)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_675f658f92557.pdf"
+    ["image"]=>
+    string(41) "uploads/images/teacher_675f658f9281b.jfif"
+    ["id"]=>
+    int(42)
+    ["nom"]=>
+    string(7) "Jon Doe"
+    ["email"]=>
+    string(27) "chahbani.mohammed@esprit.tn"
+    ["numero_telephone"]=>
+    string(8) "60195210"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-16 00:26:07"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-16 00:34:05] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-16 00:34:05] Fetched Teachers Data: array(2) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(19)
+    ["utilisateur_id"]=>
+    int(40)
+    ["qualifications"]=>
+    string(7) "Science"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_6758b188b0307.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_6758b188b08a5.png"
+    ["id"]=>
+    int(40)
+    ["nom"]=>
+    string(16) "mohamed chahbani"
+    ["email"]=>
+    string(20) "medchah606@gmail.com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-10 22:24:24"
+    ["statut"]=>
+    string(6) "active"
+  }
+  [1]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(20)
+    ["utilisateur_id"]=>
+    int(42)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_675f658f92557.pdf"
+    ["image"]=>
+    string(41) "uploads/images/teacher_675f658f9281b.jfif"
+    ["id"]=>
+    int(42)
+    ["nom"]=>
+    string(7) "Jon Doe"
+    ["email"]=>
+    string(27) "chahbani.mohammed@esprit.tn"
+    ["numero_telephone"]=>
+    string(8) "60195210"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-16 00:26:07"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-16 00:34:09] Email sent successfully to medchah606@gmail.com. Subject: 🎉 Welcome to NexDegree: Your Application is Accepted!
+[2024-12-16 00:34:11] Email sent successfully to medchah606@gmail.com. Subject: 🎉 Welcome to NexDegree: Your Application is Accepted!
+[2024-12-16 00:34:11] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-16 00:34:11] Fetched Teachers Data: array(2) {
+  [0]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(19)
+    ["utilisateur_id"]=>
+    int(40)
+    ["qualifications"]=>
+    string(7) "Science"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_6758b188b0307.pdf"
+    ["image"]=>
+    string(40) "uploads/images/teacher_6758b188b08a5.png"
+    ["id"]=>
+    int(40)
+    ["nom"]=>
+    string(16) "mohamed chahbani"
+    ["email"]=>
+    string(20) "medchah606@gmail.com"
+    ["numero_telephone"]=>
+    string(8) "92308572"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-10 22:24:24"
+    ["statut"]=>
+    string(6) "active"
+  }
+  [1]=>
+  array(13) {
+    ["id_enseignant"]=>
+    int(20)
+    ["utilisateur_id"]=>
+    int(42)
+    ["qualifications"]=>
+    string(4) "Math"
+    ["cv"]=>
+    string(32) "uploads/cvs/cv_675f658f92557.pdf"
+    ["image"]=>
+    string(41) "uploads/images/teacher_675f658f9281b.jfif"
+    ["id"]=>
+    int(42)
+    ["nom"]=>
+    string(7) "Jon Doe"
+    ["email"]=>
+    string(27) "chahbani.mohammed@esprit.tn"
+    ["numero_telephone"]=>
+    string(8) "60195210"
+    ["role"]=>
+    string(10) "enseignant"
+    ["mot_de_passe"]=>
+    string(11) "@Medchah12@"
+    ["cree_a"]=>
+    string(19) "2024-12-16 00:26:07"
+    ["statut"]=>
+    string(8) "inactive"
+  }
+}
+
+[2024-12-16 00:35:33] Email sent successfully to medchah606@gmail.com. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:34] Email sent successfully to medchah606@gmail.com. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:36] Email sent successfully to medchah606@gmail.com. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:37] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:38] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:38] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:38] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:39] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:40] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:40] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:40] Email sent successfully to chahbani.mohammed@esprit.tn. Subject: Application Rejected - NexDegree
+[2024-12-16 00:35:40] Fetching teachers sorted by id_enseignant in asc order.
+[2024-12-16 00:35:40] Fetched Teachers Data: array(0) {
+}
+

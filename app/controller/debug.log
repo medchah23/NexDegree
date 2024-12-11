@@ -1,0 +1,200 @@
+[2024-12-09 18:06:15] Deleting teacher with ID:: 18
+[2024-12-09 18:06:15] Teacher with ID 18 deleted successfully.
+[2024-12-10 21:47:42] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:47:42] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:11] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:11] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:11] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:11] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:31] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:31] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:43] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:43] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:51:57] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:51:57] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 22:24:24] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => medchah606@gmail.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Science
+    [cv:Enseignant:private] => uploads/cvs/cv_6758b188b0307.pdf
+    [image:Enseignant:private] => uploads/images/teacher_6758b188b08a5.png
+)
+
+[2024-12-10 22:24:24] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 40
+        )
+
+)
+
+[2024-12-10 22:25:51] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_6758b1df273c9.png
+)
+
+[2024-12-10 22:25:51] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 41
+        )
+
+)
+
+[2024-12-16 00:35:33] Deleting teacher with ID:: 19
+[2024-12-16 00:35:33] Teacher with ID 19 deleted successfully.
+[2024-12-16 00:35:34] Deleting teacher with ID:: 19
+[2024-12-16 00:35:34] Teacher with ID 19 deleted successfully.
+[2024-12-16 00:35:36] Deleting teacher with ID:: 19
+[2024-12-16 00:35:36] Teacher with ID 19 deleted successfully.
+[2024-12-16 00:35:37] Deleting teacher with ID:: 20
+[2024-12-16 00:35:37] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:38] Deleting teacher with ID:: 20
+[2024-12-16 00:35:38] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:38] Deleting teacher with ID:: 20
+[2024-12-16 00:35:38] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:38] Deleting teacher with ID:: 20
+[2024-12-16 00:35:38] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:39] Deleting teacher with ID:: 20
+[2024-12-16 00:35:39] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:40] Deleting teacher with ID:: 20
+[2024-12-16 00:35:40] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:40] Deleting teacher with ID:: 20
+[2024-12-16 00:35:40] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:40] Deleting teacher with ID:: 20
+[2024-12-16 00:35:40] Teacher with ID 20 deleted successfully.
+[2024-12-16 02:16:04] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.ussss
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_675f7f5456276.pdf
+    [image:Enseignant:private] => uploads/images/teacher_675f7f5456508.png
+)
+
+[2024-12-16 02:16:04] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 43
+        )
+
+)
+

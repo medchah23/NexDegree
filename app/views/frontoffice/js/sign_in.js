@@ -20,11 +20,7 @@ document.addEventListener("DOMContentLoaded", function () {
         }
     });
 
-    document.getElementById("loginForm").addEventListener("submit", function (event) {
-        if (!validateLogin()) {
-            event.preventDefault(); // Prevent submission if validation fails
-        }
-    });
+
 
     function toggleRole() {
         const role = document.getElementById("role").value;
@@ -123,26 +119,7 @@ document.addEventListener("DOMContentLoaded", function () {
         return isValid;
     }
 
-    function validateLogin() {
-        const email = document.getElementById("loginEmail");
-        const password = document.getElementById("loginPassword");
-        let isValid = true;
 
-        const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-        if (!emailRegex.test(email.value)) {
-            email.classList.add("error");
-            createPopup("Adresse email non valide", "error");
-            isValid = false;
-        }
-
-        if (password.value.length < 8) {
-            password.classList.add("error");
-            createPopup("Mot de passe trop court", "error");
-            isValid = false;
-        }
-
-        return isValid;
-    }
 
     async function submitForm(event) {
         const form = document.getElementById("signupForm");

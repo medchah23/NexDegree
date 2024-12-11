@@ -6,20 +6,57 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>NexDegree - Inscription & Connexion</title>
     <link rel="stylesheet" href="../css/style2.css" />
+    <style>
+
+        #webcam-container {
+            display: none; /* Initially hidden */
+            margin-top: 20px;
+        }
+        #video {
+            width: 30%;
+            height: 30%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        #capture-button {
+            margin-top: 10px;
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        #capture-button:hover {
+            background-color: #0056b3;
+        }
+        #captured-image {
+            display: none; /* Initially hidden */
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .forgot-password {
+            display: block;
+            margin-top: 10px;
+            text-align: right;
+        }
+    </style>
 </head>
 <body>
 <div class="animated-bg"></div>
 <section class="wrapper">
-    <!-- Formulaire d'inscription -->
+
     <div class="form signup">
         <header>Inscription</header>
         <form id="signupForm">
-            <input type="text" id="firstName" name="firstName" placeholder="Prénom" required aria-label="Prénom" />
-            <input type="text" id="secondName" name="secondName" placeholder="Nom" required aria-label="Nom" />
-            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Numéro de téléphone" pattern="[0-9]{8}" required aria-label="Numéro de téléphone" />
-            <input type="email" id="email" name="email" placeholder="Adresse e-mail" required aria-label="Adresse e-mail" />
+            <input type="text" id="firstName" name="firstName" placeholder="Prénom"   aria-label="Prénom" />
+            <input type="text" id="secondName" name="secondName" placeholder="Nom"   aria-label="Nom" />
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Numéro de téléphone" pattern="[0-9]{8}"   aria-label="Numéro de téléphone" />
+            <input type="email" id="email" name="email" placeholder="Adresse e-mail"   aria-label="Adresse e-mail" />
 
-            <select name="role" id="role" required aria-label="Rôle">
+            <select name="role" id="role"   aria-label="Rôle">
                 <option selected disabled value="">Sélectionnez votre rôle</option>
                 <option value="etudiant">Étudiant</option>
                 <option value="enseignant">Enseignant</option>
@@ -27,187 +64,85 @@
 
             <div id="student" style="display: none;">
                 <header>Détails Étudiant</header>
-                <select name="niveau" id="niveau" required aria-label="Niveau">
+                <select name="niveau" id="niveau"   aria-label="Niveau">
                     <option value="" selected>Choisissez votre niveau</option>
                     <option value="7eme">7ème</option>
                     <option value="8eme">8ème</option>
                 </select>
+                <label for="student_image">Téléchargez votre photo :</ ```html
                 <label for="student_image">Téléchargez votre photo :</label>
-                <input type="file" id="student_image" name="student_image" accept="image/*" required />
-                <button type="button" id="openStudentCamera">Prendre une photo</button>
-                <video id="studentCamera" autoplay hidden></video>
-                <canvas id="studentCanvas" hidden></canvas>
+                <input type="file" id="student_image" name="student_image" accept="image/*"   />
             </div>
             <div id="prof" style="display: none;">
                 <header>Détails Enseignant</header>
-                <select name="matier" id="matier" required aria-label="Matière">
+                <select name="matier" id="matier"   aria-label="Matière">
                     <option value="" selected>Choisissez votre matière</option>
                     <option value="Math">Mathématiques</option>
                     <option value="Science">Sciences</option>
                 </select>
                 <label for="cv">Téléchargez votre CV :</label>
-                <input type="file" id="cv" name="cv" accept="application/pdf" required />
+                <input type="file" id="cv" name="cv" accept="application/pdf"   />
                 <label for="ens_image">Téléchargez votre photo :</label>
-                <input type="file" id="ens_image" name="ens_image" accept="image/*" required />
-                <button type="button" id="openTeacherCamera">Prendre une photo</button>
-                <video id="teacherCamera" autoplay hidden></video>
-                <canvas id="teacherCanvas" hidden></canvas>
+                <input type="file" id="ens_image" name="ens_image" accept="image/*"   />
             </div>
 
-            <input type="password" id="password" name="password" placeholder="Mot de passe" required minlength="6" aria-label="Mot de passe" />
-            <input type="password" id="cpassword" name="cpassword" placeholder="Confirmez le mot de passe" required minlength="6" aria-label="Confirmez le mot de passe" />
+            <input type="password" id="password" name="password" placeholder="Mot de passe"   minlength="6" aria-label="Mot de passe" />
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirmez le mot de passe"   minlength="6" aria-label="Confirmez le mot de passe" />
+
+            <!-- Webcam Capture Section -->
+            <div id="webcam-container">
+                <header>Capturez votre photo</header>
+                <video id="video" autoplay></video>
+                <button type="button" id="capture-button">Capturer la photo</button>
+                <canvas id="captured-image" aria-label="Image capturée"></canvas>
+                <input type="hidden" id="faceImage" name="faceImage" />
+            </div>
+
             <input type="submit" id="signupSubmit" value="S'inscrire" />
         </form>
     </div>
     <div class="form login">
         <header>Connexion</header>
-        <form id="loginForm" method="post" action="../PHP/login.php">
-            <input type="radio" id="loginWithEmail" name="loginMethod" value="email" checked />
-            <label for="loginWithEmail">Connexion avec e-mail</label>
-            <input type="radio" id="loginWithFace" name="loginMethod" value="face" />
-            <label for="loginWithFace">Connexion avec reconnaissance faciale</label>
+        <form id="loginForm">
+            <label for="loginEmail">Adresse e-mail</label>
+            <input
+                    type="email"
+                    id="loginEmail"
+                    name="loginEmail"
+                    placeholder="Adresse e-mail"
 
-            <div id="emailLoginFields">
-                <input type="email" id="loginEmail" name="loginEmail" placeholder="Adresse e-mail" required aria-label="Adresse e-mail" />
-                <input type="password" id="loginPassword" name="loginPassword" placeholder="Mot de passe" required aria-label="Mot de passe" />
-            </div>
+                    aria-label="Adresse e-mail"
+                    class="form-control"
+            />
 
-            <div id="faceLoginFields" style="display: none;">
-                <button type="button" id="startFaceRecognition">Démarrer la reconnaissance faciale</button>
-                <video id="faceCamera" autoplay hidden></video>
-                <canvas id="faceCanvas" hidden></canvas>
-                <button type="button" id="captureFace">Capturer</button>
-            </div>
+            <label for="loginPassword">Mot de passe</label>
+            <input
+                    type="password"
+                    id="loginPassword"
+                    name="loginPassword"
+                    placeholder="Mot de passe"
+
+                    aria-label="Mot de passe"
+                    class="form-control"
+            />
 
             <a href="password.html" class="forgot-password">Mot de passe oublié ?</a>
-            <input type="submit" id="loginSubmit" value="Se connecter" />
+
+            <input
+                    type="submit"
+                    id="loginSubmit"
+                    value="Se connecter"
+                    class="btn btn-primary"
+            />
         </form>
     </div>
+
 </section>
 <div id="popup-container" class="popup-container"></div>
 <script src="../js/sign_in.js"></script>
+<script src="../js/face.js"></script>
+<script src="../js/login.js"></script>
 <script>
-    document.querySelectorAll('input[name="loginMethod"]').forEach((radio) => {
-        radio.addEventListener('change', function () {
-            const emailFields = document.getElementById('emailLoginFields');
-            const faceFields = document.getElementById('faceLoginFields');
-            emailFields.style.display = this.value === 'email' ? 'block' : 'none';
-            faceFields.style.display = this.value === 'face' ? 'block' : 'none';
-        });
-    });
-
-    // Start Face Recognition
-    document.getElementById('startFaceRecognition').addEventListener('click', function () {
-        const video = document.getElementById('faceCamera');
-        const canvas = document.getElementById('faceCanvas');
-        video.hidden = false;
-
-        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
-            video.srcObject = stream;
-        });
-
-        // Capture Face Data
-        document.getElementById('captureFace').addEventListener('click', function () {
-            const context = canvas.getContext('2d');
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            context.drawImage(video, 0, 0, canvas.width, canvas.height);
-            const faceData = canvas.toDataURL('image/png');
-
-            // Send to backend for recognition
-            fetch('process_face.php', {
-                method: 'POST',
-                body: JSON.stringify({ face_data: faceData }),
-                headers: { 'Content-Type': 'application/json' },
-            })
-                .then((response) => response.json())
-                .then((data) => {
-                    if (data.success) {
-                        alert('Face recognized successfully.');
-                    } else {
-                        alert('Face recognition failed.');
-                    }
-                })
-                .catch((error) => console.error('Error:', error));
-        });
-    });
-    document.getElementById('openStudentCamera').addEventListener('click', function () {
-        const video = document.getElementById('studentCamera');
-        const canvas = document.getElementById('studentCanvas');
-        video.hidden = false;
-
-        // Access the camera
-        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
-            video.srcObject = stream;
-        });
-
-        // Add an event listener to capture the photo
-        video.addEventListener('click', function () {
-            const context = canvas.getContext('2d');
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            context.drawImage(video, 0, 0, canvas.width, canvas.height);
-            const capturedImage = canvas.toDataURL('image/png'); // Get the Base64 image data
-            console.log(capturedImage); // Optional: log to the console for testing
-
-            // Send the captured image to the backend
-            sendToBackend(capturedImage); // Send image to backend
-
-            video.hidden = true; // Hide the video feed after capturing
-            canvas.hidden = false; // Show the captured image
-        });
-    });
-
-    document.getElementById('openTeacherCamera').addEventListener('click', function () {
-        const video = document.getElementById('teacherCamera');
-        const canvas = document.getElementById('teacherCanvas');
-        video.hidden = false;
-
-        // Access the camera
-        navigator.mediaDevices.getUserMedia({ video: true }).then((stream) => {
-            video.srcObject = stream;
-        });
-
-        // Add an event listener to capture the photo
-        video.addEventListener('click', function () {
-            const context = canvas.getContext('2d');
-            canvas.width = video.videoWidth;
-            canvas.height = video.videoHeight;
-            context.drawImage(video, 0, 0, canvas.width, canvas.height);
-            const capturedImage = canvas.toDataURL('image/png'); // Get the Base64 image data
-            console.log(capturedImage); // Optional: log to the console for testing
-
-            // Send the captured image to the backend
-            sendToBackend(capturedImage); // Send image to backend
-
-            video.hidden = true; // Hide the video feed after capturing
-            canvas.hidden = false; // Show the captured image
-        });
-    });
-
-    // Function to send captured image to backend
-    function sendToBackend(imageData) {
-        // Send the Base64 image data to the backend
-        fetch('../PHP/process_face.php', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify({ face_data: imageData }) // Send face image data in JSON format
-        })
-            .then(response => response.json())
-            .then(data => {
-                if (data.success) {
-                    alert('Face recognized successfully!');
-                } else {
-                    alert('Face recognition failed.');
-                }
-            })
-            .catch(error => {
-                console.error('Error:', error);
-                alert('Error in sending data to the backend.');
-            });
-    }
 
 </script>
 </body>
