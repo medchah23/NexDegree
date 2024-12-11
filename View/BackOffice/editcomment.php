@@ -23,12 +23,11 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             $comment['post_id'],        // Associated post ID (unchanged)
             $comment['user_id'],        // User ID (unchanged)
             $_POST['content'],          // Updated content from the form
-            new DateTime($comment['created_at']) // Preserve original creation date
+            new DateTime($comment['created_at'])
         ),
-        (int)$_POST['comment_id'] // The comment ID for updating the specific comment
+        (int)$_POST['comment_id'] 
     );
 
-    // Redirect to the comments page after update
     header("Location: comments.php");
     exit();
 }

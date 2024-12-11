@@ -6,16 +6,18 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
     $commentC = new CommentController();
 
     // Validate input (Handled by JS, but we'll still check for basic structure)
-    if (!empty($_POST['content']) && isset($_POST['post_id']) && is_numeric($_POST['post_id'])) {
+    //if (!empty($_POST['content']) && isset($_POST['post_id']) && is_numeric($_POST['post_id'])) {
+    if (!empty($_POST['content'])) {
+
         try {
             $content = $_POST['content'];
-            $postId = (int)$_POST['post_id']; // Get the post_id from the form
+            $postId = $_POST['post_id'] ? $_POST['post_id'] : 60; // Get the post_id from the form
 
             // Add the comment
             $commentC->addComment($postId, $content);  // Pass both postId and content
 
             // Redirect to comments page with success message
-            header("Location: comments.php?message=Comment%20added%20successfully.&messageType=success");
+            header("Location: ../frontoffice/accueil.php?message=Comment%20added%20successfully.&messageType=success");
         } catch (Exception $e) {
             // Redirect with error message
             header("Location: addComment.php?post_id={$_POST['post_id']}&message=" . urlencode($e->getMessage()) . "&messageType=error");

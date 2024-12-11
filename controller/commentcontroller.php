@@ -29,7 +29,7 @@ class CommentController
         $comment = new Comment(null, $postId, $user_id, $content, $created_at);
 
         // Assuming you have a $dbConnection from your DB configuration
-        global $dbConnection;
+        $dbConnection = config::getConnexion();
 
         // Save the comment to the database
         if ($comment->saveToDatabase($dbConnection)) {

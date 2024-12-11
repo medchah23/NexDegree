@@ -9,18 +9,26 @@ class comment {
 
     // Constructor to initialize the properties
     public function __construct(?int $comment_id, ?int $post_id, ?int $user_id, ?string $content, ?DateTime $created_at) {
-        $this->comment_id = $comment_id;
+        if (!empty($comment_id)) {
+            $this->comment_id = $comment_id;
+        }
         $this->post_id = $post_id;
         $this->user_id = $user_id;
         $this->content = $content;
         $this->created_at = $created_at;
     }
     public function saveToDatabase($dbConnection) {
-        $query = "INSERT INTO comments (post_id, user_id, content, created_at) VALUES (?, ?, ?, ?)";
+        echo($this->created_at->format('Y-m-d H:i:s'));
+
+        $query = "INSERT INTO comments (post_id, user_id, content, created_at) VALUES (:post_id, :user_id, :content, :created_at)";
         $stmt = $dbConnection->prepare($query);
 
         // Bind the parameters
-        $stmt->bind_param("iiss", $this->post_id, $this->user_id, $this->content, $this->created_at->format('Y-m-d H:i:s'));
+        $stmt->bindParam(':post_id', $this->post_id);
+        $stmt->bindParam(':user_id', $this->user_id);
+        $stmt->bindParam(':content', $this->content);
+        $stmt->bindParam(':created_at', $this->created_at->format('Y-m-d H:i:s'));
+
         return $stmt->execute(); // Execute and return the success or failure of the query
     }
     // Getter and Setter for comment_id

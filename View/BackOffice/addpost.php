@@ -13,7 +13,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
             1 
         );
         $postC->addPost($post);
-        header("Location: ../backoffice/backoffice.php?message=Post%20added%20successfully.&messageType=success");
+        header("Location: ../frontoffice/accueil.php?message=Post%20added%20successfully.&messageType=success");
     }
     exit();
 }

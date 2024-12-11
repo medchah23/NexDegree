@@ -33,20 +33,20 @@ $commentsList = $commentC->listComments();
             font-family: Arial, sans-serif;
             margin: 0;
             padding: 0;
-            display: flex; /* Ensure sidebar and content are aligned horizontally */
+            display: flex; 
         }
 
         #sidebar {
             width: 250px;
             background-color: # white;
             min-height: 100vh;
-            position: fixed; /* Keep sidebar fixed on the left */
+            position: fixed; 
         }
 
         .main-content {
-            margin-left: 250px; /* Leave space for the sidebar */
-            padding: 20px; /* Add padding for spacing */
-            width: calc(100% - 250px); /* Adjust width to fill the remaining space */
+            margin-left: 250px;
+            padding: 20px;
+            width: calc(100% - 250px); 
         }
 
         table {
