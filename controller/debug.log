@@ -1,0 +1,772 @@
+[2024-12-09 18:06:15] Deleting teacher with ID:: 18
+[2024-12-09 18:06:15] Teacher with ID 18 deleted successfully.
+[2024-12-10 21:47:42] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:47:42] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:11] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:11] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:11] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:11] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:31] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:31] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:49:43] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:49:43] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 21:51:57] Executing showByOrder for role: etudiant, field: id_etudiant
+[2024-12-10 21:51:57] showByOrder result:: Array
+(
+    [0] => Array
+        (
+            [id_etudiant] => 7
+            [id_utilisateur] => 38
+            [niveau] => 7eme
+            [image_profil] => uploads/images/student_674fd16829417.png
+            [nom] => Jon Doe
+            [email] => teste@exemplo.us
+            [numero_telephone] => 60195210
+            [role] => etudiant
+        )
+
+)
+
+[2024-12-10 22:24:24] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => medchah606@gmail.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Science
+    [cv:Enseignant:private] => uploads/cvs/cv_6758b188b0307.pdf
+    [image:Enseignant:private] => uploads/images/teacher_6758b188b08a5.png
+)
+
+[2024-12-10 22:24:24] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 40
+        )
+
+)
+
+[2024-12-10 22:25:51] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_6758b1df273c9.png
+)
+
+[2024-12-10 22:25:51] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 41
+        )
+
+)
+
+[2024-12-16 00:35:33] Deleting teacher with ID:: 19
+[2024-12-16 00:35:33] Teacher with ID 19 deleted successfully.
+[2024-12-16 00:35:34] Deleting teacher with ID:: 19
+[2024-12-16 00:35:34] Teacher with ID 19 deleted successfully.
+[2024-12-16 00:35:36] Deleting teacher with ID:: 19
+[2024-12-16 00:35:36] Teacher with ID 19 deleted successfully.
+[2024-12-16 00:35:37] Deleting teacher with ID:: 20
+[2024-12-16 00:35:37] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:38] Deleting teacher with ID:: 20
+[2024-12-16 00:35:38] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:38] Deleting teacher with ID:: 20
+[2024-12-16 00:35:38] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:38] Deleting teacher with ID:: 20
+[2024-12-16 00:35:38] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:39] Deleting teacher with ID:: 20
+[2024-12-16 00:35:39] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:40] Deleting teacher with ID:: 20
+[2024-12-16 00:35:40] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:40] Deleting teacher with ID:: 20
+[2024-12-16 00:35:40] Teacher with ID 20 deleted successfully.
+[2024-12-16 00:35:40] Deleting teacher with ID:: 20
+[2024-12-16 00:35:40] Teacher with ID 20 deleted successfully.
+[2024-12-16 02:16:04] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.ussss
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_675f7f5456276.pdf
+    [image:Enseignant:private] => uploads/images/teacher_675f7f5456508.png
+)
+
+[2024-12-16 02:16:04] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 43
+        )
+
+)
+
+[2024-12-16 12:58:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_676015d75e7f5.jpg
+)
+
+[2024-12-16 12:58:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-16 12:58:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_676015d77d573.jpg
+)
+
+[2024-12-16 12:58:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-16 12:58:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_676015d7925f5.jpg
+)
+
+[2024-12-16 12:58:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:05:27] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.usm
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_67615af7c31e1.pdf
+    [image:Enseignant:private] => uploads/images/teacher_67615af7c360d.jfif
+)
+
+[2024-12-17 12:06:13] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.usm
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_67615b252885b.pdf
+    [image:Enseignant:private] => uploads/images/teacher_67615b2528b8a.jfif
+)
+
+[2024-12-17 12:06:13] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 44
+        )
+
+)
+
+[2024-12-17 12:06:18] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.usm
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_67615b2a00124.pdf
+    [image:Enseignant:private] => uploads/images/teacher_67615b2a00486.jfif
+)
+
+[2024-12-17 12:06:18] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:06:27] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.usmm
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_67615b337dff2.pdf
+    [image:Enseignant:private] => uploads/images/teacher_67615b337e32b.jfif
+)
+
+[2024-12-17 12:06:27] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 45
+        )
+
+)
+
+[2024-12-17 12:33:18] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.uso
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761617eb3e75.png
+)
+
+[2024-12-17 12:33:18] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 46
+        )
+
+)
+
+[2024-12-17 12:33:52] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.usom
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_676161a09d691.png
+)
+
+[2024-12-17 12:33:52] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 47
+        )
+
+)
+
+[2024-12-17 12:34:28] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.usomd
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_676161c48f58f.png
+)
+
+[2024-12-17 12:34:28] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 48
+        )
+
+)
+
+[2024-12-17 12:35:03] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.usomds
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_676161e7b8b75.png
+)
+
+[2024-12-17 12:35:04] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 49
+        )
+
+)
+
+[2024-12-17 12:40:04] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.usa
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Science
+    [cv:Enseignant:private] => uploads/cvs/cv_6761631460e33.pdf
+    [image:Enseignant:private] => uploads/images/teacher_676163146118f.png
+)
+
+[2024-12-17 12:40:04] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 50
+        )
+
+)
+
+[2024-12-17 12:40:52] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.usq
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761634426721.png
+)
+
+[2024-12-17 12:40:52] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 51
+        )
+
+)
+
+[2024-12-17 12:41:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.us
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761635bca920.png
+)
+
+[2024-12-17 12:41:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:41:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.us
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761635bcf74e.png
+)
+
+[2024-12-17 12:41:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:41:22] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.usaq
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_676163622ac3e.png
+)
+
+[2024-12-17 12:41:22] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 52
+        )
+
+)
+
+[2024-12-17 12:41:22] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.usaq
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761636246e47.png
+)
+
+[2024-12-17 12:41:22] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:41:31] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.usaq
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761636bb798c.png
+)
+
+[2024-12-17 12:41:31] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:41:31] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.usaq
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761636bbd285.png
+)
+
+[2024-12-17 12:41:31] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:41:50] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.usaq
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761637e87c83.png
+)
+
+[2024-12-17 12:41:50] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 53
+        )
+
+)
+
+[2024-12-17 12:41:50] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Joao Souza
+    [email:protected] => teste@exemplo.usaq
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_6761637e9cb6a.png
+)
+
+[2024-12-17 12:41:50] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 12:42:30] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.us
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_676163a64629c.png
+)
+
+[2024-12-17 12:42:30] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 54
+        )
+
+)
+
+[2024-12-17 12:42:30] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => teste@exemplo.us
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_676163a66c1f7.png
+)
+
+[2024-12-17 12:42:30] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-17 16:09:52] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => bob.martin@example.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => HamaEya12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => uploads/images/student_67619440979fb.png
+)
+
+[2024-12-17 16:09:52] User added successfully: Array
+(
+    [success] => 1
+    [message] => Étudiant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 55
+        )
+
+)
+
+[2024-12-17 22:18:30] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.usmmm
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_6761eaa69fc62.pdf
+    [image:Enseignant:private] => uploads/images/teacher_6761eaa69fed0.jfif
+)
+
+[2024-12-17 22:18:30] User added successfully: Array
+(
+    [success] => 1
+    [message] => Enseignant ajouté avec succès !
+    [data] => Array
+        (
+            [id_utilisateur] => 56
+        )
+
+)
+
+[2024-12-17 22:18:34] Adding user:: Enseignant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => Jon Doe
+    [email:protected] => teste@exemplo.usmmm
+    [tel:utilisateur:private] => 60195210
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => enseignant
+    [statut] => inactive
+    [qualifications:Enseignant:private] => Math
+    [cv:Enseignant:private] => uploads/cvs/cv_6761eaaa06b24.pdf
+    [image:Enseignant:private] => uploads/images/teacher_6761eaaa07380.jfif
+)
+
+[2024-12-17 22:18:34] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+

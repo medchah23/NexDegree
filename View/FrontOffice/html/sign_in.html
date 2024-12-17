@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>NexDegree - Inscription & Connexion</title>
+    <link rel="stylesheet" href="../css/style2.css" />
+</head>
+<body>
+<div class="animated-bg"></div>
+<section class="wrapper">
+
+    <div class="form signup">
+        <header>Inscription</header>
+        <form id="signupForm">
+            <input type="text" id="firstName" name="firstName" placeholder="Prénom" aria-label="Prénom" />
+            <input type="text" id="secondName" name="secondName" placeholder="Nom" aria-label="Nom" />
+            <input type="tel" id="phoneNumber" name="phoneNumber" placeholder="Numéro de téléphone" pattern="[0-9]{8}" aria-label="Numéro de téléphone" />
+            <input type="email" id="email" name="email" placeholder="Adresse e-mail" aria-label="Adresse e-mail" />
+
+            <select name="role" id="role" aria-label="Rôle">
+                <option selected disabled value="">Sélectionnez votre rôle</option>
+                <option value="etudiant">Étudiant</option>
+                <option value="enseignant">Enseignant</option>
+            </select>
+
+            <div id ="student" style="display: none;">
+                <header>Détails Étudiant</header>
+                <select name="niveau" id="niveau" aria-label="Niveau">
+                    <option value="" selected>Choisissez votre niveau</option>
+                    <option value="7eme">7ème</option>
+                    <option value="8eme">8ème</option>
+                </select>
+                <label for="student_image">Téléchargez votre photo :</label>
+                <input type="file" id="student_image" name="student_image" accept="image/*" />
+            </div>
+            <div id="prof" style="display: none;">
+                <header>Détails Enseignant</header>
+                <select name="matier" id="matier" aria-label="Matière">
+                    <option value="" selected>Choisissez votre matière</option>
+                    <option value="Math">Mathématiques</option>
+                    <option value="Science">Sciences</option>
+                </select>
+                <label for="cv">Téléchargez votre CV :</label>
+                <input type="file" id="cv" name="cv" accept="application/pdf" />
+                <label for="ens_image">Téléchargez votre photo :</label>
+                <input type="file" id="ens_image" name="ens_image" accept="image/*" />
+            </div>
+
+            <input type="password" id="password" name="password" placeholder="Mot de passe" minlength="6" aria-label="Mot de passe" />
+            <input type="password" id="cpassword" name="cpassword" placeholder="Confirmez le mot de passe" minlength="6" aria-label="Confirmez le mot de passe" />
+
+            <!-- Webcam Capture Section -->
+            <div id="webcam-container">
+                <header>Capturez votre photo</header>
+                <video id="video" autoplay></video>
+                <button type="button" id="capture-button">Capturer la photo</button>
+                <canvas id="captured-image" aria-label="Image capturée"></canvas>
+                <input type="hidden" id="faceImage" name="faceImage" />
+            </div>
+
+            <input type="submit" id="signupSubmit" value="S'inscrire" />
+        </form>
+    </div>
+    <div class="form login">
+        <header>Connexion</header>
+        <div class="login-methods">
+            <div class="login-method" id="emailLogin">
+                <strong>Connexion par e-mail</strong>
+                <form id="loginFormEmail">
+                    <label for="loginEmail">Adresse e-mail</label>
+                    <input type="email" id="loginEmail" name="loginEmail" placeholder="Adresse e-mail" aria-label="Adresse e-mail" class="form-control" />
+                    <label for="loginPassword">Mot de passe</label>
+                    <input type="password" id="loginPassword" name="loginPassword" placeholder="Mot de passe" aria-label="Mot de passe" class="form-control" />
+                    <input type="submit" id="loginSubmitEmail" value="Se connecter" class="btn btn-primary" />
+                </form>
+            </div>
+            <div class="login-method" id="faceLogin">
+                <strong>Connexion par Face ID</strong>
+                <button id="loginFaceId" class="btn btn-primary">Se connecter avec Face ID</button>
+            </div>
+        </div>
+        <a href="password.html" class="forgot-password">Mot de passe oublié ?</a>
+    </div>
+
+</section>
+<div id="popup-container" class="popup-container"></div>
+<script src="../js/sign_in.js"></script>
+<script src="../js/face.js"></script>
+<script src="../js/login.js"></script>
+
+</body>
+</html>

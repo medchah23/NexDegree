@@ -1,0 +1,11 @@
+{
+    "name": "mitch/nexdegree",
+    "description": "A web application for managing degrees and teachers",
+    "type": "project",
+    "minimum-stability": "stable",
+    "require": {
+        "phpmailer/phpmailer": "^6.9",
+        "intervention/image": "^3.9",
+        "aws/aws-sdk-php": "^3.334"
+    }
+}
