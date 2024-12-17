@@ -995,3 +995,51 @@
 )
 
 [2024-12-16 02:16:04] Image Path for User: : uploads/images/teacher_675f7f5456508.png
+[2024-12-16 12:58:15] Processing request.: Array
+(
+    [firstName] => mohamed
+    [secondName] => chahbani
+    [phoneNumber] => 92308572
+    [email] => chahbani.mohammed@esprit.tn
+    [role] => etudiant
+    [niveau] => 8eme
+    [matier] => 
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+    [faceImage] => 
+)
+
+[2024-12-16 12:58:15] Image Path for User: : uploads/images/student_676015d75e7f5.jpg
+[16-Dec-2024 12:58:15 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
+[2024-12-16 12:58:15] Processing request.: Array
+(
+    [firstName] => mohamed
+    [secondName] => chahbani
+    [phoneNumber] => 92308572
+    [email] => chahbani.mohammed@esprit.tn
+    [role] => etudiant
+    [niveau] => 8eme
+    [matier] => 
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+    [faceImage] => 
+)
+
+[2024-12-16 12:58:15] Image Path for User: : uploads/images/student_676015d77d573.jpg
+[16-Dec-2024 12:58:15 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
+[2024-12-16 12:58:15] Processing request.: Array
+(
+    [firstName] => mohamed
+    [secondName] => chahbani
+    [phoneNumber] => 92308572
+    [email] => chahbani.mohammed@esprit.tn
+    [role] => etudiant
+    [niveau] => 8eme
+    [matier] => 
+    [password] => @Medchah12@
+    [cpassword] => @Medchah12@
+    [faceImage] => 
+)
+
+[2024-12-16 12:58:15] Image Path for User: : uploads/images/student_676015d7925f5.jpg
+[16-Dec-2024 12:58:15 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.

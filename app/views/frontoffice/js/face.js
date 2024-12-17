@@ -51,3 +51,6 @@ document.getElementById('signupForm').addEventListener('submit', (event) => {
             alert('Une erreur est survenue lors de l\'inscription.');
         });
 });
+document.getElementById('loginFaceId').addEventListener('click', function() {
+    // Implement face ID login logic here
+});

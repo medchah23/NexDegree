@@ -198,3 +198,63 @@
 
 )
 
+[2024-12-16 12:58:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_676015d75e7f5.jpg
+)
+
+[2024-12-16 12:58:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-16 12:58:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_676015d77d573.jpg
+)
+
+[2024-12-16 12:58:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
+[2024-12-16 12:58:15] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => chahbani.mohammed@esprit.tn
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => @Medchah12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 8eme
+    [image_profil:Etudiant:private] => uploads/images/student_676015d7925f5.jpg
+)
+
+[2024-12-16 12:58:15] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+

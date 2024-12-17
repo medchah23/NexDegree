@@ -1,5 +1,58 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
 
+/* Webcam Styles */
+#webcam-container {
+    display: none; /* Initially hidden */
+    margin-top: 20px;
+    text-align: center;
+}
+#video {
+    width: 100%;
+    height: auto;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+#capture-button {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#capture-button:hover {
+    background-color: #0056b3;
+}
+#captured-image {
+    display: none; /* Initially hidden */
+    margin-top: 10px;
+    border: 2px solid #007bff;
+    border-radius: 8px;
+    width: 100%;
+    height: auto;
+}
+
+
+/* Login Method Toggle */
+.login-methods {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+.login-method {
+    flex: 1;
+    text-align: center;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+.login-method:hover {
+    background-color: #f0f0f0;
+}
 * {
     margin: 0;
     padding: 0;
@@ -48,7 +101,7 @@ body {
 .form.login {
     position: absolute;
     left: 50%;
-    bottom: -90%;
+    bottom: -95%;
     transform: translateX(-50%);
     width: calc(100% + 220px);
     padding: 20px 140px;
