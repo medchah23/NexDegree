@@ -1903,3 +1903,59 @@
     [sessionToken] => 98540cfe945a1c9b0b2e16fee029e233
 )
 
+[2024-12-17 23:14:33] Processing request.: Array
+(
+    [firstName] => mohamed
+    [secondName] => chahbani
+    [phoneNumber] => 92308572
+    [email] => bob.martin@example.com
+    [role] => etudiant
+    [niveau] => 7eme
+    [matier] => 
+    [password] => HamaEya12@
+    [cpassword] => HamaEya12@
+    [faceImage] => 
+)
+
+[2024-12-17 23:14:33] Student image upload failed or not provided.: Array
+(
+    [name] => 
+    [full_path] => 
+    [type] => 
+    [tmp_name] => 
+    [error] => 4
+    [size] => 0
+)
+
+[2024-12-17 23:14:33] Image Path for User: 
+[17-Dec-2024 23:14:33 Europe/Berlin] Error encountered: L'adresse e-mail existe déjà dans la base de données.
+[2024-12-17 23:41:56] Login attempt: Array
+(
+    [email] => bob.martin@example.com
+)
+
+[2024-12-17 23:41:56] User  role retrieved: Array
+(
+    [role] => etudiant
+)
+
+[2024-12-17 23:41:56] Fetching user ID for email: Array
+(
+    [email] => bob.martin@example.com
+)
+
+[2024-12-17 23:41:56] User  ID retrieved: Array
+(
+    [userId] => 55
+)
+
+[2024-12-17 23:41:56] User  status retrieved: Array
+(
+    [status] => active
+)
+
+[2024-12-17 23:41:56] Session token creation: Array
+(
+    [sessionToken] => a78bc6fbf8d47bbe45babbe9b4d94ce0
+)
+

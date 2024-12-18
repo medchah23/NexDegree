@@ -12,6 +12,13 @@ $sql_matiere = "SELECT id_matiere, nom FROM matiere";
 $db = config::getConnexion();
 $query_matiere = $db->query($sql_matiere);
 $matieres = $query_matiere->fetchAll();
+include '../../controller/PostController.php';
+$postC = new PostController();
+$postsList = $postC->listPosts();
+
+include '../../controller/CommentController.php';
+$commentC = new CommentController();
+$commentsList = $commentC->listComments();
 ?>
 
 
@@ -137,8 +144,6 @@ $matieres = $query_matiere->fetchAll();
   <aside id="sidebar" class="sidebar">
 
     <ul class="sidebar-nav" id="sidebar-nav">
-
-      
     <li class="nav-item">
         <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
@@ -164,6 +169,18 @@ $matieres = $query_matiere->fetchAll();
           <span>Add Matiere</span>
         </a>
         </li> 
+        <li class="nav-item">
+        <a class="nav-link " href="posts.php">
+          <i class="bi bi-grid"></i>
+          <span>Posts</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="comments.php">
+          <i class="bi bi-grid"></i>
+          <span>Comments</span>
+        </a>
+      </li>
         <li class="nav-item">
         <a class="nav-link collapsed" href="quizList.php">
           <i class="bi bi-grid"></i>
@@ -255,6 +272,54 @@ $matieres = $query_matiere->fetchAll();
   </form>
 </section>
 
+<section class="section dashboard">
+      <div class="row">
+        <div class="col-lg-12">
+          <h2>Posts Overview</h2>
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <th>Title</th>
+                <th>Content</th>
+              </tr>
+            </thead>
+            <tbody>
+              <?php foreach ($postsList as $post) { ?>
+              <tr>
+                <td><?php echo htmlspecialchars($post['title']); ?></td>
+                <td><?php echo htmlspecialchars(mb_strimwidth($post['content'], 0, 100, '...')); ?></td>
+              </tr>
+              <?php } ?>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div class="col-lg-12">
+        <h2>Comments Overview</h2>
+        <table class="table table-bordered">
+          <thead>
+            <tr>
+              <th>Comment ID</th>
+              <th>Post ID</th>
+              <th>User ID</th>
+              <th>Content</th>
+              <th>Created At</th>
+            </tr>
+          </thead>
+          <tbody>
+            <?php foreach ($commentsList as $comment) { ?>
+            <tr>
+              <td><?php echo htmlspecialchars($comment['comment_id']); ?></td>
+              <td><?php echo htmlspecialchars($comment['post_id']); ?></td>
+              <td><?php echo htmlspecialchars($comment['user_id']); ?></td>
+              <td><?php echo htmlspecialchars(mb_strimwidth($comment['content'], 0, 100, '...')); ?></td>
+              <td><?php echo htmlspecialchars($comment['created_at']); ?></td>
+            </tr>
+            <?php } ?>
+          </tbody>
+        </table>
+      </div>
+    </section>
 
          
     </section>

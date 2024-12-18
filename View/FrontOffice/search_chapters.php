@@ -143,6 +143,8 @@ ul li::before {
         <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
             <div class="navbar-nav font-weight-bold mx-auto py-0 d-flex align-items-center">
                 <a href="index.php" class="nav-item nav-link active">Matiere</a>
+                <a href="about.html" class="nav-item nav-link">About</a>
+            <a href="contact.html" class="nav-item nav-link">Contact</a>
                 <div class="search-bar ml-4">
                     <form class="search-form d-flex align-items-center" method="POST" action="search_chapters.php">
                         <input type="text" name="query" placeholder="Search Chapters..." 

@@ -198,6 +198,18 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     </a>
     </li> 
     <li class="nav-item">
+        <a class="nav-link " href="posts.php">
+          <i class="bi bi-grid"></i>
+          <span>Posts</span>
+        </a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link " href="comments.php">
+          <i class="bi bi-grid"></i>
+          <span>Comments</span>
+        </a>
+      </li>
+    <li class="nav-item">
     <a class="nav-link collapsed" href="quizList.php">
       <i class="bi bi-grid"></i>
       <span>Quiz list</span>

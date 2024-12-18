@@ -770,3 +770,23 @@
     [data] => 
 )
 
+[2024-12-17 23:14:33] Adding user:: Etudiant Object
+(
+    [id_utilisateur:utilisateur:private] => 
+    [nom:protected] => mohamed chahbani
+    [email:protected] => bob.martin@example.com
+    [tel:utilisateur:private] => 92308572
+    [mot_de_passe:utilisateur:private] => HamaEya12@
+    [role] => etudiant
+    [statut] => active
+    [niveau:protected] => 7eme
+    [image_profil:Etudiant:private] => 
+)
+
+[2024-12-17 23:14:33] Email already exists: Array
+(
+    [success] => 
+    [message] => L'adresse e-mail existe déjà dans la base de données.
+    [data] => 
+)
+
