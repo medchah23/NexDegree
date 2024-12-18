@@ -145,6 +145,12 @@ $commentsList = $commentC->listComments();
 
     <ul class="sidebar-nav" id="sidebar-nav">
     <li class="nav-item">
+        <a class="nav-link collapsed" href="backoffice.php">
+          <i class="bi bi-grid"></i>
+          <span>dashboard</span>
+        </a>
+      </li>
+    <li class="nav-item">
         <a class="nav-link collapsed" href="index.php">
           <i class="bi bi-grid"></i>
           <span>Chapitre</span>
@@ -272,57 +278,10 @@ $commentsList = $commentC->listComments();
   </form>
 </section>
 
-<section class="section dashboard">
-      <div class="row">
-        <div class="col-lg-12">
-          <h2>Posts Overview</h2>
-          <table class="table table-bordered">
-            <thead>
-              <tr>
-                <th>Title</th>
-                <th>Content</th>
-              </tr>
-            </thead>
-            <tbody>
-              <?php foreach ($postsList as $post) { ?>
-              <tr>
-                <td><?php echo htmlspecialchars($post['title']); ?></td>
-                <td><?php echo htmlspecialchars(mb_strimwidth($post['content'], 0, 100, '...')); ?></td>
-              </tr>
-              <?php } ?>
-            </tbody>
-          </table>
-        </div>
-      </div>
-      <div class="col-lg-12">
-        <h2>Comments Overview</h2>
-        <table class="table table-bordered">
-          <thead>
-            <tr>
-              <th>Comment ID</th>
-              <th>Post ID</th>
-              <th>User ID</th>
-              <th>Content</th>
-              <th>Created At</th>
-            </tr>
-          </thead>
-          <tbody>
-            <?php foreach ($commentsList as $comment) { ?>
-            <tr>
-              <td><?php echo htmlspecialchars($comment['comment_id']); ?></td>
-              <td><?php echo htmlspecialchars($comment['post_id']); ?></td>
-              <td><?php echo htmlspecialchars($comment['user_id']); ?></td>
-              <td><?php echo htmlspecialchars(mb_strimwidth($comment['content'], 0, 100, '...')); ?></td>
-              <td><?php echo htmlspecialchars($comment['created_at']); ?></td>
-            </tr>
-            <?php } ?>
-          </tbody>
-        </table>
-      </div>
-    </section>
+
 
          
-    </section>
+    
 
 
 

@@ -167,7 +167,12 @@ if (isset($_GET['id_chapitre']) && !empty($_GET['id_chapitre'])) {
   <aside id="sidebar" class="sidebar">
 
 <ul class="sidebar-nav" id="sidebar-nav">
-
+<li class="nav-item">
+        <a class="nav-link collapsed" href="backoffice.php">
+          <i class="bi bi-grid"></i>
+          <span>dashboard</span>
+        </a>
+      </li>
   
 <li class="nav-item">
         <a class="nav-link collapsed" href="index.php">

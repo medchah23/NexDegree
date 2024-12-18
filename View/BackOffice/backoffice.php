@@ -54,14 +54,40 @@ $commentsList = $commentC->listComments();
 
   <!-- ======= Sidebar ======= -->
   <aside id="sidebar" class="sidebar">
+
     <ul class="sidebar-nav" id="sidebar-nav">
-      <li class="nav-item">
-        <a class="nav-link " href="backoffice.php">
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="backoffice.php">
           <i class="bi bi-grid"></i>
-          <span>Dashboard</span>
+          <span>dashboard</span>
         </a>
       </li>
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="index.php">
+          <i class="bi bi-grid"></i>
+          <span>Chapitre</span>
+        </a>
+      </li>
+
       <li class="nav-item">
+        <a class="nav-link collapsed" href="addchapitre.php">
+          <i class="bi bi-grid"></i>
+          <span>Add Chapter</span>
+        </a>
+        </li>
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="affichematiere.php">
+          <i class="bi bi-grid"></i>
+          <span>Matiere</span>
+        </a>
+        </li> 
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="addmatiere.php">
+          <i class="bi bi-grid"></i>
+          <span>Add Matiere</span>
+        </a>
+        </li> 
+        <li class="nav-item">
         <a class="nav-link " href="posts.php">
           <i class="bi bi-grid"></i>
           <span>Posts</span>
@@ -73,7 +99,38 @@ $commentsList = $commentC->listComments();
           <span>Comments</span>
         </a>
       </li>
-    </ul>
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="quizList.php">
+          <i class="bi bi-grid"></i>
+          <span>Quiz list</span>
+        </a>
+        </li> 
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="addquiz.php">
+          <i class="bi bi-grid"></i>
+          <span>Add quiz </span>
+        </a>
+        </li> 
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="addQuestion.php">
+          <i class="bi bi-grid"></i>
+          <span>Add Question </span>
+        </a>
+        </li> 
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="addEvaluation.php">
+          <i class="bi bi-grid"></i>
+          <span>Add Evaluation </span>
+        </a>
+        </li> 
+        <li class="nav-item">
+        <a class="nav-link collapsed" href="EvaluationList.php">
+          <i class="bi bi-grid"></i>
+          <span>Evaluation list </span>
+        </a>
+        </li> 
+
+      <!-- End Dashboard Nav -->
   </aside><!-- End Sidebar -->
 
   <main id="main" class="main">
